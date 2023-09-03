@@ -165,9 +165,9 @@
       }
     }
   },
-  "75830f2a38bce2505a8f2db26b2e92837c804bfd5bed80ef6772d13796983e7e": {
-    "sourceId": "75830f2a38bce2505a8f2db26b2e92837c804bfd5bed80ef6772d13796983e7e",
-    "reproducibleGitChecksum": "3e2c98d3fb62dd167302bb7b96d3169e4815b0ba638fb64abe6df4f182ec8a37",
+  "203c8765ba15fac9a64fe1cec89bae6706e793f7024aaa8cd71436587ae0ebdd": {
+    "sourceId": "203c8765ba15fac9a64fe1cec89bae6706e793f7024aaa8cd71436587ae0ebdd",
+    "reproducibleGitChecksum": "59d8a7446a0413d9b61c66abdb9e90a6314a8c9ae6b5e2d1e1098b32d8b4564c",
     "allTags": [
       "tianon/containerd:1.7.5",
       "tianon/containerd:1.7",
@@ -177,11 +177,11 @@
     "entry": {
       "GitRepo": "https://github.com/tianon/dockerfiles.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "33edfb5c45a97e530e65d290d0b6ed1627316672",
+      "GitCommit": "1531fa894ca37a96f6d4291b0faa94f729193c95",
       "Directory": "containerd",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1693549295
+      "SOURCE_DATE_EPOCH": 1693719813
     },
     "arches": {
       "amd64": {
@@ -198,6 +198,76 @@
         "platformString": "linux/amd64",
         "platform": {
           "architecture": "amd64",
+          "os": "linux"
+        },
+        "parents": {
+          "debian:bullseye-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm64v8": {
+        "tags": [
+          "tianon/containerd:1.7.5",
+          "tianon/containerd:1.7",
+          "tianon/containerd:1",
+          "tianon/containerd:latest"
+        ],
+        "archTags": [],
+        "froms": [
+          "debian:bullseye-slim"
+        ],
+        "platformString": "linux/arm64/v8",
+        "platform": {
+          "architecture": "arm64",
+          "os": "linux",
+          "variant": "v8"
+        },
+        "parents": {
+          "debian:bullseye-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "ppc64le": {
+        "tags": [
+          "tianon/containerd:1.7.5",
+          "tianon/containerd:1.7",
+          "tianon/containerd:1",
+          "tianon/containerd:latest"
+        ],
+        "archTags": [],
+        "froms": [
+          "debian:bullseye-slim"
+        ],
+        "platformString": "linux/ppc64le",
+        "platform": {
+          "architecture": "ppc64le",
+          "os": "linux"
+        },
+        "parents": {
+          "debian:bullseye-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "s390x": {
+        "tags": [
+          "tianon/containerd:1.7.5",
+          "tianon/containerd:1.7",
+          "tianon/containerd:1",
+          "tianon/containerd:latest"
+        ],
+        "archTags": [],
+        "froms": [
+          "debian:bullseye-slim"
+        ],
+        "platformString": "linux/s390x",
+        "platform": {
+          "architecture": "s390x",
           "os": "linux"
         },
         "parents": {
@@ -246,7 +316,77 @@
         },
         "parents": {
           "tianon/containerd:latest": {
-            "sourceId": "75830f2a38bce2505a8f2db26b2e92837c804bfd5bed80ef6772d13796983e7e",
+            "sourceId": "203c8765ba15fac9a64fe1cec89bae6706e793f7024aaa8cd71436587ae0ebdd",
+            "pin": null
+          }
+        }
+      },
+      "arm64v8": {
+        "tags": [
+          "tianon/containerd:1.7.5-c8dind",
+          "tianon/containerd:1.7-c8dind",
+          "tianon/containerd:1-c8dind",
+          "tianon/containerd:c8dind"
+        ],
+        "archTags": [],
+        "froms": [
+          "tianon/containerd:latest"
+        ],
+        "platformString": "linux/arm64/v8",
+        "platform": {
+          "architecture": "arm64",
+          "os": "linux",
+          "variant": "v8"
+        },
+        "parents": {
+          "tianon/containerd:latest": {
+            "sourceId": "203c8765ba15fac9a64fe1cec89bae6706e793f7024aaa8cd71436587ae0ebdd",
+            "pin": null
+          }
+        }
+      },
+      "ppc64le": {
+        "tags": [
+          "tianon/containerd:1.7.5-c8dind",
+          "tianon/containerd:1.7-c8dind",
+          "tianon/containerd:1-c8dind",
+          "tianon/containerd:c8dind"
+        ],
+        "archTags": [],
+        "froms": [
+          "tianon/containerd:latest"
+        ],
+        "platformString": "linux/ppc64le",
+        "platform": {
+          "architecture": "ppc64le",
+          "os": "linux"
+        },
+        "parents": {
+          "tianon/containerd:latest": {
+            "sourceId": "203c8765ba15fac9a64fe1cec89bae6706e793f7024aaa8cd71436587ae0ebdd",
+            "pin": null
+          }
+        }
+      },
+      "s390x": {
+        "tags": [
+          "tianon/containerd:1.7.5-c8dind",
+          "tianon/containerd:1.7-c8dind",
+          "tianon/containerd:1-c8dind",
+          "tianon/containerd:c8dind"
+        ],
+        "archTags": [],
+        "froms": [
+          "tianon/containerd:latest"
+        ],
+        "platformString": "linux/s390x",
+        "platform": {
+          "architecture": "s390x",
+          "os": "linux"
+        },
+        "parents": {
+          "tianon/containerd:latest": {
+            "sourceId": "203c8765ba15fac9a64fe1cec89bae6706e793f7024aaa8cd71436587ae0ebdd",
             "pin": null
           }
         }
@@ -501,11 +641,11 @@
       }
     }
   },
-  "449b2ca3842e0413313549507c337e4d838a6d51ac0082720867e28167726629": {
-    "sourceId": "449b2ca3842e0413313549507c337e4d838a6d51ac0082720867e28167726629",
-    "reproducibleGitChecksum": "511e68144cea279fb8f67633d3b1f4f1ccdd7d65cc44a48742bdd11ad388c587",
+  "9d366ed0e3895c09bcfc8c01b00fcb076cf85b952bc8fad8743b8f7089a08440": {
+    "sourceId": "9d366ed0e3895c09bcfc8c01b00fcb076cf85b952bc8fad8743b8f7089a08440",
+    "reproducibleGitChecksum": "eef3a8fccb46526a667e4f59ade09523a1fe66293b35627f1d1c00add8845092",
     "allTags": [
-      "tianon/duplicity:2.1.0",
+      "tianon/duplicity:2.1.1",
       "tianon/duplicity:2.1",
       "tianon/duplicity:2",
       "tianon/duplicity:latest"
@@ -513,16 +653,16 @@
     "entry": {
       "GitRepo": "https://github.com/tianon/dockerfiles.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "4e15f4fc3bd27a83f0c4f732048d0c69d3096674",
+      "GitCommit": "e48fff4ef271ba6ab98fe2f1956fb571dfcf07b7",
       "Directory": "duplicity",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1693454610
+      "SOURCE_DATE_EPOCH": 1693697068
     },
     "arches": {
       "amd64": {
         "tags": [
-          "tianon/duplicity:2.1.0",
+          "tianon/duplicity:2.1.1",
           "tianon/duplicity:2.1",
           "tianon/duplicity:2",
           "tianon/duplicity:latest"
