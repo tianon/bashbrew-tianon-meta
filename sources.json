@@ -783,9 +783,9 @@
       }
     }
   },
-  "67a3fd5ec7ef0031f3edd198f0ac0aa3e2e187ac2962e751fafd7df4b1b48bdc": {
-    "sourceId": "67a3fd5ec7ef0031f3edd198f0ac0aa3e2e187ac2962e751fafd7df4b1b48bdc",
-    "reproducibleGitChecksum": "858a3e7501cb70984e67c54cddbf648c62b4859a2cd4103eb649b6021b4a081b",
+  "fc2206d417b9b88b97c3b95fc6a91228c3feb1c86f3453a30b99c9b206020405": {
+    "sourceId": "fc2206d417b9b88b97c3b95fc6a91228c3feb1c86f3453a30b99c9b206020405",
+    "reproducibleGitChecksum": "52019d1eeafaa2cd4afcbbb0247b91be91524a1df8d8a984bd1bc71b018255d9",
     "allTags": [
       "tianon/docker-master:latest",
       "tianon/docker-master:dind"
@@ -793,11 +793,11 @@
     "entry": {
       "GitRepo": "https://github.com/tianon/dockerfiles.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "cb71b219ad4559e2a5a1adea84917c4f2f1d9bcd",
+      "GitCommit": "f3cf3b5d4f3766059c8909cc6a355569d44e57f0",
       "Directory": "docker-master",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1695155610
+      "SOURCE_DATE_EPOCH": 1695242014
     },
     "arches": {
       "amd64": {
@@ -866,7 +866,7 @@
         },
         "parents": {
           "tianon/docker-master:dind": {
-            "sourceId": "67a3fd5ec7ef0031f3edd198f0ac0aa3e2e187ac2962e751fafd7df4b1b48bdc",
+            "sourceId": "fc2206d417b9b88b97c3b95fc6a91228c3feb1c86f3453a30b99c9b206020405",
             "pin": null
           }
         }
@@ -1163,9 +1163,9 @@
       }
     }
   },
-  "1e251f697457a0704f552f113e86ff73671baca8d36a6d8175ceff001ee2ab1f": {
-    "sourceId": "1e251f697457a0704f552f113e86ff73671baca8d36a6d8175ceff001ee2ab1f",
-    "reproducibleGitChecksum": "7f8527a102b779f784921930422c062d9053cdf6a83ec1e53cc249dcde318a71",
+  "4f612b8c3ab78fe1387258a33484c0074be4169780abfa798d9a3eb56dcf62d3": {
+    "sourceId": "4f612b8c3ab78fe1387258a33484c0074be4169780abfa798d9a3eb56dcf62d3",
+    "reproducibleGitChecksum": "4debbc3c4f2d8e7af8b3ac0031e75b9dc4e8b766ed2e3a345b69e36b494f7c87",
     "allTags": [
       "tianon/jenkins:2.424",
       "tianon/jenkins:2",
@@ -1175,11 +1175,11 @@
     "entry": {
       "GitRepo": "https://github.com/tianon/dockerfiles.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "72d7d3b55b84687a3b3900e5b51b6003c6d8ff71",
+      "GitCommit": "e7807f8ae02afb1c842319fa1a76761235e9f93e",
       "Directory": "jenkins/weekly",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1695225091
+      "SOURCE_DATE_EPOCH": 1695253373
     },
     "arches": {
       "amd64": {
@@ -1191,7 +1191,8 @@
         ],
         "archTags": [],
         "froms": [
-          "debian:bullseye-slim"
+          "debian:bookworm-slim",
+          "eclipse-temurin:17-jre"
         ],
         "platformString": "linux/amd64",
         "platform": {
@@ -1199,7 +1200,11 @@
           "os": "linux"
         },
         "parents": {
-          "debian:bullseye-slim": {
+          "debian:bookworm-slim": {
+            "sourceId": null,
+            "pin": null
+          },
+          "eclipse-temurin:17-jre": {
             "sourceId": null,
             "pin": null
           }
@@ -1207,9 +1212,9 @@
       }
     }
   },
-  "be8eb4e4b5bf735ca4d18ad457601d7e4338f9396cf2f89ec5222442139b2676": {
-    "sourceId": "be8eb4e4b5bf735ca4d18ad457601d7e4338f9396cf2f89ec5222442139b2676",
-    "reproducibleGitChecksum": "e106327c9190bf71ff730911a8473b433325a0fd6440d26f5ac2b567e8c4d9d5",
+  "77f2e432c1d72c35c8de6f406c604869b7091b350c7105b1a60e8cc0868f96f8": {
+    "sourceId": "77f2e432c1d72c35c8de6f406c604869b7091b350c7105b1a60e8cc0868f96f8",
+    "reproducibleGitChecksum": "77155b19f3b6b04929c11420237fefbc062a390832ec97548ec1a40e21816e5f",
     "allTags": [
       "tianon/jenkins:2.414.2-lts",
       "tianon/jenkins:2.414-lts",
@@ -1219,11 +1224,11 @@
     "entry": {
       "GitRepo": "https://github.com/tianon/dockerfiles.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "72d7d3b55b84687a3b3900e5b51b6003c6d8ff71",
+      "GitCommit": "e7807f8ae02afb1c842319fa1a76761235e9f93e",
       "Directory": "jenkins/lts",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1695225091
+      "SOURCE_DATE_EPOCH": 1695253373
     },
     "arches": {
       "amd64": {
@@ -1235,7 +1240,8 @@
         ],
         "archTags": [],
         "froms": [
-          "debian:bullseye-slim"
+          "debian:bookworm-slim",
+          "eclipse-temurin:17-jre"
         ],
         "platformString": "linux/amd64",
         "platform": {
@@ -1243,7 +1249,11 @@
           "os": "linux"
         },
         "parents": {
-          "debian:bullseye-slim": {
+          "debian:bookworm-slim": {
+            "sourceId": null,
+            "pin": null
+          },
+          "eclipse-temurin:17-jre": {
             "sourceId": null,
             "pin": null
           }
@@ -1425,34 +1435,34 @@
       }
     }
   },
-  "10b42ff79224013a262a74dd43072beec174ba667304fdd878a60383ff21d731": {
-    "sourceId": "10b42ff79224013a262a74dd43072beec174ba667304fdd878a60383ff21d731",
-    "reproducibleGitChecksum": "c78f572786b00c7e9212e819f582ce5cfbd319e0715b9fab22f88d2b55c5769a",
+  "9083c7783447bbe829ab3bc97d304f0c662dae087d962148039e9547b5614c42": {
+    "sourceId": "9083c7783447bbe829ab3bc97d304f0c662dae087d962148039e9547b5614c42",
+    "reproducibleGitChecksum": "76c0a4b1d4d73ab776cd5c301b5c0a1edf74ba72945e298dda7b9e472104f154",
     "allTags": [
-      "tianon/microsoft-edge:117.0.2045.31-1-beta",
-      "tianon/microsoft-edge:117.0.2045.31-beta",
-      "tianon/microsoft-edge:117.0.2045-beta",
-      "tianon/microsoft-edge:117.0-beta",
-      "tianon/microsoft-edge:117-beta",
+      "tianon/microsoft-edge:118.0.2088.11-1-beta",
+      "tianon/microsoft-edge:118.0.2088.11-beta",
+      "tianon/microsoft-edge:118.0.2088-beta",
+      "tianon/microsoft-edge:118.0-beta",
+      "tianon/microsoft-edge:118-beta",
       "tianon/microsoft-edge:beta"
     ],
     "entry": {
       "GitRepo": "https://github.com/tianon/dockerfiles.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "9d9c64456fa609c7a797ca52c56890b85c0a1ee0",
+      "GitCommit": "a1da1ee733fff8f9816c6498988819a86b85b8fe",
       "Directory": "microsoft-edge/beta",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1694820277
+      "SOURCE_DATE_EPOCH": 1695252282
     },
     "arches": {
       "amd64": {
         "tags": [
-          "tianon/microsoft-edge:117.0.2045.31-1-beta",
-          "tianon/microsoft-edge:117.0.2045.31-beta",
-          "tianon/microsoft-edge:117.0.2045-beta",
-          "tianon/microsoft-edge:117.0-beta",
-          "tianon/microsoft-edge:117-beta",
+          "tianon/microsoft-edge:118.0.2088.11-1-beta",
+          "tianon/microsoft-edge:118.0.2088.11-beta",
+          "tianon/microsoft-edge:118.0.2088-beta",
+          "tianon/microsoft-edge:118.0-beta",
+          "tianon/microsoft-edge:118-beta",
           "tianon/microsoft-edge:beta"
         ],
         "archTags": [],
@@ -3868,29 +3878,29 @@
       }
     }
   },
-  "5a838aefee045edf0c9d149b27a4fcfa6ed5039191e5ef069aa5ecb10c0eda20": {
-    "sourceId": "5a838aefee045edf0c9d149b27a4fcfa6ed5039191e5ef069aa5ecb10c0eda20",
-    "reproducibleGitChecksum": "d5cd06dca66ee8b37f807e4c59ad549ea253414c6f61c2f1ac49cbd8b2866783",
+  "1d70a362293682e6181160614e58558c589d1bc6b6900e973798481c42fc874e": {
+    "sourceId": "1d70a362293682e6181160614e58558c589d1bc6b6900e973798481c42fc874e",
+    "reproducibleGitChecksum": "3baa2428262bf122a75aa53cc334019b010329f92eadaa75d6150f065e4f7a21",
     "allTags": [
-      "tianon/signal-desktop:6.30.2",
-      "tianon/signal-desktop:6.30",
+      "tianon/signal-desktop:6.31.0",
+      "tianon/signal-desktop:6.31",
       "tianon/signal-desktop:6",
       "tianon/signal-desktop:latest"
     ],
     "entry": {
       "GitRepo": "https://github.com/tianon/dockerfiles.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "2fcf1caaf86df45fdefa9f653e96f16d33616133",
+      "GitCommit": "3d8d3be1f88982f8d55bd4a561d0f12791d8344e",
       "Directory": "signal-desktop",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1694654762
+      "SOURCE_DATE_EPOCH": 1695252282
     },
     "arches": {
       "amd64": {
         "tags": [
-          "tianon/signal-desktop:6.30.2",
-          "tianon/signal-desktop:6.30",
+          "tianon/signal-desktop:6.31.0",
+          "tianon/signal-desktop:6.31",
           "tianon/signal-desktop:6",
           "tianon/signal-desktop:latest"
         ],
