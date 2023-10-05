@@ -2670,7 +2670,35 @@
     "buildId": "f9cb47b6f14b4186efd8244669bb88335573ba775142e748247dbf938042bf40",
     "build": {
       "img": "tianon/zz-staging:amd64-f9cb47b6f14b4186efd8244669bb88335573ba775142e748247dbf938042bf40",
-      "resolved": null,
+      "resolved": {
+        "manifest": {
+          "ref": "tianon/zz-staging:amd64-f9cb47b6f14b4186efd8244669bb88335573ba775142e748247dbf938042bf40@sha256:fc45d43fefdd6cd49c89149d72ba51aca4b01050211ddfa6ebac585beefdf7c9",
+          "desc": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:fc45d43fefdd6cd49c89149d72ba51aca4b01050211ddfa6ebac585beefdf7c9",
+            "size": 2243,
+            "annotations": {
+              "com.docker.library.bashbrew.arch": "amd64",
+              "org.opencontainers.image.revision": "677c8e39d54b0d10022528361404891ff583702d",
+              "org.opencontainers.image.source": "https://github.com/tianon/dockerfiles.git#677c8e39d54b0d10022528361404891ff583702d:docker-master",
+              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/docker-master",
+              "org.opencontainers.image.version": "latest"
+            },
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            }
+          }
+        },
+        "index": {
+          "ref": "tianon/zz-staging:amd64-f9cb47b6f14b4186efd8244669bb88335573ba775142e748247dbf938042bf40@sha256:a4e29a99fd25b75f106dec38e304add739968c32c6430752b9f33a7340db9218",
+          "desc": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:a4e29a99fd25b75f106dec38e304add739968c32c6430752b9f33a7340db9218",
+            "size": 1315
+          }
+        }
+      },
       "sourceId": "159345cef491ca5087c5c15b17656ee369107d626998db49741902d3c7234dea",
       "arch": "amd64",
       "parents": {
@@ -2766,6 +2794,87 @@
             },
             "alpine:3.18": {
               "sourceId": null,
+              "pin": null
+            }
+          }
+        }
+      }
+    }
+  },
+  "ca6d517432d13fa11ac89ae25c2242810f30260b8a8eff4b466535fd0fda61bc": {
+    "buildId": "ca6d517432d13fa11ac89ae25c2242810f30260b8a8eff4b466535fd0fda61bc",
+    "build": {
+      "img": "tianon/zz-staging:amd64-ca6d517432d13fa11ac89ae25c2242810f30260b8a8eff4b466535fd0fda61bc",
+      "resolved": null,
+      "sourceId": "442150ae520883e14b72492843ca870f6df3684e57fab19bc6f4e15d14a61ffc",
+      "arch": "amd64",
+      "parents": {
+        "tianon/docker-master:dind": "sha256:fc45d43fefdd6cd49c89149d72ba51aca4b01050211ddfa6ebac585beefdf7c9"
+      },
+      "resolvedParents": {
+        "tianon/docker-master:dind": {
+          "manifest": {
+            "ref": "tianon/zz-staging:amd64-f9cb47b6f14b4186efd8244669bb88335573ba775142e748247dbf938042bf40@sha256:fc45d43fefdd6cd49c89149d72ba51aca4b01050211ddfa6ebac585beefdf7c9",
+            "desc": {
+              "mediaType": "application/vnd.oci.image.manifest.v1+json",
+              "digest": "sha256:fc45d43fefdd6cd49c89149d72ba51aca4b01050211ddfa6ebac585beefdf7c9",
+              "size": 2243,
+              "annotations": {
+                "com.docker.library.bashbrew.arch": "amd64",
+                "org.opencontainers.image.revision": "677c8e39d54b0d10022528361404891ff583702d",
+                "org.opencontainers.image.source": "https://github.com/tianon/dockerfiles.git#677c8e39d54b0d10022528361404891ff583702d:docker-master",
+                "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/docker-master",
+                "org.opencontainers.image.version": "latest"
+              },
+              "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+              }
+            }
+          },
+          "index": {
+            "ref": "tianon/zz-staging:amd64-f9cb47b6f14b4186efd8244669bb88335573ba775142e748247dbf938042bf40@sha256:a4e29a99fd25b75f106dec38e304add739968c32c6430752b9f33a7340db9218",
+            "desc": {
+              "mediaType": "application/vnd.oci.image.index.v1+json",
+              "digest": "sha256:a4e29a99fd25b75f106dec38e304add739968c32c6430752b9f33a7340db9218",
+              "size": 1315
+            }
+          }
+        }
+      }
+    },
+    "source": {
+      "sourceId": "442150ae520883e14b72492843ca870f6df3684e57fab19bc6f4e15d14a61ffc",
+      "reproducibleGitChecksum": "da29aceef1153a4eaeec76d99b082ea13a2130e79bd4e0f2129aacfc8298c52d",
+      "allTags": [
+        "tianon/docker-master:containerd"
+      ],
+      "entry": {
+        "GitRepo": "https://github.com/tianon/dockerfiles.git",
+        "GitFetch": "refs/heads/master",
+        "GitCommit": "b599499292b75c9f01f8f8cd3141a288028fffc9",
+        "Directory": "docker-master",
+        "File": "Dockerfile.containerd",
+        "Builder": "",
+        "SOURCE_DATE_EPOCH": 1680215052
+      },
+      "arches": {
+        "amd64": {
+          "tags": [
+            "tianon/docker-master:containerd"
+          ],
+          "archTags": [],
+          "froms": [
+            "tianon/docker-master:dind"
+          ],
+          "platformString": "linux/amd64",
+          "platform": {
+            "architecture": "amd64",
+            "os": "linux"
+          },
+          "parents": {
+            "tianon/docker-master:dind": {
+              "sourceId": "159345cef491ca5087c5c15b17656ee369107d626998db49741902d3c7234dea",
               "pin": null
             }
           }
@@ -5253,7 +5362,35 @@
     "buildId": "0821c743ca96a1ffe1600b7d6cb6fe1df88b7bf0d85cd768ecf6b0e4edfc94d8",
     "build": {
       "img": "tianon/zz-staging:amd64-0821c743ca96a1ffe1600b7d6cb6fe1df88b7bf0d85cd768ecf6b0e4edfc94d8",
-      "resolved": null,
+      "resolved": {
+        "manifest": {
+          "ref": "tianon/zz-staging:amd64-0821c743ca96a1ffe1600b7d6cb6fe1df88b7bf0d85cd768ecf6b0e4edfc94d8@sha256:02f256dde85ce6ab70db231a8f35530bb418a8dcd7914453728354d70666e87d",
+          "desc": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:02f256dde85ce6ab70db231a8f35530bb418a8dcd7914453728354d70666e87d",
+            "size": 1111,
+            "annotations": {
+              "com.docker.library.bashbrew.arch": "amd64",
+              "org.opencontainers.image.revision": "cc8ec89968ade866e6bb4f1fa042190398969b63",
+              "org.opencontainers.image.source": "https://github.com/tianon/docker-moosefs.git#cc8ec89968ade866e6bb4f1fa042190398969b63:mfs-volume-driver",
+              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/moosefs",
+              "org.opencontainers.image.version": "volume-driver"
+            },
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            }
+          }
+        },
+        "index": {
+          "ref": "tianon/zz-staging:amd64-0821c743ca96a1ffe1600b7d6cb6fe1df88b7bf0d85cd768ecf6b0e4edfc94d8@sha256:a577bb1954b333d23e398e03424234662ff8c60ed7501eb87d4519ed645e6651",
+          "desc": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:a577bb1954b333d23e398e03424234662ff8c60ed7501eb87d4519ed645e6651",
+            "size": 1323
+          }
+        }
+      },
       "sourceId": "a6f86b9a1baf2ecc8d529d19979bf7d5c553ed07ce6ec6733834607c655b7f16",
       "arch": "amd64",
       "parents": {
@@ -5356,7 +5493,36 @@
     "buildId": "d2f8fd5f9a462f5bb94a8caded64b87f1a6c33447a8160bb270fd1248f99cdab",
     "build": {
       "img": "tianon/zz-staging:arm32v7-d2f8fd5f9a462f5bb94a8caded64b87f1a6c33447a8160bb270fd1248f99cdab",
-      "resolved": null,
+      "resolved": {
+        "manifest": {
+          "ref": "tianon/zz-staging:arm32v7-d2f8fd5f9a462f5bb94a8caded64b87f1a6c33447a8160bb270fd1248f99cdab@sha256:d2bcdd4f3622e99e5187b5c3f757c45ed6e83a19e1818d7878c9dd29b9a47504",
+          "desc": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:d2bcdd4f3622e99e5187b5c3f757c45ed6e83a19e1818d7878c9dd29b9a47504",
+            "size": 1113,
+            "annotations": {
+              "com.docker.library.bashbrew.arch": "arm32v7",
+              "org.opencontainers.image.revision": "cc8ec89968ade866e6bb4f1fa042190398969b63",
+              "org.opencontainers.image.source": "https://github.com/tianon/docker-moosefs.git#cc8ec89968ade866e6bb4f1fa042190398969b63:mfs-volume-driver",
+              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/moosefs",
+              "org.opencontainers.image.version": "volume-driver"
+            },
+            "platform": {
+              "architecture": "arm",
+              "os": "linux",
+              "variant": "v7"
+            }
+          }
+        },
+        "index": {
+          "ref": "tianon/zz-staging:arm32v7-d2f8fd5f9a462f5bb94a8caded64b87f1a6c33447a8160bb270fd1248f99cdab@sha256:20ab1612fd3560021fcbae3ddd6259f0d65112012a74bed7bebbab81622bcd1d",
+          "desc": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:20ab1612fd3560021fcbae3ddd6259f0d65112012a74bed7bebbab81622bcd1d",
+            "size": 1348
+          }
+        }
+      },
       "sourceId": "a6f86b9a1baf2ecc8d529d19979bf7d5c553ed07ce6ec6733834607c655b7f16",
       "arch": "arm32v7",
       "parents": {
@@ -5462,7 +5628,36 @@
     "buildId": "66e254a3a77ca7314aefe5fecb8c0c38d8fbaacfb8d4663c16d1f77c32321f86",
     "build": {
       "img": "tianon/zz-staging:arm64v8-66e254a3a77ca7314aefe5fecb8c0c38d8fbaacfb8d4663c16d1f77c32321f86",
-      "resolved": null,
+      "resolved": {
+        "manifest": {
+          "ref": "tianon/zz-staging:arm64v8-66e254a3a77ca7314aefe5fecb8c0c38d8fbaacfb8d4663c16d1f77c32321f86@sha256:ed3bb2b223a5b70c8ec07c588a48460224885ff37b9e6bd0d93457f35fe334a5",
+          "desc": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:ed3bb2b223a5b70c8ec07c588a48460224885ff37b9e6bd0d93457f35fe334a5",
+            "size": 1113,
+            "annotations": {
+              "com.docker.library.bashbrew.arch": "arm64v8",
+              "org.opencontainers.image.revision": "cc8ec89968ade866e6bb4f1fa042190398969b63",
+              "org.opencontainers.image.source": "https://github.com/tianon/docker-moosefs.git#cc8ec89968ade866e6bb4f1fa042190398969b63:mfs-volume-driver",
+              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/moosefs",
+              "org.opencontainers.image.version": "volume-driver"
+            },
+            "platform": {
+              "architecture": "arm64",
+              "os": "linux",
+              "variant": "v8"
+            }
+          }
+        },
+        "index": {
+          "ref": "tianon/zz-staging:arm64v8-66e254a3a77ca7314aefe5fecb8c0c38d8fbaacfb8d4663c16d1f77c32321f86@sha256:7505bf5bef2c6780c4b4706902ebcb2153d6d64e52ee6d60d7f4bcba3691c39d",
+          "desc": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:7505bf5bef2c6780c4b4706902ebcb2153d6d64e52ee6d60d7f4bcba3691c39d",
+            "size": 1325
+          }
+        }
+      },
       "sourceId": "a6f86b9a1baf2ecc8d529d19979bf7d5c553ed07ce6ec6733834607c655b7f16",
       "arch": "arm64v8",
       "parents": {
@@ -5568,7 +5763,35 @@
     "buildId": "9ac59e512e03691c41690294dc14f24899122d0c23d2b678b0b1967ba087ca95",
     "build": {
       "img": "tianon/zz-staging:i386-9ac59e512e03691c41690294dc14f24899122d0c23d2b678b0b1967ba087ca95",
-      "resolved": null,
+      "resolved": {
+        "manifest": {
+          "ref": "tianon/zz-staging:i386-9ac59e512e03691c41690294dc14f24899122d0c23d2b678b0b1967ba087ca95@sha256:9965838918ad4c20fca13a7a0c5efc1e924c8e75beb94369a4c74d4da51d7c3d",
+          "desc": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:9965838918ad4c20fca13a7a0c5efc1e924c8e75beb94369a4c74d4da51d7c3d",
+            "size": 1110,
+            "annotations": {
+              "com.docker.library.bashbrew.arch": "i386",
+              "org.opencontainers.image.revision": "cc8ec89968ade866e6bb4f1fa042190398969b63",
+              "org.opencontainers.image.source": "https://github.com/tianon/docker-moosefs.git#cc8ec89968ade866e6bb4f1fa042190398969b63:mfs-volume-driver",
+              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/moosefs",
+              "org.opencontainers.image.version": "volume-driver"
+            },
+            "platform": {
+              "architecture": "386",
+              "os": "linux"
+            }
+          }
+        },
+        "index": {
+          "ref": "tianon/zz-staging:i386-9ac59e512e03691c41690294dc14f24899122d0c23d2b678b0b1967ba087ca95@sha256:e55a78245349c1b66ef3985c62675c954ea9a25c61312fc21706b303abd8e90c",
+          "desc": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:e55a78245349c1b66ef3985c62675c954ea9a25c61312fc21706b303abd8e90c",
+            "size": 1320
+          }
+        }
+      },
       "sourceId": "a6f86b9a1baf2ecc8d529d19979bf7d5c553ed07ce6ec6733834607c655b7f16",
       "arch": "i386",
       "parents": {
@@ -5671,7 +5894,35 @@
     "buildId": "b1639f735e90ddb3c5ec9a2f34c4158197ea4b5dd1723b22c7414a295d241c72",
     "build": {
       "img": "tianon/zz-staging:ppc64le-b1639f735e90ddb3c5ec9a2f34c4158197ea4b5dd1723b22c7414a295d241c72",
-      "resolved": null,
+      "resolved": {
+        "manifest": {
+          "ref": "tianon/zz-staging:ppc64le-b1639f735e90ddb3c5ec9a2f34c4158197ea4b5dd1723b22c7414a295d241c72@sha256:76f229c8a1720124949d1a728758aacf1a614c97379035b8a3feda8b01e77932",
+          "desc": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:76f229c8a1720124949d1a728758aacf1a614c97379035b8a3feda8b01e77932",
+            "size": 1113,
+            "annotations": {
+              "com.docker.library.bashbrew.arch": "ppc64le",
+              "org.opencontainers.image.revision": "cc8ec89968ade866e6bb4f1fa042190398969b63",
+              "org.opencontainers.image.source": "https://github.com/tianon/docker-moosefs.git#cc8ec89968ade866e6bb4f1fa042190398969b63:mfs-volume-driver",
+              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/moosefs",
+              "org.opencontainers.image.version": "volume-driver"
+            },
+            "platform": {
+              "architecture": "ppc64le",
+              "os": "linux"
+            }
+          }
+        },
+        "index": {
+          "ref": "tianon/zz-staging:ppc64le-b1639f735e90ddb3c5ec9a2f34c4158197ea4b5dd1723b22c7414a295d241c72@sha256:af5336e91f1b831f6dde83e13a3a276e97f1ebf152f9e58d6e22276004f5ea8d",
+          "desc": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:af5336e91f1b831f6dde83e13a3a276e97f1ebf152f9e58d6e22276004f5ea8d",
+            "size": 1327
+          }
+        }
+      },
       "sourceId": "a6f86b9a1baf2ecc8d529d19979bf7d5c553ed07ce6ec6733834607c655b7f16",
       "arch": "ppc64le",
       "parents": {
