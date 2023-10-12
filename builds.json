@@ -2670,7 +2670,35 @@
     "buildId": "a53ba95f49ef19a7179686152b68346f4976c3ab8ef1c1e57e5ad0d6eef96e24",
     "build": {
       "img": "tianon/zz-staging:amd64-a53ba95f49ef19a7179686152b68346f4976c3ab8ef1c1e57e5ad0d6eef96e24",
-      "resolved": null,
+      "resolved": {
+        "manifest": {
+          "ref": "tianon/zz-staging:amd64-a53ba95f49ef19a7179686152b68346f4976c3ab8ef1c1e57e5ad0d6eef96e24@sha256:a4b08ce15bc41102729207e67548e3ce51af31a55901b3277a16af928775d5e5",
+          "desc": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:a4b08ce15bc41102729207e67548e3ce51af31a55901b3277a16af928775d5e5",
+            "size": 2243,
+            "annotations": {
+              "com.docker.library.bashbrew.arch": "amd64",
+              "org.opencontainers.image.revision": "155e1970441fe88909a86f25bda8989962bb0013",
+              "org.opencontainers.image.source": "https://github.com/tianon/dockerfiles.git#155e1970441fe88909a86f25bda8989962bb0013:docker-master",
+              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/docker-master",
+              "org.opencontainers.image.version": "latest"
+            },
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            }
+          }
+        },
+        "index": {
+          "ref": "tianon/zz-staging:amd64-a53ba95f49ef19a7179686152b68346f4976c3ab8ef1c1e57e5ad0d6eef96e24@sha256:f3c4a6c34af2445a1aa85a13f141e253b6251e7adc7494a7e502247a170e3a6c",
+          "desc": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:f3c4a6c34af2445a1aa85a13f141e253b6251e7adc7494a7e502247a170e3a6c",
+            "size": 1315
+          }
+        }
+      },
       "sourceId": "0441a708f3efb28db9e16a20ef46a064bf8a10b8801000f2ac63e4c7223f5b83",
       "arch": "amd64",
       "parents": {
@@ -2766,6 +2794,87 @@
             },
             "alpine:3.18": {
               "sourceId": null,
+              "pin": null
+            }
+          }
+        }
+      }
+    }
+  },
+  "c9a473449bb59d4df57118185fac563b3eabf9dfdfac5eedf65eb2fdb5865310": {
+    "buildId": "c9a473449bb59d4df57118185fac563b3eabf9dfdfac5eedf65eb2fdb5865310",
+    "build": {
+      "img": "tianon/zz-staging:amd64-c9a473449bb59d4df57118185fac563b3eabf9dfdfac5eedf65eb2fdb5865310",
+      "resolved": null,
+      "sourceId": "442150ae520883e14b72492843ca870f6df3684e57fab19bc6f4e15d14a61ffc",
+      "arch": "amd64",
+      "parents": {
+        "tianon/docker-master:dind": "sha256:a4b08ce15bc41102729207e67548e3ce51af31a55901b3277a16af928775d5e5"
+      },
+      "resolvedParents": {
+        "tianon/docker-master:dind": {
+          "manifest": {
+            "ref": "tianon/zz-staging:amd64-a53ba95f49ef19a7179686152b68346f4976c3ab8ef1c1e57e5ad0d6eef96e24@sha256:a4b08ce15bc41102729207e67548e3ce51af31a55901b3277a16af928775d5e5",
+            "desc": {
+              "mediaType": "application/vnd.oci.image.manifest.v1+json",
+              "digest": "sha256:a4b08ce15bc41102729207e67548e3ce51af31a55901b3277a16af928775d5e5",
+              "size": 2243,
+              "annotations": {
+                "com.docker.library.bashbrew.arch": "amd64",
+                "org.opencontainers.image.revision": "155e1970441fe88909a86f25bda8989962bb0013",
+                "org.opencontainers.image.source": "https://github.com/tianon/dockerfiles.git#155e1970441fe88909a86f25bda8989962bb0013:docker-master",
+                "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/docker-master",
+                "org.opencontainers.image.version": "latest"
+              },
+              "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+              }
+            }
+          },
+          "index": {
+            "ref": "tianon/zz-staging:amd64-a53ba95f49ef19a7179686152b68346f4976c3ab8ef1c1e57e5ad0d6eef96e24@sha256:f3c4a6c34af2445a1aa85a13f141e253b6251e7adc7494a7e502247a170e3a6c",
+            "desc": {
+              "mediaType": "application/vnd.oci.image.index.v1+json",
+              "digest": "sha256:f3c4a6c34af2445a1aa85a13f141e253b6251e7adc7494a7e502247a170e3a6c",
+              "size": 1315
+            }
+          }
+        }
+      }
+    },
+    "source": {
+      "sourceId": "442150ae520883e14b72492843ca870f6df3684e57fab19bc6f4e15d14a61ffc",
+      "reproducibleGitChecksum": "da29aceef1153a4eaeec76d99b082ea13a2130e79bd4e0f2129aacfc8298c52d",
+      "allTags": [
+        "tianon/docker-master:containerd"
+      ],
+      "entry": {
+        "GitRepo": "https://github.com/tianon/dockerfiles.git",
+        "GitFetch": "refs/heads/master",
+        "GitCommit": "b599499292b75c9f01f8f8cd3141a288028fffc9",
+        "Directory": "docker-master",
+        "File": "Dockerfile.containerd",
+        "Builder": "",
+        "SOURCE_DATE_EPOCH": 1680215052
+      },
+      "arches": {
+        "amd64": {
+          "tags": [
+            "tianon/docker-master:containerd"
+          ],
+          "archTags": [],
+          "froms": [
+            "tianon/docker-master:dind"
+          ],
+          "platformString": "linux/amd64",
+          "platform": {
+            "architecture": "amd64",
+            "os": "linux"
+          },
+          "parents": {
+            "tianon/docker-master:dind": {
+              "sourceId": "0441a708f3efb28db9e16a20ef46a064bf8a10b8801000f2ac63e4c7223f5b83",
               "pin": null
             }
           }
@@ -7598,7 +7707,35 @@
     "buildId": "3ded9c0b090196f1f8ec264e73a9c64856c993f41a18362231c95b7c7af8a6cf",
     "build": {
       "img": "tianon/zz-staging:ppc64le-3ded9c0b090196f1f8ec264e73a9c64856c993f41a18362231c95b7c7af8a6cf",
-      "resolved": null,
+      "resolved": {
+        "manifest": {
+          "ref": "tianon/zz-staging:ppc64le-3ded9c0b090196f1f8ec264e73a9c64856c993f41a18362231c95b7c7af8a6cf@sha256:d8bf3b6c7e6686bb0f57536ac8f99c3e35a33ff5a2219904320097c7fcf1c3fc",
+          "desc": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:d8bf3b6c7e6686bb0f57536ac8f99c3e35a33ff5a2219904320097c7fcf1c3fc",
+            "size": 1113,
+            "annotations": {
+              "com.docker.library.bashbrew.arch": "ppc64le",
+              "org.opencontainers.image.revision": "cc8ec89968ade866e6bb4f1fa042190398969b63",
+              "org.opencontainers.image.source": "https://github.com/tianon/docker-moosefs.git#cc8ec89968ade866e6bb4f1fa042190398969b63:mfs-volume-driver",
+              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/moosefs",
+              "org.opencontainers.image.version": "volume-driver"
+            },
+            "platform": {
+              "architecture": "ppc64le",
+              "os": "linux"
+            }
+          }
+        },
+        "index": {
+          "ref": "tianon/zz-staging:ppc64le-3ded9c0b090196f1f8ec264e73a9c64856c993f41a18362231c95b7c7af8a6cf@sha256:770d971921b3dfdc762ed628dcb13e9e57cd556c67a9e23352fad7fd57dcaeaa",
+          "desc": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:770d971921b3dfdc762ed628dcb13e9e57cd556c67a9e23352fad7fd57dcaeaa",
+            "size": 1327
+          }
+        }
+      },
       "sourceId": "a6f86b9a1baf2ecc8d529d19979bf7d5c553ed07ce6ec6733834607c655b7f16",
       "arch": "ppc64le",
       "parents": {
@@ -10225,10 +10362,10 @@
             }
           },
           "index": {
-            "ref": "postgres:16-bookworm@sha256:2fae04c445a6301d9bd5681c289ee26f62db66824a0e057e609c049a07331e4d",
+            "ref": "postgres:16-bookworm@sha256:b46651665b72cf3b05b84a6f09579ec5a1e6835037c3d5d6a7f6305033f12eb2",
             "desc": {
               "mediaType": "application/vnd.oci.image.index.v1+json",
-              "digest": "sha256:2fae04c445a6301d9bd5681c289ee26f62db66824a0e057e609c049a07331e4d",
+              "digest": "sha256:b46651665b72cf3b05b84a6f09579ec5a1e6835037c3d5d6a7f6305033f12eb2",
               "size": 7580
             }
           }
@@ -10333,10 +10470,10 @@
             }
           },
           "index": {
-            "ref": "postgres:16-bookworm@sha256:2fae04c445a6301d9bd5681c289ee26f62db66824a0e057e609c049a07331e4d",
+            "ref": "postgres:16-bookworm@sha256:b46651665b72cf3b05b84a6f09579ec5a1e6835037c3d5d6a7f6305033f12eb2",
             "desc": {
               "mediaType": "application/vnd.oci.image.index.v1+json",
-              "digest": "sha256:2fae04c445a6301d9bd5681c289ee26f62db66824a0e057e609c049a07331e4d",
+              "digest": "sha256:b46651665b72cf3b05b84a6f09579ec5a1e6835037c3d5d6a7f6305033f12eb2",
               "size": 7580
             }
           }
@@ -10441,10 +10578,10 @@
             }
           },
           "index": {
-            "ref": "postgres:16-bookworm@sha256:2fae04c445a6301d9bd5681c289ee26f62db66824a0e057e609c049a07331e4d",
+            "ref": "postgres:16-bookworm@sha256:b46651665b72cf3b05b84a6f09579ec5a1e6835037c3d5d6a7f6305033f12eb2",
             "desc": {
               "mediaType": "application/vnd.oci.image.index.v1+json",
-              "digest": "sha256:2fae04c445a6301d9bd5681c289ee26f62db66824a0e057e609c049a07331e4d",
+              "digest": "sha256:b46651665b72cf3b05b84a6f09579ec5a1e6835037c3d5d6a7f6305033f12eb2",
               "size": 7580
             }
           }
@@ -10549,10 +10686,10 @@
             }
           },
           "index": {
-            "ref": "postgres:16-bookworm@sha256:2fae04c445a6301d9bd5681c289ee26f62db66824a0e057e609c049a07331e4d",
+            "ref": "postgres:16-bookworm@sha256:b46651665b72cf3b05b84a6f09579ec5a1e6835037c3d5d6a7f6305033f12eb2",
             "desc": {
               "mediaType": "application/vnd.oci.image.index.v1+json",
-              "digest": "sha256:2fae04c445a6301d9bd5681c289ee26f62db66824a0e057e609c049a07331e4d",
+              "digest": "sha256:b46651665b72cf3b05b84a6f09579ec5a1e6835037c3d5d6a7f6305033f12eb2",
               "size": 7580
             }
           }
@@ -10657,10 +10794,10 @@
             }
           },
           "index": {
-            "ref": "postgres:16-bookworm@sha256:2fae04c445a6301d9bd5681c289ee26f62db66824a0e057e609c049a07331e4d",
+            "ref": "postgres:16-bookworm@sha256:b46651665b72cf3b05b84a6f09579ec5a1e6835037c3d5d6a7f6305033f12eb2",
             "desc": {
               "mediaType": "application/vnd.oci.image.index.v1+json",
-              "digest": "sha256:2fae04c445a6301d9bd5681c289ee26f62db66824a0e057e609c049a07331e4d",
+              "digest": "sha256:b46651665b72cf3b05b84a6f09579ec5a1e6835037c3d5d6a7f6305033f12eb2",
               "size": 7580
             }
           }
@@ -10765,10 +10902,10 @@
             }
           },
           "index": {
-            "ref": "postgres:15-bookworm@sha256:5c7072ce271b56c8d9698eabfe70bc96324e980545f00b75640ef44264f5d73a",
+            "ref": "postgres:15-bookworm@sha256:4719b29c09287f68394f4d1fe8fa402bcdc565f83921cbcc55b992007692307b",
             "desc": {
               "mediaType": "application/vnd.oci.image.index.v1+json",
-              "digest": "sha256:5c7072ce271b56c8d9698eabfe70bc96324e980545f00b75640ef44264f5d73a",
+              "digest": "sha256:4719b29c09287f68394f4d1fe8fa402bcdc565f83921cbcc55b992007692307b",
               "size": 7580
             }
           }
@@ -10873,10 +11010,10 @@
             }
           },
           "index": {
-            "ref": "postgres:15-bookworm@sha256:5c7072ce271b56c8d9698eabfe70bc96324e980545f00b75640ef44264f5d73a",
+            "ref": "postgres:15-bookworm@sha256:4719b29c09287f68394f4d1fe8fa402bcdc565f83921cbcc55b992007692307b",
             "desc": {
               "mediaType": "application/vnd.oci.image.index.v1+json",
-              "digest": "sha256:5c7072ce271b56c8d9698eabfe70bc96324e980545f00b75640ef44264f5d73a",
+              "digest": "sha256:4719b29c09287f68394f4d1fe8fa402bcdc565f83921cbcc55b992007692307b",
               "size": 7580
             }
           }
@@ -10981,10 +11118,10 @@
             }
           },
           "index": {
-            "ref": "postgres:15-bookworm@sha256:5c7072ce271b56c8d9698eabfe70bc96324e980545f00b75640ef44264f5d73a",
+            "ref": "postgres:15-bookworm@sha256:4719b29c09287f68394f4d1fe8fa402bcdc565f83921cbcc55b992007692307b",
             "desc": {
               "mediaType": "application/vnd.oci.image.index.v1+json",
-              "digest": "sha256:5c7072ce271b56c8d9698eabfe70bc96324e980545f00b75640ef44264f5d73a",
+              "digest": "sha256:4719b29c09287f68394f4d1fe8fa402bcdc565f83921cbcc55b992007692307b",
               "size": 7580
             }
           }
@@ -11089,10 +11226,10 @@
             }
           },
           "index": {
-            "ref": "postgres:15-bookworm@sha256:5c7072ce271b56c8d9698eabfe70bc96324e980545f00b75640ef44264f5d73a",
+            "ref": "postgres:15-bookworm@sha256:4719b29c09287f68394f4d1fe8fa402bcdc565f83921cbcc55b992007692307b",
             "desc": {
               "mediaType": "application/vnd.oci.image.index.v1+json",
-              "digest": "sha256:5c7072ce271b56c8d9698eabfe70bc96324e980545f00b75640ef44264f5d73a",
+              "digest": "sha256:4719b29c09287f68394f4d1fe8fa402bcdc565f83921cbcc55b992007692307b",
               "size": 7580
             }
           }
@@ -11197,10 +11334,10 @@
             }
           },
           "index": {
-            "ref": "postgres:14-bookworm@sha256:1bb63e81ea0564b610cf6671defcca708b495c69e9e4d57435703158f3e4b639",
+            "ref": "postgres:14-bookworm@sha256:3853b8aeee81c9b1ed02215f7ef5fcfbaa7425d7080f6573d753d08e99330600",
             "desc": {
               "mediaType": "application/vnd.oci.image.index.v1+json",
-              "digest": "sha256:1bb63e81ea0564b610cf6671defcca708b495c69e9e4d57435703158f3e4b639",
+              "digest": "sha256:3853b8aeee81c9b1ed02215f7ef5fcfbaa7425d7080f6573d753d08e99330600",
               "size": 7580
             }
           }
@@ -11305,10 +11442,10 @@
             }
           },
           "index": {
-            "ref": "postgres:14-bookworm@sha256:1bb63e81ea0564b610cf6671defcca708b495c69e9e4d57435703158f3e4b639",
+            "ref": "postgres:14-bookworm@sha256:3853b8aeee81c9b1ed02215f7ef5fcfbaa7425d7080f6573d753d08e99330600",
             "desc": {
               "mediaType": "application/vnd.oci.image.index.v1+json",
-              "digest": "sha256:1bb63e81ea0564b610cf6671defcca708b495c69e9e4d57435703158f3e4b639",
+              "digest": "sha256:3853b8aeee81c9b1ed02215f7ef5fcfbaa7425d7080f6573d753d08e99330600",
               "size": 7580
             }
           }
@@ -11413,10 +11550,10 @@
             }
           },
           "index": {
-            "ref": "postgres:14-bookworm@sha256:1bb63e81ea0564b610cf6671defcca708b495c69e9e4d57435703158f3e4b639",
+            "ref": "postgres:14-bookworm@sha256:3853b8aeee81c9b1ed02215f7ef5fcfbaa7425d7080f6573d753d08e99330600",
             "desc": {
               "mediaType": "application/vnd.oci.image.index.v1+json",
-              "digest": "sha256:1bb63e81ea0564b610cf6671defcca708b495c69e9e4d57435703158f3e4b639",
+              "digest": "sha256:3853b8aeee81c9b1ed02215f7ef5fcfbaa7425d7080f6573d753d08e99330600",
               "size": 7580
             }
           }
@@ -11521,10 +11658,10 @@
             }
           },
           "index": {
-            "ref": "postgres:13-bookworm@sha256:9bb10b5f8e9a2d5df8349eac08074b12b916140e6be690da1e82fdd12c9208a2",
+            "ref": "postgres:13-bookworm@sha256:89b46f33571ed404679e7d289a6676bfa075b393bcdba7a6df39b5d570309902",
             "desc": {
               "mediaType": "application/vnd.oci.image.index.v1+json",
-              "digest": "sha256:9bb10b5f8e9a2d5df8349eac08074b12b916140e6be690da1e82fdd12c9208a2",
+              "digest": "sha256:89b46f33571ed404679e7d289a6676bfa075b393bcdba7a6df39b5d570309902",
               "size": 7588
             }
           }
@@ -11629,10 +11766,10 @@
             }
           },
           "index": {
-            "ref": "postgres:13-bookworm@sha256:9bb10b5f8e9a2d5df8349eac08074b12b916140e6be690da1e82fdd12c9208a2",
+            "ref": "postgres:13-bookworm@sha256:89b46f33571ed404679e7d289a6676bfa075b393bcdba7a6df39b5d570309902",
             "desc": {
               "mediaType": "application/vnd.oci.image.index.v1+json",
-              "digest": "sha256:9bb10b5f8e9a2d5df8349eac08074b12b916140e6be690da1e82fdd12c9208a2",
+              "digest": "sha256:89b46f33571ed404679e7d289a6676bfa075b393bcdba7a6df39b5d570309902",
               "size": 7588
             }
           }
