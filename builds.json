@@ -2670,7 +2670,35 @@
     "buildId": "eb2287639af36d473e90ed5a34cd80cbfe1453d08ce95939094c6e855a800b08",
     "build": {
       "img": "tianon/zz-staging:amd64-eb2287639af36d473e90ed5a34cd80cbfe1453d08ce95939094c6e855a800b08",
-      "resolved": null,
+      "resolved": {
+        "manifest": {
+          "ref": "tianon/zz-staging:amd64-eb2287639af36d473e90ed5a34cd80cbfe1453d08ce95939094c6e855a800b08@sha256:d23091a6e2fc5d1f9ff1d926b64357a549baa1279379ed1712866b0062145cf2",
+          "desc": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:d23091a6e2fc5d1f9ff1d926b64357a549baa1279379ed1712866b0062145cf2",
+            "size": 2243,
+            "annotations": {
+              "com.docker.library.bashbrew.arch": "amd64",
+              "org.opencontainers.image.revision": "6983a125e10b0c8b424a66d16b05fdec9ced5a52",
+              "org.opencontainers.image.source": "https://github.com/tianon/dockerfiles.git#6983a125e10b0c8b424a66d16b05fdec9ced5a52:docker-master",
+              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/docker-master",
+              "org.opencontainers.image.version": "latest"
+            },
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            }
+          }
+        },
+        "index": {
+          "ref": "tianon/zz-staging:amd64-eb2287639af36d473e90ed5a34cd80cbfe1453d08ce95939094c6e855a800b08@sha256:0dce98dd6e7aca0c22e9b2fb590951f02e11ee7e5100b62950025f2b4e349083",
+          "desc": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:0dce98dd6e7aca0c22e9b2fb590951f02e11ee7e5100b62950025f2b4e349083",
+            "size": 1315
+          }
+        }
+      },
       "sourceId": "bf034bdb4fb4e5e7345c25ba916180209fd4cc35bb6b3a2b99f141b421d04b90",
       "arch": "amd64",
       "parents": {
@@ -2766,6 +2794,87 @@
             },
             "alpine:3.18": {
               "sourceId": null,
+              "pin": null
+            }
+          }
+        }
+      }
+    }
+  },
+  "44c137e8ede3093f9ee7338a07cdf308ea2971c91473223198e022f9db2cb254": {
+    "buildId": "44c137e8ede3093f9ee7338a07cdf308ea2971c91473223198e022f9db2cb254",
+    "build": {
+      "img": "tianon/zz-staging:amd64-44c137e8ede3093f9ee7338a07cdf308ea2971c91473223198e022f9db2cb254",
+      "resolved": null,
+      "sourceId": "442150ae520883e14b72492843ca870f6df3684e57fab19bc6f4e15d14a61ffc",
+      "arch": "amd64",
+      "parents": {
+        "tianon/docker-master:dind": "sha256:d23091a6e2fc5d1f9ff1d926b64357a549baa1279379ed1712866b0062145cf2"
+      },
+      "resolvedParents": {
+        "tianon/docker-master:dind": {
+          "manifest": {
+            "ref": "tianon/zz-staging:amd64-eb2287639af36d473e90ed5a34cd80cbfe1453d08ce95939094c6e855a800b08@sha256:d23091a6e2fc5d1f9ff1d926b64357a549baa1279379ed1712866b0062145cf2",
+            "desc": {
+              "mediaType": "application/vnd.oci.image.manifest.v1+json",
+              "digest": "sha256:d23091a6e2fc5d1f9ff1d926b64357a549baa1279379ed1712866b0062145cf2",
+              "size": 2243,
+              "annotations": {
+                "com.docker.library.bashbrew.arch": "amd64",
+                "org.opencontainers.image.revision": "6983a125e10b0c8b424a66d16b05fdec9ced5a52",
+                "org.opencontainers.image.source": "https://github.com/tianon/dockerfiles.git#6983a125e10b0c8b424a66d16b05fdec9ced5a52:docker-master",
+                "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/docker-master",
+                "org.opencontainers.image.version": "latest"
+              },
+              "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+              }
+            }
+          },
+          "index": {
+            "ref": "tianon/zz-staging:amd64-eb2287639af36d473e90ed5a34cd80cbfe1453d08ce95939094c6e855a800b08@sha256:0dce98dd6e7aca0c22e9b2fb590951f02e11ee7e5100b62950025f2b4e349083",
+            "desc": {
+              "mediaType": "application/vnd.oci.image.index.v1+json",
+              "digest": "sha256:0dce98dd6e7aca0c22e9b2fb590951f02e11ee7e5100b62950025f2b4e349083",
+              "size": 1315
+            }
+          }
+        }
+      }
+    },
+    "source": {
+      "sourceId": "442150ae520883e14b72492843ca870f6df3684e57fab19bc6f4e15d14a61ffc",
+      "reproducibleGitChecksum": "da29aceef1153a4eaeec76d99b082ea13a2130e79bd4e0f2129aacfc8298c52d",
+      "allTags": [
+        "tianon/docker-master:containerd"
+      ],
+      "entry": {
+        "GitRepo": "https://github.com/tianon/dockerfiles.git",
+        "GitFetch": "refs/heads/master",
+        "GitCommit": "b599499292b75c9f01f8f8cd3141a288028fffc9",
+        "Directory": "docker-master",
+        "File": "Dockerfile.containerd",
+        "Builder": "",
+        "SOURCE_DATE_EPOCH": 1680215052
+      },
+      "arches": {
+        "amd64": {
+          "tags": [
+            "tianon/docker-master:containerd"
+          ],
+          "archTags": [],
+          "froms": [
+            "tianon/docker-master:dind"
+          ],
+          "platformString": "linux/amd64",
+          "platform": {
+            "architecture": "amd64",
+            "os": "linux"
+          },
+          "parents": {
+            "tianon/docker-master:dind": {
+              "sourceId": "bf034bdb4fb4e5e7345c25ba916180209fd4cc35bb6b3a2b99f141b421d04b90",
               "pin": null
             }
           }
