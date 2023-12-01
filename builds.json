@@ -2666,44 +2666,17 @@
       }
     }
   },
-  "ed260386027985f00ceabc3cdd511604be770acb627bce02032755bc315e5e96": {
-    "buildId": "ed260386027985f00ceabc3cdd511604be770acb627bce02032755bc315e5e96",
+  "b91cf953748529869df41f4a8e5d4f7e27f3f33b5b144dad53b438448060af4f": {
+    "buildId": "b91cf953748529869df41f4a8e5d4f7e27f3f33b5b144dad53b438448060af4f",
     "build": {
-      "img": "tianon/zz-staging:amd64-ed260386027985f00ceabc3cdd511604be770acb627bce02032755bc315e5e96",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:amd64-ed260386027985f00ceabc3cdd511604be770acb627bce02032755bc315e5e96@sha256:315d35e9dcde653de8a7cf60ae87621893e1e182392c2c9b3844c2ad13abfb5a",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:315d35e9dcde653de8a7cf60ae87621893e1e182392c2c9b3844c2ad13abfb5a",
-            "size": 2243,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "amd64",
-              "org.opencontainers.image.revision": "169b2daed39689a6f3c9db1c59f9f36dfb3fa9bb",
-              "org.opencontainers.image.source": "https://github.com/tianon/dockerfiles.git#169b2daed39689a6f3c9db1c59f9f36dfb3fa9bb:docker-master",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/docker-master",
-              "org.opencontainers.image.version": "latest"
-            },
-            "platform": {
-              "architecture": "amd64",
-              "os": "linux"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:amd64-ed260386027985f00ceabc3cdd511604be770acb627bce02032755bc315e5e96@sha256:5e1f6c5f93590c4b5094f5de86422b026ab8c4d7b38aa01c8a05181de0d54ed5",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:5e1f6c5f93590c4b5094f5de86422b026ab8c4d7b38aa01c8a05181de0d54ed5",
-            "size": 1315
-          }
-        }
-      },
-      "sourceId": "60f1f04cfcceb21de404c3eea0c513091bbb461dedd5c1d6769a50f42d171602",
+      "img": "tianon/zz-staging:amd64-b91cf953748529869df41f4a8e5d4f7e27f3f33b5b144dad53b438448060af4f",
+      "resolved": null,
+      "sourceId": "5b8738f7c3751b6ae6ee4b5835c9ee278bce36d5c17943d2e10bc0409c1cf0f7",
       "arch": "amd64",
       "parents": {
         "golang:1.20-bullseye": "sha256:477fa681f40124a0c675f1de507023fe11f2ce65cdfece3235165c89950524a3",
-        "alpine:3.18": "sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86"
+        "golang:1.21-bullseye": "sha256:404427572053ec4a7be94b540895fc0eade26f345048196b9ad71c061bf279db",
+        "alpine:3.18": "sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389"
       },
       "resolvedParents": {
         "golang:1.20-bullseye": {
@@ -2728,12 +2701,34 @@
             }
           }
         },
-        "alpine:3.18": {
+        "golang:1.21-bullseye": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86",
+            "ref": "golang:1.21-bullseye@sha256:404427572053ec4a7be94b540895fc0eade26f345048196b9ad71c061bf279db",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86",
+              "digest": "sha256:404427572053ec4a7be94b540895fc0eade26f345048196b9ad71c061bf279db",
+              "size": 1584,
+              "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+              }
+            }
+          },
+          "index": {
+            "ref": "golang:1.21-bullseye@sha256:3b4ac7623c123263662ec6c62ef7b97a1e47b8c9e03de9e631651b293f5b8e41",
+            "desc": {
+              "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+              "digest": "sha256:3b4ac7623c123263662ec6c62ef7b97a1e47b8c9e03de9e631651b293f5b8e41",
+              "size": 1862
+            }
+          }
+        },
+        "alpine:3.18": {
+          "manifest": {
+            "ref": "alpine:3.18@sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389",
+            "desc": {
+              "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+              "digest": "sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389",
               "size": 528,
               "platform": {
                 "architecture": "amd64",
@@ -2742,10 +2737,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -2753,8 +2748,8 @@
       }
     },
     "source": {
-      "sourceId": "60f1f04cfcceb21de404c3eea0c513091bbb461dedd5c1d6769a50f42d171602",
-      "reproducibleGitChecksum": "9e75a907e6c9cb6a8290ae0701b43be726a0c56f9621121b12705d53ea9aabd2",
+      "sourceId": "5b8738f7c3751b6ae6ee4b5835c9ee278bce36d5c17943d2e10bc0409c1cf0f7",
+      "reproducibleGitChecksum": "78ab16d1ab4e6483b97099d97ebc6eb3ee315b5d80c12fe59fe35374a83c2e12",
       "allTags": [
         "tianon/docker-master:latest",
         "tianon/docker-master:dind"
@@ -2762,11 +2757,11 @@
       "entry": {
         "GitRepo": "https://github.com/tianon/dockerfiles.git",
         "GitFetch": "refs/heads/master",
-        "GitCommit": "169b2daed39689a6f3c9db1c59f9f36dfb3fa9bb",
+        "GitCommit": "a5a294dc203e783c147e7515ec44125b5c86c120",
         "Directory": "docker-master",
         "File": "Dockerfile",
         "Builder": "",
-        "SOURCE_DATE_EPOCH": 1701293617
+        "SOURCE_DATE_EPOCH": 1701380052
       },
       "arches": {
         "amd64": {
@@ -2777,10 +2772,10 @@
           "archTags": [],
           "froms": [
             "golang:1.20-bullseye",
-            "golang:1.20-bullseye",
+            "golang:1.21-bullseye",
             "alpine:3.18",
             "golang:1.20-bullseye",
-            "golang:1.20-bullseye"
+            "golang:1.21-bullseye"
           ],
           "platformString": "linux/amd64",
           "platform": {
@@ -2792,117 +2787,12 @@
               "sourceId": null,
               "pin": null
             },
-            "alpine:3.18": {
+            "golang:1.21-bullseye": {
               "sourceId": null,
               "pin": null
-            }
-          }
-        }
-      }
-    }
-  },
-  "8a82d6afa02226a3ed30a38a13a52dad6fe4ec85a0cf4519b3c45e6db3caf89e": {
-    "buildId": "8a82d6afa02226a3ed30a38a13a52dad6fe4ec85a0cf4519b3c45e6db3caf89e",
-    "build": {
-      "img": "tianon/zz-staging:amd64-8a82d6afa02226a3ed30a38a13a52dad6fe4ec85a0cf4519b3c45e6db3caf89e",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:amd64-8a82d6afa02226a3ed30a38a13a52dad6fe4ec85a0cf4519b3c45e6db3caf89e@sha256:90863998cca4e48997f6d6d4133b39da47cc14116ec2a18d196f3670169b011d",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:90863998cca4e48997f6d6d4133b39da47cc14116ec2a18d196f3670169b011d",
-            "size": 2435,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "amd64",
-              "org.opencontainers.image.revision": "b599499292b75c9f01f8f8cd3141a288028fffc9",
-              "org.opencontainers.image.source": "https://github.com/tianon/dockerfiles.git#b599499292b75c9f01f8f8cd3141a288028fffc9:docker-master",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/docker-master",
-              "org.opencontainers.image.version": "containerd"
             },
-            "platform": {
-              "architecture": "amd64",
-              "os": "linux"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:amd64-8a82d6afa02226a3ed30a38a13a52dad6fe4ec85a0cf4519b3c45e6db3caf89e@sha256:78cbc0b54a9a3adc2156082d393b2f51043a8a3009f3485f09c299108dd30819",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:78cbc0b54a9a3adc2156082d393b2f51043a8a3009f3485f09c299108dd30819",
-            "size": 1319
-          }
-        }
-      },
-      "sourceId": "442150ae520883e14b72492843ca870f6df3684e57fab19bc6f4e15d14a61ffc",
-      "arch": "amd64",
-      "parents": {
-        "tianon/docker-master:dind": "sha256:315d35e9dcde653de8a7cf60ae87621893e1e182392c2c9b3844c2ad13abfb5a"
-      },
-      "resolvedParents": {
-        "tianon/docker-master:dind": {
-          "manifest": {
-            "ref": "tianon/zz-staging:amd64-ed260386027985f00ceabc3cdd511604be770acb627bce02032755bc315e5e96@sha256:315d35e9dcde653de8a7cf60ae87621893e1e182392c2c9b3844c2ad13abfb5a",
-            "desc": {
-              "mediaType": "application/vnd.oci.image.manifest.v1+json",
-              "digest": "sha256:315d35e9dcde653de8a7cf60ae87621893e1e182392c2c9b3844c2ad13abfb5a",
-              "size": 2243,
-              "annotations": {
-                "com.docker.library.bashbrew.arch": "amd64",
-                "org.opencontainers.image.revision": "169b2daed39689a6f3c9db1c59f9f36dfb3fa9bb",
-                "org.opencontainers.image.source": "https://github.com/tianon/dockerfiles.git#169b2daed39689a6f3c9db1c59f9f36dfb3fa9bb:docker-master",
-                "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/docker-master",
-                "org.opencontainers.image.version": "latest"
-              },
-              "platform": {
-                "architecture": "amd64",
-                "os": "linux"
-              }
-            }
-          },
-          "index": {
-            "ref": "tianon/zz-staging:amd64-ed260386027985f00ceabc3cdd511604be770acb627bce02032755bc315e5e96@sha256:5e1f6c5f93590c4b5094f5de86422b026ab8c4d7b38aa01c8a05181de0d54ed5",
-            "desc": {
-              "mediaType": "application/vnd.oci.image.index.v1+json",
-              "digest": "sha256:5e1f6c5f93590c4b5094f5de86422b026ab8c4d7b38aa01c8a05181de0d54ed5",
-              "size": 1315
-            }
-          }
-        }
-      }
-    },
-    "source": {
-      "sourceId": "442150ae520883e14b72492843ca870f6df3684e57fab19bc6f4e15d14a61ffc",
-      "reproducibleGitChecksum": "da29aceef1153a4eaeec76d99b082ea13a2130e79bd4e0f2129aacfc8298c52d",
-      "allTags": [
-        "tianon/docker-master:containerd"
-      ],
-      "entry": {
-        "GitRepo": "https://github.com/tianon/dockerfiles.git",
-        "GitFetch": "refs/heads/master",
-        "GitCommit": "b599499292b75c9f01f8f8cd3141a288028fffc9",
-        "Directory": "docker-master",
-        "File": "Dockerfile.containerd",
-        "Builder": "",
-        "SOURCE_DATE_EPOCH": 1680215052
-      },
-      "arches": {
-        "amd64": {
-          "tags": [
-            "tianon/docker-master:containerd"
-          ],
-          "archTags": [],
-          "froms": [
-            "tianon/docker-master:dind"
-          ],
-          "platformString": "linux/amd64",
-          "platform": {
-            "architecture": "amd64",
-            "os": "linux"
-          },
-          "parents": {
-            "tianon/docker-master:dind": {
-              "sourceId": "60f1f04cfcceb21de404c3eea0c513091bbb461dedd5c1d6769a50f42d171602",
+            "alpine:3.18": {
+              "sourceId": null,
               "pin": null
             }
           }
@@ -3507,51 +3397,23 @@
       }
     }
   },
-  "357321c756d0d501668ce3dbeac214cf503df896b1d0311896d0a9e1bd6f9b24": {
-    "buildId": "357321c756d0d501668ce3dbeac214cf503df896b1d0311896d0a9e1bd6f9b24",
+  "9fb1a557d31af36a10cc4cbab52db18b9022f463eb36dd1a9a0134611ecf323a": {
+    "buildId": "9fb1a557d31af36a10cc4cbab52db18b9022f463eb36dd1a9a0134611ecf323a",
     "build": {
-      "img": "tianon/zz-staging:amd64-357321c756d0d501668ce3dbeac214cf503df896b1d0311896d0a9e1bd6f9b24",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:amd64-357321c756d0d501668ce3dbeac214cf503df896b1d0311896d0a9e1bd6f9b24@sha256:e4aa9405c2bf337dcdff017ee7dc7918c9cc7c78cf7a19f6d2f28f55793ae2f8",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:e4aa9405c2bf337dcdff017ee7dc7918c9cc7c78cf7a19f6d2f28f55793ae2f8",
-            "size": 1075,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "amd64",
-              "org.opencontainers.image.revision": "2dada3bb5dfbc1e7162a29907691b6f45995d54e",
-              "org.opencontainers.image.source": "https://github.com/tianon/gosu.git#2dada3bb5dfbc1e7162a29907691b6f45995d54e:hub",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/gosu",
-              "org.opencontainers.image.version": "1.17"
-            },
-            "platform": {
-              "architecture": "amd64",
-              "os": "linux"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:amd64-357321c756d0d501668ce3dbeac214cf503df896b1d0311896d0a9e1bd6f9b24@sha256:db238a611688569e1e5e1bbc70943d26556bd3b791e33a6704d55fcedd0d7882",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:db238a611688569e1e5e1bbc70943d26556bd3b791e33a6704d55fcedd0d7882",
-            "size": 1287
-          }
-        }
-      },
+      "img": "tianon/zz-staging:amd64-9fb1a557d31af36a10cc4cbab52db18b9022f463eb36dd1a9a0134611ecf323a",
+      "resolved": null,
       "sourceId": "63456e469c12532a24e85cedbbba5cf99a5d0b0efaea665ebe729afc719e482d",
       "arch": "amd64",
       "parents": {
-        "alpine:3.18": "sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86"
+        "alpine:3.18": "sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86",
+            "ref": "alpine:3.18@sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86",
+              "digest": "sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389",
               "size": 528,
               "platform": {
                 "architecture": "amd64",
@@ -3560,10 +3422,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -3631,37 +3493,23 @@
       }
     }
   },
-  "abbddb040980d0d811aace3c7326cefccfb2c6d3a22887f6c9016999785f37dd": {
-    "buildId": "abbddb040980d0d811aace3c7326cefccfb2c6d3a22887f6c9016999785f37dd",
+  "3b1fa1ece68fd1369855e93f5206ff8e760d10f1767407112bfde2ca55c02228": {
+    "buildId": "3b1fa1ece68fd1369855e93f5206ff8e760d10f1767407112bfde2ca55c02228",
     "build": {
-      "img": "tianon/zz-staging:arm32v6-abbddb040980d0d811aace3c7326cefccfb2c6d3a22887f6c9016999785f37dd",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:arm32v6-abbddb040980d0d811aace3c7326cefccfb2c6d3a22887f6c9016999785f37dd@sha256:51693489fc5192912937bcb85aa7c5193ba43abc34b96f932fb40ce678c3a175",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:51693489fc5192912937bcb85aa7c5193ba43abc34b96f932fb40ce678c3a175",
-            "size": 672,
-            "platform": {
-              "architecture": "arm",
-              "os": "linux",
-              "variant": "v6"
-            }
-          }
-        }
-      },
+      "img": "tianon/zz-staging:arm32v6-3b1fa1ece68fd1369855e93f5206ff8e760d10f1767407112bfde2ca55c02228",
+      "resolved": null,
       "sourceId": "63456e469c12532a24e85cedbbba5cf99a5d0b0efaea665ebe729afc719e482d",
       "arch": "arm32v6",
       "parents": {
-        "alpine:3.18": "sha256:777e2106170c66742ddbe77f703badb7dc94d9a5b1dc2c4a01538fad9aef56bb"
+        "alpine:3.18": "sha256:1832ef473ede9a923cc6affdf13b54a1be6561ad2ce3c3684910260a7582d36b"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:777e2106170c66742ddbe77f703badb7dc94d9a5b1dc2c4a01538fad9aef56bb",
+            "ref": "alpine:3.18@sha256:1832ef473ede9a923cc6affdf13b54a1be6561ad2ce3c3684910260a7582d36b",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:777e2106170c66742ddbe77f703badb7dc94d9a5b1dc2c4a01538fad9aef56bb",
+              "digest": "sha256:1832ef473ede9a923cc6affdf13b54a1be6561ad2ce3c3684910260a7582d36b",
               "size": 528,
               "platform": {
                 "architecture": "arm",
@@ -3671,10 +3519,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -3743,52 +3591,23 @@
       }
     }
   },
-  "10db199518d2abeffdfa4bdd862f7d60f4fddf68510f3c1a204a251221d7fe63": {
-    "buildId": "10db199518d2abeffdfa4bdd862f7d60f4fddf68510f3c1a204a251221d7fe63",
+  "0c40795dff4e56fcdb35f1a2ca1834d052a504adb295af84215ba1cc74646e0d": {
+    "buildId": "0c40795dff4e56fcdb35f1a2ca1834d052a504adb295af84215ba1cc74646e0d",
     "build": {
-      "img": "tianon/zz-staging:arm32v7-10db199518d2abeffdfa4bdd862f7d60f4fddf68510f3c1a204a251221d7fe63",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:arm32v7-10db199518d2abeffdfa4bdd862f7d60f4fddf68510f3c1a204a251221d7fe63@sha256:cb6f3837b0e3be77f4cc937fce1381702122e60fdf61ebd013589ed799d23948",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:cb6f3837b0e3be77f4cc937fce1381702122e60fdf61ebd013589ed799d23948",
-            "size": 1077,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "arm32v7",
-              "org.opencontainers.image.revision": "2dada3bb5dfbc1e7162a29907691b6f45995d54e",
-              "org.opencontainers.image.source": "https://github.com/tianon/gosu.git#2dada3bb5dfbc1e7162a29907691b6f45995d54e:hub",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/gosu",
-              "org.opencontainers.image.version": "1.17"
-            },
-            "platform": {
-              "architecture": "arm",
-              "os": "linux",
-              "variant": "v7"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:arm32v7-10db199518d2abeffdfa4bdd862f7d60f4fddf68510f3c1a204a251221d7fe63@sha256:adb50672505c51692891adf589078bb3d04d0763e11546fa574321d9f97bc324",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:adb50672505c51692891adf589078bb3d04d0763e11546fa574321d9f97bc324",
-            "size": 1312
-          }
-        }
-      },
+      "img": "tianon/zz-staging:arm32v7-0c40795dff4e56fcdb35f1a2ca1834d052a504adb295af84215ba1cc74646e0d",
+      "resolved": null,
       "sourceId": "63456e469c12532a24e85cedbbba5cf99a5d0b0efaea665ebe729afc719e482d",
       "arch": "arm32v7",
       "parents": {
-        "alpine:3.18": "sha256:9909a171ac287c316f771a4f1d1384df96957ed772bc39caf6deb6e3e360316f"
+        "alpine:3.18": "sha256:211fe64069acea47ea680c0943b5a77be1819d0e85365011595391f7562caf27"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:9909a171ac287c316f771a4f1d1384df96957ed772bc39caf6deb6e3e360316f",
+            "ref": "alpine:3.18@sha256:211fe64069acea47ea680c0943b5a77be1819d0e85365011595391f7562caf27",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:9909a171ac287c316f771a4f1d1384df96957ed772bc39caf6deb6e3e360316f",
+              "digest": "sha256:211fe64069acea47ea680c0943b5a77be1819d0e85365011595391f7562caf27",
               "size": 528,
               "platform": {
                 "architecture": "arm",
@@ -3798,10 +3617,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -3870,52 +3689,23 @@
       }
     }
   },
-  "9fd4f62d11379d9a2c2a97566d412e83e67ae0769d29ecd7e8396c249540b06f": {
-    "buildId": "9fd4f62d11379d9a2c2a97566d412e83e67ae0769d29ecd7e8396c249540b06f",
+  "a0c078ee2966da5aa4cf7adff16736300a7fb4fe65d6cef0270b6e6eff46cd6f": {
+    "buildId": "a0c078ee2966da5aa4cf7adff16736300a7fb4fe65d6cef0270b6e6eff46cd6f",
     "build": {
-      "img": "tianon/zz-staging:arm64v8-9fd4f62d11379d9a2c2a97566d412e83e67ae0769d29ecd7e8396c249540b06f",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:arm64v8-9fd4f62d11379d9a2c2a97566d412e83e67ae0769d29ecd7e8396c249540b06f@sha256:0b720329067d122aa4af7cf8fe237e3fc3c2256108ae850db0b379d49d8ecaef",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:0b720329067d122aa4af7cf8fe237e3fc3c2256108ae850db0b379d49d8ecaef",
-            "size": 1077,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "arm64v8",
-              "org.opencontainers.image.revision": "2dada3bb5dfbc1e7162a29907691b6f45995d54e",
-              "org.opencontainers.image.source": "https://github.com/tianon/gosu.git#2dada3bb5dfbc1e7162a29907691b6f45995d54e:hub",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/gosu",
-              "org.opencontainers.image.version": "1.17"
-            },
-            "platform": {
-              "architecture": "arm64",
-              "os": "linux",
-              "variant": "v8"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:arm64v8-9fd4f62d11379d9a2c2a97566d412e83e67ae0769d29ecd7e8396c249540b06f@sha256:ad8ac4dd866ba8d2d2449e4288ed03cfd0b20d20b5f5c8333b48c783efac6b8a",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:ad8ac4dd866ba8d2d2449e4288ed03cfd0b20d20b5f5c8333b48c783efac6b8a",
-            "size": 1289
-          }
-        }
-      },
+      "img": "tianon/zz-staging:arm64v8-a0c078ee2966da5aa4cf7adff16736300a7fb4fe65d6cef0270b6e6eff46cd6f",
+      "resolved": null,
       "sourceId": "63456e469c12532a24e85cedbbba5cf99a5d0b0efaea665ebe729afc719e482d",
       "arch": "arm64v8",
       "parents": {
-        "alpine:3.18": "sha256:6ce9a9a256a3495ae60ab0059ed1c7aee5ee89450477f2223f6ea7f6296df555"
+        "alpine:3.18": "sha256:d4ade3639c27579321046d78cc44ec978cea8357d56932611984f601d27e30ac"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:6ce9a9a256a3495ae60ab0059ed1c7aee5ee89450477f2223f6ea7f6296df555",
+            "ref": "alpine:3.18@sha256:d4ade3639c27579321046d78cc44ec978cea8357d56932611984f601d27e30ac",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:6ce9a9a256a3495ae60ab0059ed1c7aee5ee89450477f2223f6ea7f6296df555",
+              "digest": "sha256:d4ade3639c27579321046d78cc44ec978cea8357d56932611984f601d27e30ac",
               "size": 528,
               "platform": {
                 "architecture": "arm64",
@@ -3925,10 +3715,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -4050,10 +3840,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -4121,51 +3911,23 @@
       }
     }
   },
-  "d273b15e4aa1d067e4f116f6bbe8179cb71842364ca6c05e7a5d4ae491a38497": {
-    "buildId": "d273b15e4aa1d067e4f116f6bbe8179cb71842364ca6c05e7a5d4ae491a38497",
+  "a66b1db9d1eb014bc4bb504e397aea40a32c062563f742bdc086be351868ffc7": {
+    "buildId": "a66b1db9d1eb014bc4bb504e397aea40a32c062563f742bdc086be351868ffc7",
     "build": {
-      "img": "tianon/zz-staging:ppc64le-d273b15e4aa1d067e4f116f6bbe8179cb71842364ca6c05e7a5d4ae491a38497",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:ppc64le-d273b15e4aa1d067e4f116f6bbe8179cb71842364ca6c05e7a5d4ae491a38497@sha256:e0a9a31a14d7e5d8a7fcdb8d5ab41ac67831e40cd7698d4b3be0daf829fb71be",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:e0a9a31a14d7e5d8a7fcdb8d5ab41ac67831e40cd7698d4b3be0daf829fb71be",
-            "size": 1077,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "ppc64le",
-              "org.opencontainers.image.revision": "2dada3bb5dfbc1e7162a29907691b6f45995d54e",
-              "org.opencontainers.image.source": "https://github.com/tianon/gosu.git#2dada3bb5dfbc1e7162a29907691b6f45995d54e:hub",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/gosu",
-              "org.opencontainers.image.version": "1.17"
-            },
-            "platform": {
-              "architecture": "ppc64le",
-              "os": "linux"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:ppc64le-d273b15e4aa1d067e4f116f6bbe8179cb71842364ca6c05e7a5d4ae491a38497@sha256:3303c7ec3d4d09899b6aaf173795020f98857e1f87e3ef2b0718cc0e6ec9e8eb",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:3303c7ec3d4d09899b6aaf173795020f98857e1f87e3ef2b0718cc0e6ec9e8eb",
-            "size": 1291
-          }
-        }
-      },
+      "img": "tianon/zz-staging:ppc64le-a66b1db9d1eb014bc4bb504e397aea40a32c062563f742bdc086be351868ffc7",
+      "resolved": null,
       "sourceId": "63456e469c12532a24e85cedbbba5cf99a5d0b0efaea665ebe729afc719e482d",
       "arch": "ppc64le",
       "parents": {
-        "alpine:3.18": "sha256:39ac038d955f9d66f98b998aa52843493c03f0373888a988f25e5ed039949aff"
+        "alpine:3.18": "sha256:1698bcd6bf339e1578dfb9f0034dff615e3eec8404517045046ecbeb84ad01d6"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:39ac038d955f9d66f98b998aa52843493c03f0373888a988f25e5ed039949aff",
+            "ref": "alpine:3.18@sha256:1698bcd6bf339e1578dfb9f0034dff615e3eec8404517045046ecbeb84ad01d6",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:39ac038d955f9d66f98b998aa52843493c03f0373888a988f25e5ed039949aff",
+              "digest": "sha256:1698bcd6bf339e1578dfb9f0034dff615e3eec8404517045046ecbeb84ad01d6",
               "size": 528,
               "platform": {
                 "architecture": "ppc64le",
@@ -4174,10 +3936,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -4245,51 +4007,23 @@
       }
     }
   },
-  "3172713bfb2a3d2358e9af51a82a065b6f40e059a943eae8b014d88032ac0544": {
-    "buildId": "3172713bfb2a3d2358e9af51a82a065b6f40e059a943eae8b014d88032ac0544",
+  "43a8f6f12b451bac46bc13d471bf3d142c7d58b3642aee7e5b5736be70c052d1": {
+    "buildId": "43a8f6f12b451bac46bc13d471bf3d142c7d58b3642aee7e5b5736be70c052d1",
     "build": {
-      "img": "tianon/zz-staging:s390x-3172713bfb2a3d2358e9af51a82a065b6f40e059a943eae8b014d88032ac0544",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:s390x-3172713bfb2a3d2358e9af51a82a065b6f40e059a943eae8b014d88032ac0544@sha256:7a6db889d0a3cf69ac4a7ca98f44f5489ea35e71e189fc6cc9fb9c3764a6dbe5",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:7a6db889d0a3cf69ac4a7ca98f44f5489ea35e71e189fc6cc9fb9c3764a6dbe5",
-            "size": 1075,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "s390x",
-              "org.opencontainers.image.revision": "2dada3bb5dfbc1e7162a29907691b6f45995d54e",
-              "org.opencontainers.image.source": "https://github.com/tianon/gosu.git#2dada3bb5dfbc1e7162a29907691b6f45995d54e:hub",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/gosu",
-              "org.opencontainers.image.version": "1.17"
-            },
-            "platform": {
-              "architecture": "s390x",
-              "os": "linux"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:s390x-3172713bfb2a3d2358e9af51a82a065b6f40e059a943eae8b014d88032ac0544@sha256:b21a790cd0deaac5baa3ee5b54a8f9ab89d2ca52d5f81db75faf6a5ab3e6546b",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:b21a790cd0deaac5baa3ee5b54a8f9ab89d2ca52d5f81db75faf6a5ab3e6546b",
-            "size": 1287
-          }
-        }
-      },
+      "img": "tianon/zz-staging:s390x-43a8f6f12b451bac46bc13d471bf3d142c7d58b3642aee7e5b5736be70c052d1",
+      "resolved": null,
       "sourceId": "63456e469c12532a24e85cedbbba5cf99a5d0b0efaea665ebe729afc719e482d",
       "arch": "s390x",
       "parents": {
-        "alpine:3.18": "sha256:4bfee8cb4c809bcb21aa730ce26a2302d3888002ff2d70ec5fd569e7ffdc1a7d"
+        "alpine:3.18": "sha256:5c63479aeed37522de78284d99dcd32f9ad288b04a56236f44e78b3b3f62ebd2"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:4bfee8cb4c809bcb21aa730ce26a2302d3888002ff2d70ec5fd569e7ffdc1a7d",
+            "ref": "alpine:3.18@sha256:5c63479aeed37522de78284d99dcd32f9ad288b04a56236f44e78b3b3f62ebd2",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:4bfee8cb4c809bcb21aa730ce26a2302d3888002ff2d70ec5fd569e7ffdc1a7d",
+              "digest": "sha256:5c63479aeed37522de78284d99dcd32f9ad288b04a56236f44e78b3b3f62ebd2",
               "size": 528,
               "platform": {
                 "architecture": "s390x",
@@ -4298,10 +4032,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -7212,44 +6946,16 @@
       }
     }
   },
-  "473a5d2067662ab3a0d090507a24e6c649205ef8f8f5ede8657477d9317a94c8": {
-    "buildId": "473a5d2067662ab3a0d090507a24e6c649205ef8f8f5ede8657477d9317a94c8",
+  "cabd296d9e38bae877dd4ce6a19b8c08dc0c29674b0deece0c7ec1dbb12dd85c": {
+    "buildId": "cabd296d9e38bae877dd4ce6a19b8c08dc0c29674b0deece0c7ec1dbb12dd85c",
     "build": {
-      "img": "tianon/zz-staging:amd64-473a5d2067662ab3a0d090507a24e6c649205ef8f8f5ede8657477d9317a94c8",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:amd64-473a5d2067662ab3a0d090507a24e6c649205ef8f8f5ede8657477d9317a94c8@sha256:3082b1a20518b73ab63f387bc26cb6fe06aa9b48b2b5c386f7b8a701bafebe9e",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:3082b1a20518b73ab63f387bc26cb6fe06aa9b48b2b5c386f7b8a701bafebe9e",
-            "size": 1111,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "amd64",
-              "org.opencontainers.image.revision": "cc8ec89968ade866e6bb4f1fa042190398969b63",
-              "org.opencontainers.image.source": "https://github.com/tianon/docker-moosefs.git#cc8ec89968ade866e6bb4f1fa042190398969b63:mfs-volume-driver",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/moosefs",
-              "org.opencontainers.image.version": "volume-driver"
-            },
-            "platform": {
-              "architecture": "amd64",
-              "os": "linux"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:amd64-473a5d2067662ab3a0d090507a24e6c649205ef8f8f5ede8657477d9317a94c8@sha256:48a0e356ac88b26516bb94967a4f8fb0972ce2331f53945dcb52582b3083b025",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:48a0e356ac88b26516bb94967a4f8fb0972ce2331f53945dcb52582b3083b025",
-            "size": 1323
-          }
-        }
-      },
+      "img": "tianon/zz-staging:amd64-cabd296d9e38bae877dd4ce6a19b8c08dc0c29674b0deece0c7ec1dbb12dd85c",
+      "resolved": null,
       "sourceId": "a6f86b9a1baf2ecc8d529d19979bf7d5c553ed07ce6ec6733834607c655b7f16",
       "arch": "amd64",
       "parents": {
         "golang:1.20-bookworm": "sha256:bdd178660145acd8edcc076bec4c92888988a6556de7b3363a30cdea87b7086b",
-        "alpine:3.18": "sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86"
+        "alpine:3.18": "sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389"
       },
       "resolvedParents": {
         "golang:1.20-bookworm": {
@@ -7276,10 +6982,10 @@
         },
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86",
+            "ref": "alpine:3.18@sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86",
+              "digest": "sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389",
               "size": 528,
               "platform": {
                 "architecture": "amd64",
@@ -7288,10 +6994,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -7343,45 +7049,16 @@
       }
     }
   },
-  "0f945fcae25ede83625ba7cbdac9fe79d1acfe4e2bbe20c57c5d51344af61835": {
-    "buildId": "0f945fcae25ede83625ba7cbdac9fe79d1acfe4e2bbe20c57c5d51344af61835",
+  "27c8c21682a28323f1e529980cbccc53464afa7d46b6b3ca1570a63e3ec7639c": {
+    "buildId": "27c8c21682a28323f1e529980cbccc53464afa7d46b6b3ca1570a63e3ec7639c",
     "build": {
-      "img": "tianon/zz-staging:arm32v7-0f945fcae25ede83625ba7cbdac9fe79d1acfe4e2bbe20c57c5d51344af61835",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:arm32v7-0f945fcae25ede83625ba7cbdac9fe79d1acfe4e2bbe20c57c5d51344af61835@sha256:1485c3c7df6c83b6d1e97bef94373e6727bf919a3bb3c73e9163cece5bd56c7c",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:1485c3c7df6c83b6d1e97bef94373e6727bf919a3bb3c73e9163cece5bd56c7c",
-            "size": 1113,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "arm32v7",
-              "org.opencontainers.image.revision": "cc8ec89968ade866e6bb4f1fa042190398969b63",
-              "org.opencontainers.image.source": "https://github.com/tianon/docker-moosefs.git#cc8ec89968ade866e6bb4f1fa042190398969b63:mfs-volume-driver",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/moosefs",
-              "org.opencontainers.image.version": "volume-driver"
-            },
-            "platform": {
-              "architecture": "arm",
-              "os": "linux",
-              "variant": "v7"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:arm32v7-0f945fcae25ede83625ba7cbdac9fe79d1acfe4e2bbe20c57c5d51344af61835@sha256:c926a7b54653f2a838a0a80ffdeb615c83a0c171293e106b233bec987e3d882d",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:c926a7b54653f2a838a0a80ffdeb615c83a0c171293e106b233bec987e3d882d",
-            "size": 1348
-          }
-        }
-      },
+      "img": "tianon/zz-staging:arm32v7-27c8c21682a28323f1e529980cbccc53464afa7d46b6b3ca1570a63e3ec7639c",
+      "resolved": null,
       "sourceId": "a6f86b9a1baf2ecc8d529d19979bf7d5c553ed07ce6ec6733834607c655b7f16",
       "arch": "arm32v7",
       "parents": {
         "golang:1.20-bookworm": "sha256:4d3029b5a710ce57fde256eedaef8044495d0ff4af2e42ced1191507f5c6d0d3",
-        "alpine:3.18": "sha256:9909a171ac287c316f771a4f1d1384df96957ed772bc39caf6deb6e3e360316f"
+        "alpine:3.18": "sha256:211fe64069acea47ea680c0943b5a77be1819d0e85365011595391f7562caf27"
       },
       "resolvedParents": {
         "golang:1.20-bookworm": {
@@ -7409,10 +7086,10 @@
         },
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:9909a171ac287c316f771a4f1d1384df96957ed772bc39caf6deb6e3e360316f",
+            "ref": "alpine:3.18@sha256:211fe64069acea47ea680c0943b5a77be1819d0e85365011595391f7562caf27",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:9909a171ac287c316f771a4f1d1384df96957ed772bc39caf6deb6e3e360316f",
+              "digest": "sha256:211fe64069acea47ea680c0943b5a77be1819d0e85365011595391f7562caf27",
               "size": 528,
               "platform": {
                 "architecture": "arm",
@@ -7422,10 +7099,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -7478,45 +7155,16 @@
       }
     }
   },
-  "d74fb82ec407c7d9c473a199d02630007ac1b0e40fc25f84b5a7160115c229ce": {
-    "buildId": "d74fb82ec407c7d9c473a199d02630007ac1b0e40fc25f84b5a7160115c229ce",
+  "3c877a20f92ec34df5d1e7d8afbdd784fca79058e799f0e2553034d49fbe9bdb": {
+    "buildId": "3c877a20f92ec34df5d1e7d8afbdd784fca79058e799f0e2553034d49fbe9bdb",
     "build": {
-      "img": "tianon/zz-staging:arm64v8-d74fb82ec407c7d9c473a199d02630007ac1b0e40fc25f84b5a7160115c229ce",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:arm64v8-d74fb82ec407c7d9c473a199d02630007ac1b0e40fc25f84b5a7160115c229ce@sha256:027c930d317f4510a8679f4e13c37ca8150893ff6a929c54d2e84d75103ad7c2",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:027c930d317f4510a8679f4e13c37ca8150893ff6a929c54d2e84d75103ad7c2",
-            "size": 1113,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "arm64v8",
-              "org.opencontainers.image.revision": "cc8ec89968ade866e6bb4f1fa042190398969b63",
-              "org.opencontainers.image.source": "https://github.com/tianon/docker-moosefs.git#cc8ec89968ade866e6bb4f1fa042190398969b63:mfs-volume-driver",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/moosefs",
-              "org.opencontainers.image.version": "volume-driver"
-            },
-            "platform": {
-              "architecture": "arm64",
-              "os": "linux",
-              "variant": "v8"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:arm64v8-d74fb82ec407c7d9c473a199d02630007ac1b0e40fc25f84b5a7160115c229ce@sha256:e8ff170c544cc4b99ae548a615b15285aa290b54fcb11476fd9bcfae499b97dd",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:e8ff170c544cc4b99ae548a615b15285aa290b54fcb11476fd9bcfae499b97dd",
-            "size": 1325
-          }
-        }
-      },
+      "img": "tianon/zz-staging:arm64v8-3c877a20f92ec34df5d1e7d8afbdd784fca79058e799f0e2553034d49fbe9bdb",
+      "resolved": null,
       "sourceId": "a6f86b9a1baf2ecc8d529d19979bf7d5c553ed07ce6ec6733834607c655b7f16",
       "arch": "arm64v8",
       "parents": {
         "golang:1.20-bookworm": "sha256:d0baad248986d8b5bbc24e8f7aa2eecff7b4bec9aeadcd2ee57d6de1564d0279",
-        "alpine:3.18": "sha256:6ce9a9a256a3495ae60ab0059ed1c7aee5ee89450477f2223f6ea7f6296df555"
+        "alpine:3.18": "sha256:d4ade3639c27579321046d78cc44ec978cea8357d56932611984f601d27e30ac"
       },
       "resolvedParents": {
         "golang:1.20-bookworm": {
@@ -7544,10 +7192,10 @@
         },
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:6ce9a9a256a3495ae60ab0059ed1c7aee5ee89450477f2223f6ea7f6296df555",
+            "ref": "alpine:3.18@sha256:d4ade3639c27579321046d78cc44ec978cea8357d56932611984f601d27e30ac",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:6ce9a9a256a3495ae60ab0059ed1c7aee5ee89450477f2223f6ea7f6296df555",
+              "digest": "sha256:d4ade3639c27579321046d78cc44ec978cea8357d56932611984f601d27e30ac",
               "size": 528,
               "platform": {
                 "architecture": "arm64",
@@ -7557,10 +7205,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -7689,10 +7337,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -7744,44 +7392,16 @@
       }
     }
   },
-  "6504b581ef3b709e9c43a05c06f21b52462f6d242cccecbb757df176641b2515": {
-    "buildId": "6504b581ef3b709e9c43a05c06f21b52462f6d242cccecbb757df176641b2515",
+  "89740e9b9a1c9e8aa0ed0af5e1fc0664a49b657ab440f385f83468c96ce9f333": {
+    "buildId": "89740e9b9a1c9e8aa0ed0af5e1fc0664a49b657ab440f385f83468c96ce9f333",
     "build": {
-      "img": "tianon/zz-staging:ppc64le-6504b581ef3b709e9c43a05c06f21b52462f6d242cccecbb757df176641b2515",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:ppc64le-6504b581ef3b709e9c43a05c06f21b52462f6d242cccecbb757df176641b2515@sha256:fe8c7bd6e3fee828782aad641a17557bf1c9fd2f1d9d4f933bd337f627e3aa2b",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:fe8c7bd6e3fee828782aad641a17557bf1c9fd2f1d9d4f933bd337f627e3aa2b",
-            "size": 1113,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "ppc64le",
-              "org.opencontainers.image.revision": "cc8ec89968ade866e6bb4f1fa042190398969b63",
-              "org.opencontainers.image.source": "https://github.com/tianon/docker-moosefs.git#cc8ec89968ade866e6bb4f1fa042190398969b63:mfs-volume-driver",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/moosefs",
-              "org.opencontainers.image.version": "volume-driver"
-            },
-            "platform": {
-              "architecture": "ppc64le",
-              "os": "linux"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:ppc64le-6504b581ef3b709e9c43a05c06f21b52462f6d242cccecbb757df176641b2515@sha256:69d51d4166b188b69ed05cbc73e417fc2bfdb714651dcdaee2244f4a46c9fba5",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:69d51d4166b188b69ed05cbc73e417fc2bfdb714651dcdaee2244f4a46c9fba5",
-            "size": 1327
-          }
-        }
-      },
+      "img": "tianon/zz-staging:ppc64le-89740e9b9a1c9e8aa0ed0af5e1fc0664a49b657ab440f385f83468c96ce9f333",
+      "resolved": null,
       "sourceId": "a6f86b9a1baf2ecc8d529d19979bf7d5c553ed07ce6ec6733834607c655b7f16",
       "arch": "ppc64le",
       "parents": {
         "golang:1.20-bookworm": "sha256:8f8796072bdb9fcb88ea559e8df1e21e0dc58719af0ee068623863c4763090f0",
-        "alpine:3.18": "sha256:39ac038d955f9d66f98b998aa52843493c03f0373888a988f25e5ed039949aff"
+        "alpine:3.18": "sha256:1698bcd6bf339e1578dfb9f0034dff615e3eec8404517045046ecbeb84ad01d6"
       },
       "resolvedParents": {
         "golang:1.20-bookworm": {
@@ -7808,10 +7428,10 @@
         },
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:39ac038d955f9d66f98b998aa52843493c03f0373888a988f25e5ed039949aff",
+            "ref": "alpine:3.18@sha256:1698bcd6bf339e1578dfb9f0034dff615e3eec8404517045046ecbeb84ad01d6",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:39ac038d955f9d66f98b998aa52843493c03f0373888a988f25e5ed039949aff",
+              "digest": "sha256:1698bcd6bf339e1578dfb9f0034dff615e3eec8404517045046ecbeb84ad01d6",
               "size": 528,
               "platform": {
                 "architecture": "ppc64le",
@@ -7820,10 +7440,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -7875,44 +7495,16 @@
       }
     }
   },
-  "7187b123033be92137952993578246edee3a0dc2707d2b34699649c6fa251e9d": {
-    "buildId": "7187b123033be92137952993578246edee3a0dc2707d2b34699649c6fa251e9d",
+  "b3a5a9df7aa6e0a710914f580eeb7b43caea5f35d1c68ea92dcf5689117eb148": {
+    "buildId": "b3a5a9df7aa6e0a710914f580eeb7b43caea5f35d1c68ea92dcf5689117eb148",
     "build": {
-      "img": "tianon/zz-staging:s390x-7187b123033be92137952993578246edee3a0dc2707d2b34699649c6fa251e9d",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:s390x-7187b123033be92137952993578246edee3a0dc2707d2b34699649c6fa251e9d@sha256:e05a826d830f0170e3a3054b7a5f91746e3323d7a942c166c14e5e57dfa04fee",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:e05a826d830f0170e3a3054b7a5f91746e3323d7a942c166c14e5e57dfa04fee",
-            "size": 1111,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "s390x",
-              "org.opencontainers.image.revision": "cc8ec89968ade866e6bb4f1fa042190398969b63",
-              "org.opencontainers.image.source": "https://github.com/tianon/docker-moosefs.git#cc8ec89968ade866e6bb4f1fa042190398969b63:mfs-volume-driver",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/moosefs",
-              "org.opencontainers.image.version": "volume-driver"
-            },
-            "platform": {
-              "architecture": "s390x",
-              "os": "linux"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:s390x-7187b123033be92137952993578246edee3a0dc2707d2b34699649c6fa251e9d@sha256:8589bfaa1a79c8b0bc6a89b5e8c8608ffcf423771e9d58f8d2ff87443f06de09",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:8589bfaa1a79c8b0bc6a89b5e8c8608ffcf423771e9d58f8d2ff87443f06de09",
-            "size": 1323
-          }
-        }
-      },
+      "img": "tianon/zz-staging:s390x-b3a5a9df7aa6e0a710914f580eeb7b43caea5f35d1c68ea92dcf5689117eb148",
+      "resolved": null,
       "sourceId": "a6f86b9a1baf2ecc8d529d19979bf7d5c553ed07ce6ec6733834607c655b7f16",
       "arch": "s390x",
       "parents": {
         "golang:1.20-bookworm": "sha256:344e0cb07a43e6d56015481c2308f5ab8b1dee18fb70eedc5ba075e321b74dcd",
-        "alpine:3.18": "sha256:4bfee8cb4c809bcb21aa730ce26a2302d3888002ff2d70ec5fd569e7ffdc1a7d"
+        "alpine:3.18": "sha256:5c63479aeed37522de78284d99dcd32f9ad288b04a56236f44e78b3b3f62ebd2"
       },
       "resolvedParents": {
         "golang:1.20-bookworm": {
@@ -7939,10 +7531,10 @@
         },
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:4bfee8cb4c809bcb21aa730ce26a2302d3888002ff2d70ec5fd569e7ffdc1a7d",
+            "ref": "alpine:3.18@sha256:5c63479aeed37522de78284d99dcd32f9ad288b04a56236f44e78b3b3f62ebd2",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:4bfee8cb4c809bcb21aa730ce26a2302d3888002ff2d70ec5fd569e7ffdc1a7d",
+              "digest": "sha256:5c63479aeed37522de78284d99dcd32f9ad288b04a56236f44e78b3b3f62ebd2",
               "size": 528,
               "platform": {
                 "architecture": "s390x",
@@ -7951,10 +7543,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -8965,51 +8557,23 @@
       }
     }
   },
-  "6c9b4a8bafaa9e2fb09059e901c6923e20fa9d1cc910930eee81b2193c92a99a": {
-    "buildId": "6c9b4a8bafaa9e2fb09059e901c6923e20fa9d1cc910930eee81b2193c92a99a",
+  "14b1d487f77c3fa9b37e32127e76fdff432c90fa851ce8644c00288e9c888d67": {
+    "buildId": "14b1d487f77c3fa9b37e32127e76fdff432c90fa851ce8644c00288e9c888d67",
     "build": {
-      "img": "tianon/zz-staging:amd64-6c9b4a8bafaa9e2fb09059e901c6923e20fa9d1cc910930eee81b2193c92a99a",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:amd64-6c9b4a8bafaa9e2fb09059e901c6923e20fa9d1cc910930eee81b2193c92a99a@sha256:18c9870bb4c4ed8e9b929f12f60e6843e900af6ef06b4a974119d4a2d470b2dc",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:18c9870bb4c4ed8e9b929f12f60e6843e900af6ef06b4a974119d4a2d470b2dc",
-            "size": 1116,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "amd64",
-              "org.opencontainers.image.revision": "051939a57ec8504a1cbe612d5b42b9ea2ed486bc",
-              "org.opencontainers.image.source": "https://github.com/tianon/dockerfiles.git#051939a57ec8504a1cbe612d5b42b9ea2ed486bc:network-toolbox/alpine",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/network-toolbox",
-              "org.opencontainers.image.version": "alpine"
-            },
-            "platform": {
-              "architecture": "amd64",
-              "os": "linux"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:amd64-6c9b4a8bafaa9e2fb09059e901c6923e20fa9d1cc910930eee81b2193c92a99a@sha256:0fe4013d81095ba667c51dda919ff1ac14bbeb714e872c898e1e01f3e3415ada",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:0fe4013d81095ba667c51dda919ff1ac14bbeb714e872c898e1e01f3e3415ada",
-            "size": 1326
-          }
-        }
-      },
+      "img": "tianon/zz-staging:amd64-14b1d487f77c3fa9b37e32127e76fdff432c90fa851ce8644c00288e9c888d67",
+      "resolved": null,
       "sourceId": "4eb7a84d58b8d3941cc620fb5e90b6b11752c22c1024b70bbf9be8769198b271",
       "arch": "amd64",
       "parents": {
-        "alpine:3.18": "sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86"
+        "alpine:3.18": "sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86",
+            "ref": "alpine:3.18@sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86",
+              "digest": "sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389",
               "size": 528,
               "platform": {
                 "architecture": "amd64",
@@ -9018,10 +8582,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -9069,37 +8633,23 @@
       }
     }
   },
-  "e52c48956322fdb7a2dda2db7cf4df9927120431ce8319b5b6b9fa0f4a7829e9": {
-    "buildId": "e52c48956322fdb7a2dda2db7cf4df9927120431ce8319b5b6b9fa0f4a7829e9",
+  "925078d4070eeb304fed2aeda0a1242fa3824d42d4bee7a91f9149afe7b376c8": {
+    "buildId": "925078d4070eeb304fed2aeda0a1242fa3824d42d4bee7a91f9149afe7b376c8",
     "build": {
-      "img": "tianon/zz-staging:arm32v6-e52c48956322fdb7a2dda2db7cf4df9927120431ce8319b5b6b9fa0f4a7829e9",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:arm32v6-e52c48956322fdb7a2dda2db7cf4df9927120431ce8319b5b6b9fa0f4a7829e9@sha256:1beab0aa356a33774c1549358f75ff0bb2d6fdca06773867c50563a852b9ed0a",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:1beab0aa356a33774c1549358f75ff0bb2d6fdca06773867c50563a852b9ed0a",
-            "size": 674,
-            "platform": {
-              "architecture": "arm",
-              "os": "linux",
-              "variant": "v6"
-            }
-          }
-        }
-      },
+      "img": "tianon/zz-staging:arm32v6-925078d4070eeb304fed2aeda0a1242fa3824d42d4bee7a91f9149afe7b376c8",
+      "resolved": null,
       "sourceId": "4eb7a84d58b8d3941cc620fb5e90b6b11752c22c1024b70bbf9be8769198b271",
       "arch": "arm32v6",
       "parents": {
-        "alpine:3.18": "sha256:777e2106170c66742ddbe77f703badb7dc94d9a5b1dc2c4a01538fad9aef56bb"
+        "alpine:3.18": "sha256:1832ef473ede9a923cc6affdf13b54a1be6561ad2ce3c3684910260a7582d36b"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:777e2106170c66742ddbe77f703badb7dc94d9a5b1dc2c4a01538fad9aef56bb",
+            "ref": "alpine:3.18@sha256:1832ef473ede9a923cc6affdf13b54a1be6561ad2ce3c3684910260a7582d36b",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:777e2106170c66742ddbe77f703badb7dc94d9a5b1dc2c4a01538fad9aef56bb",
+              "digest": "sha256:1832ef473ede9a923cc6affdf13b54a1be6561ad2ce3c3684910260a7582d36b",
               "size": 528,
               "platform": {
                 "architecture": "arm",
@@ -9109,10 +8659,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -9161,52 +8711,23 @@
       }
     }
   },
-  "7db11e30bee3105d177b54077003dfe4fcf4fc4321ced222ee819a27efcbad2b": {
-    "buildId": "7db11e30bee3105d177b54077003dfe4fcf4fc4321ced222ee819a27efcbad2b",
+  "b94f3e48419f01b9d60df6fb66bb49f45202c921d4e9f1d4ae5c3eebd4923777": {
+    "buildId": "b94f3e48419f01b9d60df6fb66bb49f45202c921d4e9f1d4ae5c3eebd4923777",
     "build": {
-      "img": "tianon/zz-staging:arm32v7-7db11e30bee3105d177b54077003dfe4fcf4fc4321ced222ee819a27efcbad2b",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:arm32v7-7db11e30bee3105d177b54077003dfe4fcf4fc4321ced222ee819a27efcbad2b@sha256:4b06e0af5fa46707ba0db3c5c81840d3c1a6f6b821fae4b685afe1b80d095d91",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:4b06e0af5fa46707ba0db3c5c81840d3c1a6f6b821fae4b685afe1b80d095d91",
-            "size": 1118,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "arm32v7",
-              "org.opencontainers.image.revision": "051939a57ec8504a1cbe612d5b42b9ea2ed486bc",
-              "org.opencontainers.image.source": "https://github.com/tianon/dockerfiles.git#051939a57ec8504a1cbe612d5b42b9ea2ed486bc:network-toolbox/alpine",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/network-toolbox",
-              "org.opencontainers.image.version": "alpine"
-            },
-            "platform": {
-              "architecture": "arm",
-              "os": "linux",
-              "variant": "v7"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:arm32v7-7db11e30bee3105d177b54077003dfe4fcf4fc4321ced222ee819a27efcbad2b@sha256:d9c451f1ec17118bad239c711794874d09575a276162418d1e368dfa4a95cef3",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:d9c451f1ec17118bad239c711794874d09575a276162418d1e368dfa4a95cef3",
-            "size": 1351
-          }
-        }
-      },
+      "img": "tianon/zz-staging:arm32v7-b94f3e48419f01b9d60df6fb66bb49f45202c921d4e9f1d4ae5c3eebd4923777",
+      "resolved": null,
       "sourceId": "4eb7a84d58b8d3941cc620fb5e90b6b11752c22c1024b70bbf9be8769198b271",
       "arch": "arm32v7",
       "parents": {
-        "alpine:3.18": "sha256:9909a171ac287c316f771a4f1d1384df96957ed772bc39caf6deb6e3e360316f"
+        "alpine:3.18": "sha256:211fe64069acea47ea680c0943b5a77be1819d0e85365011595391f7562caf27"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:9909a171ac287c316f771a4f1d1384df96957ed772bc39caf6deb6e3e360316f",
+            "ref": "alpine:3.18@sha256:211fe64069acea47ea680c0943b5a77be1819d0e85365011595391f7562caf27",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:9909a171ac287c316f771a4f1d1384df96957ed772bc39caf6deb6e3e360316f",
+              "digest": "sha256:211fe64069acea47ea680c0943b5a77be1819d0e85365011595391f7562caf27",
               "size": 528,
               "platform": {
                 "architecture": "arm",
@@ -9216,10 +8737,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -9268,52 +8789,23 @@
       }
     }
   },
-  "4c358a8b3af85b6c9ce5a94f817483e6740d6f6ec1905084471a0f42fdae4012": {
-    "buildId": "4c358a8b3af85b6c9ce5a94f817483e6740d6f6ec1905084471a0f42fdae4012",
+  "5599446b7fef054cd43c93c9f1eb829bb1c694cadb9ad9f2f7ab6b710089fa58": {
+    "buildId": "5599446b7fef054cd43c93c9f1eb829bb1c694cadb9ad9f2f7ab6b710089fa58",
     "build": {
-      "img": "tianon/zz-staging:arm64v8-4c358a8b3af85b6c9ce5a94f817483e6740d6f6ec1905084471a0f42fdae4012",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:arm64v8-4c358a8b3af85b6c9ce5a94f817483e6740d6f6ec1905084471a0f42fdae4012@sha256:7cee4920706c6d6b20e12ae441082a04b0e0eac788caa0bab4403bca7dea74f8",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:7cee4920706c6d6b20e12ae441082a04b0e0eac788caa0bab4403bca7dea74f8",
-            "size": 1118,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "arm64v8",
-              "org.opencontainers.image.revision": "051939a57ec8504a1cbe612d5b42b9ea2ed486bc",
-              "org.opencontainers.image.source": "https://github.com/tianon/dockerfiles.git#051939a57ec8504a1cbe612d5b42b9ea2ed486bc:network-toolbox/alpine",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/network-toolbox",
-              "org.opencontainers.image.version": "alpine"
-            },
-            "platform": {
-              "architecture": "arm64",
-              "os": "linux",
-              "variant": "v8"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:arm64v8-4c358a8b3af85b6c9ce5a94f817483e6740d6f6ec1905084471a0f42fdae4012@sha256:5b90501ad6a3696748cc848127891635473307b3faa40e358264e00d2e2cd0bc",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:5b90501ad6a3696748cc848127891635473307b3faa40e358264e00d2e2cd0bc",
-            "size": 1328
-          }
-        }
-      },
+      "img": "tianon/zz-staging:arm64v8-5599446b7fef054cd43c93c9f1eb829bb1c694cadb9ad9f2f7ab6b710089fa58",
+      "resolved": null,
       "sourceId": "4eb7a84d58b8d3941cc620fb5e90b6b11752c22c1024b70bbf9be8769198b271",
       "arch": "arm64v8",
       "parents": {
-        "alpine:3.18": "sha256:6ce9a9a256a3495ae60ab0059ed1c7aee5ee89450477f2223f6ea7f6296df555"
+        "alpine:3.18": "sha256:d4ade3639c27579321046d78cc44ec978cea8357d56932611984f601d27e30ac"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:6ce9a9a256a3495ae60ab0059ed1c7aee5ee89450477f2223f6ea7f6296df555",
+            "ref": "alpine:3.18@sha256:d4ade3639c27579321046d78cc44ec978cea8357d56932611984f601d27e30ac",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:6ce9a9a256a3495ae60ab0059ed1c7aee5ee89450477f2223f6ea7f6296df555",
+              "digest": "sha256:d4ade3639c27579321046d78cc44ec978cea8357d56932611984f601d27e30ac",
               "size": 528,
               "platform": {
                 "architecture": "arm64",
@@ -9323,10 +8815,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -9428,10 +8920,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -9479,51 +8971,23 @@
       }
     }
   },
-  "b2743e4360222720991e71b5db3f5db4bf86162cd5161f456c8dacae0e21d3d0": {
-    "buildId": "b2743e4360222720991e71b5db3f5db4bf86162cd5161f456c8dacae0e21d3d0",
+  "d17739c889adf3888b2940aba194839f89ef17918cdd0ab7d59fc8a86390f59d": {
+    "buildId": "d17739c889adf3888b2940aba194839f89ef17918cdd0ab7d59fc8a86390f59d",
     "build": {
-      "img": "tianon/zz-staging:ppc64le-b2743e4360222720991e71b5db3f5db4bf86162cd5161f456c8dacae0e21d3d0",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:ppc64le-b2743e4360222720991e71b5db3f5db4bf86162cd5161f456c8dacae0e21d3d0@sha256:5a2d7f1cbb66fe03162954f929409c4c317a866481229ae38685f80519e30545",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:5a2d7f1cbb66fe03162954f929409c4c317a866481229ae38685f80519e30545",
-            "size": 1118,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "ppc64le",
-              "org.opencontainers.image.revision": "051939a57ec8504a1cbe612d5b42b9ea2ed486bc",
-              "org.opencontainers.image.source": "https://github.com/tianon/dockerfiles.git#051939a57ec8504a1cbe612d5b42b9ea2ed486bc:network-toolbox/alpine",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/network-toolbox",
-              "org.opencontainers.image.version": "alpine"
-            },
-            "platform": {
-              "architecture": "ppc64le",
-              "os": "linux"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:ppc64le-b2743e4360222720991e71b5db3f5db4bf86162cd5161f456c8dacae0e21d3d0@sha256:c0be5c90ce17f6fcabd013f3742b1b84a42866c31a3dd81f87044db16dbb7ea7",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:c0be5c90ce17f6fcabd013f3742b1b84a42866c31a3dd81f87044db16dbb7ea7",
-            "size": 1330
-          }
-        }
-      },
+      "img": "tianon/zz-staging:ppc64le-d17739c889adf3888b2940aba194839f89ef17918cdd0ab7d59fc8a86390f59d",
+      "resolved": null,
       "sourceId": "4eb7a84d58b8d3941cc620fb5e90b6b11752c22c1024b70bbf9be8769198b271",
       "arch": "ppc64le",
       "parents": {
-        "alpine:3.18": "sha256:39ac038d955f9d66f98b998aa52843493c03f0373888a988f25e5ed039949aff"
+        "alpine:3.18": "sha256:1698bcd6bf339e1578dfb9f0034dff615e3eec8404517045046ecbeb84ad01d6"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:39ac038d955f9d66f98b998aa52843493c03f0373888a988f25e5ed039949aff",
+            "ref": "alpine:3.18@sha256:1698bcd6bf339e1578dfb9f0034dff615e3eec8404517045046ecbeb84ad01d6",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:39ac038d955f9d66f98b998aa52843493c03f0373888a988f25e5ed039949aff",
+              "digest": "sha256:1698bcd6bf339e1578dfb9f0034dff615e3eec8404517045046ecbeb84ad01d6",
               "size": 528,
               "platform": {
                 "architecture": "ppc64le",
@@ -9532,10 +8996,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -9583,51 +9047,23 @@
       }
     }
   },
-  "ed866d2a52dd25857de259444f5261fd1486f31bd8f730e74a3e0ff5e438a3cf": {
-    "buildId": "ed866d2a52dd25857de259444f5261fd1486f31bd8f730e74a3e0ff5e438a3cf",
+  "eaf7f15a91564da718c49e4ee640d64aa5b0aad3f5be1c53e007477e152ea3c9": {
+    "buildId": "eaf7f15a91564da718c49e4ee640d64aa5b0aad3f5be1c53e007477e152ea3c9",
     "build": {
-      "img": "tianon/zz-staging:s390x-ed866d2a52dd25857de259444f5261fd1486f31bd8f730e74a3e0ff5e438a3cf",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:s390x-ed866d2a52dd25857de259444f5261fd1486f31bd8f730e74a3e0ff5e438a3cf@sha256:867af69858ebbb15ccb0453589a6a3501dc3e807db6edc812406c81210507e23",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:867af69858ebbb15ccb0453589a6a3501dc3e807db6edc812406c81210507e23",
-            "size": 1116,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "s390x",
-              "org.opencontainers.image.revision": "051939a57ec8504a1cbe612d5b42b9ea2ed486bc",
-              "org.opencontainers.image.source": "https://github.com/tianon/dockerfiles.git#051939a57ec8504a1cbe612d5b42b9ea2ed486bc:network-toolbox/alpine",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/network-toolbox",
-              "org.opencontainers.image.version": "alpine"
-            },
-            "platform": {
-              "architecture": "s390x",
-              "os": "linux"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:s390x-ed866d2a52dd25857de259444f5261fd1486f31bd8f730e74a3e0ff5e438a3cf@sha256:1506d4b3aa92ec085c215dfef9d95d42c9c665cef5ae4de7f2c37b7bcf7f6467",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:1506d4b3aa92ec085c215dfef9d95d42c9c665cef5ae4de7f2c37b7bcf7f6467",
-            "size": 1326
-          }
-        }
-      },
+      "img": "tianon/zz-staging:s390x-eaf7f15a91564da718c49e4ee640d64aa5b0aad3f5be1c53e007477e152ea3c9",
+      "resolved": null,
       "sourceId": "4eb7a84d58b8d3941cc620fb5e90b6b11752c22c1024b70bbf9be8769198b271",
       "arch": "s390x",
       "parents": {
-        "alpine:3.18": "sha256:4bfee8cb4c809bcb21aa730ce26a2302d3888002ff2d70ec5fd569e7ffdc1a7d"
+        "alpine:3.18": "sha256:5c63479aeed37522de78284d99dcd32f9ad288b04a56236f44e78b3b3f62ebd2"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:4bfee8cb4c809bcb21aa730ce26a2302d3888002ff2d70ec5fd569e7ffdc1a7d",
+            "ref": "alpine:3.18@sha256:5c63479aeed37522de78284d99dcd32f9ad288b04a56236f44e78b3b3f62ebd2",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:4bfee8cb4c809bcb21aa730ce26a2302d3888002ff2d70ec5fd569e7ffdc1a7d",
+              "digest": "sha256:5c63479aeed37522de78284d99dcd32f9ad288b04a56236f44e78b3b3f62ebd2",
               "size": 528,
               "platform": {
                 "architecture": "s390x",
@@ -9636,10 +9072,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -11964,51 +11400,23 @@
       }
     }
   },
-  "0680afb08547271172a14fca53e952e8a32eefda9e4d2101579cdd020bcf9fad": {
-    "buildId": "0680afb08547271172a14fca53e952e8a32eefda9e4d2101579cdd020bcf9fad",
+  "8d00bafb628578ba6eaf372e9ec7e9fe128c46aa647b4197e8532507e62de60b": {
+    "buildId": "8d00bafb628578ba6eaf372e9ec7e9fe128c46aa647b4197e8532507e62de60b",
     "build": {
-      "img": "tianon/zz-staging:amd64-0680afb08547271172a14fca53e952e8a32eefda9e4d2101579cdd020bcf9fad",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:amd64-0680afb08547271172a14fca53e952e8a32eefda9e4d2101579cdd020bcf9fad@sha256:4416a10d63e5e69fb885962468fc0ac07d83f7f6a416137752b957a4b07b8fe7",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:4416a10d63e5e69fb885962468fc0ac07d83f7f6a416137752b957a4b07b8fe7",
-            "size": 1667,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "amd64",
-              "org.opencontainers.image.revision": "b38c09f75aa4ef6365b80a46ae60070acbd1ca55",
-              "org.opencontainers.image.source": "https://github.com/tianon/dockerfiles.git#b38c09f75aa4ef6365b80a46ae60070acbd1ca55:prometheus",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/prometheus",
-              "org.opencontainers.image.version": "2.48.0"
-            },
-            "platform": {
-              "architecture": "amd64",
-              "os": "linux"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:amd64-0680afb08547271172a14fca53e952e8a32eefda9e4d2101579cdd020bcf9fad@sha256:69c49e2328b1d1d39ac5c4ace173cc7e505bb81a418784f032822bec8473689b",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:69c49e2328b1d1d39ac5c4ace173cc7e505bb81a418784f032822bec8473689b",
-            "size": 1309
-          }
-        }
-      },
+      "img": "tianon/zz-staging:amd64-8d00bafb628578ba6eaf372e9ec7e9fe128c46aa647b4197e8532507e62de60b",
+      "resolved": null,
       "sourceId": "42632b5683ca546d5f784bf71d80e5c0ec7f2c6c7706a89cf4bbf9e80d865910",
       "arch": "amd64",
       "parents": {
-        "alpine:3.18": "sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86"
+        "alpine:3.18": "sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86",
+            "ref": "alpine:3.18@sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86",
+              "digest": "sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389",
               "size": 528,
               "platform": {
                 "architecture": "amd64",
@@ -12017,10 +11425,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -12072,51 +11480,23 @@
       }
     }
   },
-  "ff862a08906d9a472b48ef544db1b4b6143342f69b0cd64e4625a486db34f610": {
-    "buildId": "ff862a08906d9a472b48ef544db1b4b6143342f69b0cd64e4625a486db34f610",
+  "70c0c09669b61dd6c3b2255d7eec78ac855e3fa2e198af9e0ca92aa6f5f6b80f": {
+    "buildId": "70c0c09669b61dd6c3b2255d7eec78ac855e3fa2e198af9e0ca92aa6f5f6b80f",
     "build": {
-      "img": "tianon/zz-staging:amd64-ff862a08906d9a472b48ef544db1b4b6143342f69b0cd64e4625a486db34f610",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:amd64-ff862a08906d9a472b48ef544db1b4b6143342f69b0cd64e4625a486db34f610@sha256:935067c5069252846694a0a476dbeb15b0981dcdd4485076c573674ed5b0dc52",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:935067c5069252846694a0a476dbeb15b0981dcdd4485076c573674ed5b0dc52",
-            "size": 1693,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "amd64",
-              "org.opencontainers.image.revision": "a811b8540b32a396e495b58c47f151f580950daf",
-              "org.opencontainers.image.source": "https://github.com/tianon/dockerfiles.git#a811b8540b32a396e495b58c47f151f580950daf:prometheus/alertmanager",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/prometheus",
-              "org.opencontainers.image.version": "alertmanager-0.26.0"
-            },
-            "platform": {
-              "architecture": "amd64",
-              "os": "linux"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:amd64-ff862a08906d9a472b48ef544db1b4b6143342f69b0cd64e4625a486db34f610@sha256:5fc936c78a40c4899b56c3510e72f9a9f1e7834fe1360f33f6dc7b601c6e6470",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:5fc936c78a40c4899b56c3510e72f9a9f1e7834fe1360f33f6dc7b601c6e6470",
-            "size": 1335
-          }
-        }
-      },
+      "img": "tianon/zz-staging:amd64-70c0c09669b61dd6c3b2255d7eec78ac855e3fa2e198af9e0ca92aa6f5f6b80f",
+      "resolved": null,
       "sourceId": "e4c1d8f21423c8d8bdbb40a1f84abb250df3cb391c798ad255a982c812522102",
       "arch": "amd64",
       "parents": {
-        "alpine:3.18": "sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86"
+        "alpine:3.18": "sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86",
+            "ref": "alpine:3.18@sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86",
+              "digest": "sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389",
               "size": 528,
               "platform": {
                 "architecture": "amd64",
@@ -12125,10 +11505,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -12180,51 +11560,23 @@
       }
     }
   },
-  "bdd69bf88098c89ade28d692ed030911eb1cfe87649128d165936e0197a97a19": {
-    "buildId": "bdd69bf88098c89ade28d692ed030911eb1cfe87649128d165936e0197a97a19",
+  "d569088cf278b29da7ffee26a922100d40ac1711cea085df36f020242cc1ab41": {
+    "buildId": "d569088cf278b29da7ffee26a922100d40ac1711cea085df36f020242cc1ab41",
     "build": {
-      "img": "tianon/zz-staging:amd64-bdd69bf88098c89ade28d692ed030911eb1cfe87649128d165936e0197a97a19",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:amd64-bdd69bf88098c89ade28d692ed030911eb1cfe87649128d165936e0197a97a19@sha256:519bf1e98fdf3a6044d3d2396b598fc39da4c84e0046e7008d8d95bd925126f4",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:519bf1e98fdf3a6044d3d2396b598fc39da4c84e0046e7008d8d95bd925126f4",
-            "size": 1514,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "amd64",
-              "org.opencontainers.image.revision": "fe57395fc230a19643a38111018d2bf1eb93d5bf",
-              "org.opencontainers.image.source": "https://github.com/tianon/dockerfiles.git#fe57395fc230a19643a38111018d2bf1eb93d5bf:prometheus/blackbox-exporter",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/prometheus",
-              "org.opencontainers.image.version": "blackbox-exporter-0.24.0"
-            },
-            "platform": {
-              "architecture": "amd64",
-              "os": "linux"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:amd64-bdd69bf88098c89ade28d692ed030911eb1cfe87649128d165936e0197a97a19@sha256:de57cb30a7bb877cebe3bc707661076a11351e8d3ebce12958731066cb2beb2a",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:de57cb30a7bb877cebe3bc707661076a11351e8d3ebce12958731066cb2beb2a",
-            "size": 1345
-          }
-        }
-      },
+      "img": "tianon/zz-staging:amd64-d569088cf278b29da7ffee26a922100d40ac1711cea085df36f020242cc1ab41",
+      "resolved": null,
       "sourceId": "18cae1382118bcff7485a96d0b01bd0cb4fbe85c7bf572b4f8b01d2f4f21b7c7",
       "arch": "amd64",
       "parents": {
-        "alpine:3.18": "sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86"
+        "alpine:3.18": "sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86",
+            "ref": "alpine:3.18@sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86",
+              "digest": "sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389",
               "size": 528,
               "platform": {
                 "architecture": "amd64",
@@ -12233,10 +11585,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -14875,51 +14227,23 @@
       }
     }
   },
-  "9823f4454729d6fdb2daec2e33deca38d2e98146a6ae24e64161203c35d90edc": {
-    "buildId": "9823f4454729d6fdb2daec2e33deca38d2e98146a6ae24e64161203c35d90edc",
+  "d9f48a103a071b9c249e9eb1308afee7269b69fafa8354aa7fc9e5743e035156": {
+    "buildId": "d9f48a103a071b9c249e9eb1308afee7269b69fafa8354aa7fc9e5743e035156",
     "build": {
-      "img": "tianon/zz-staging:amd64-9823f4454729d6fdb2daec2e33deca38d2e98146a6ae24e64161203c35d90edc",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:amd64-9823f4454729d6fdb2daec2e33deca38d2e98146a6ae24e64161203c35d90edc@sha256:9e65abf5f738bb9455a0fd9f6d2afb7a05f46778338c723fa97e84f3840df413",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:9e65abf5f738bb9455a0fd9f6d2afb7a05f46778338c723fa97e84f3840df413",
-            "size": 1283,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "amd64",
-              "org.opencontainers.image.revision": "86b3da9272e1859c33ef1b6d62d32a0a28601366",
-              "org.opencontainers.image.source": "https://github.com/tianon/dockerfiles.git#86b3da9272e1859c33ef1b6d62d32a0a28601366:speedtest",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/speedtest",
-              "org.opencontainers.image.version": "1.2.0"
-            },
-            "platform": {
-              "architecture": "amd64",
-              "os": "linux"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:amd64-9823f4454729d6fdb2daec2e33deca38d2e98146a6ae24e64161203c35d90edc@sha256:af86e59a9adb3066a75aa39c9ba527e0943318e2afa8ee8e8bb40f39576b443d",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:af86e59a9adb3066a75aa39c9ba527e0943318e2afa8ee8e8bb40f39576b443d",
-            "size": 1306
-          }
-        }
-      },
+      "img": "tianon/zz-staging:amd64-d9f48a103a071b9c249e9eb1308afee7269b69fafa8354aa7fc9e5743e035156",
+      "resolved": null,
       "sourceId": "f6fb743515d257456edf2716d3154b39441427bdf0e1ec7ee0b062acd883e5d0",
       "arch": "amd64",
       "parents": {
-        "alpine:3.18": "sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86"
+        "alpine:3.18": "sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86",
+            "ref": "alpine:3.18@sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86",
+              "digest": "sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389",
               "size": 528,
               "platform": {
                 "architecture": "amd64",
@@ -14928,10 +14252,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -14983,37 +14307,23 @@
       }
     }
   },
-  "559870caf5b59b8cb2b11d612bef91b877d74bcf9d589c92b71ea86616140361": {
-    "buildId": "559870caf5b59b8cb2b11d612bef91b877d74bcf9d589c92b71ea86616140361",
+  "3d720e1bd25f44cddd097f7fa42c569b3126a30956eaa89b121e1f3ed7058d2d": {
+    "buildId": "3d720e1bd25f44cddd097f7fa42c569b3126a30956eaa89b121e1f3ed7058d2d",
     "build": {
-      "img": "tianon/zz-staging:arm32v6-559870caf5b59b8cb2b11d612bef91b877d74bcf9d589c92b71ea86616140361",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:arm32v6-559870caf5b59b8cb2b11d612bef91b877d74bcf9d589c92b71ea86616140361@sha256:10377d03f97e236723d1b3c9c63d51371a181d9ff36abb241a6c53656cfb7282",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:10377d03f97e236723d1b3c9c63d51371a181d9ff36abb241a6c53656cfb7282",
-            "size": 861,
-            "platform": {
-              "architecture": "arm",
-              "os": "linux",
-              "variant": "v6"
-            }
-          }
-        }
-      },
+      "img": "tianon/zz-staging:arm32v6-3d720e1bd25f44cddd097f7fa42c569b3126a30956eaa89b121e1f3ed7058d2d",
+      "resolved": null,
       "sourceId": "f6fb743515d257456edf2716d3154b39441427bdf0e1ec7ee0b062acd883e5d0",
       "arch": "arm32v6",
       "parents": {
-        "alpine:3.18": "sha256:777e2106170c66742ddbe77f703badb7dc94d9a5b1dc2c4a01538fad9aef56bb"
+        "alpine:3.18": "sha256:1832ef473ede9a923cc6affdf13b54a1be6561ad2ce3c3684910260a7582d36b"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:777e2106170c66742ddbe77f703badb7dc94d9a5b1dc2c4a01538fad9aef56bb",
+            "ref": "alpine:3.18@sha256:1832ef473ede9a923cc6affdf13b54a1be6561ad2ce3c3684910260a7582d36b",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:777e2106170c66742ddbe77f703badb7dc94d9a5b1dc2c4a01538fad9aef56bb",
+              "digest": "sha256:1832ef473ede9a923cc6affdf13b54a1be6561ad2ce3c3684910260a7582d36b",
               "size": 528,
               "platform": {
                 "architecture": "arm",
@@ -15023,10 +14333,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -15079,52 +14389,23 @@
       }
     }
   },
-  "27e910ec1532245992cde17edfd761bf254dc3de37c43b8822366ae99e4806a0": {
-    "buildId": "27e910ec1532245992cde17edfd761bf254dc3de37c43b8822366ae99e4806a0",
+  "2f72ebfe25825569104852a091bd0558424b348d0d6989afa84eea1059bc1ba0": {
+    "buildId": "2f72ebfe25825569104852a091bd0558424b348d0d6989afa84eea1059bc1ba0",
     "build": {
-      "img": "tianon/zz-staging:arm32v7-27e910ec1532245992cde17edfd761bf254dc3de37c43b8822366ae99e4806a0",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:arm32v7-27e910ec1532245992cde17edfd761bf254dc3de37c43b8822366ae99e4806a0@sha256:80b10414576efcb4de1750a7fb0bf66c0538a3bced4a26efc598ad1e36aa9608",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:80b10414576efcb4de1750a7fb0bf66c0538a3bced4a26efc598ad1e36aa9608",
-            "size": 1285,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "arm32v7",
-              "org.opencontainers.image.revision": "86b3da9272e1859c33ef1b6d62d32a0a28601366",
-              "org.opencontainers.image.source": "https://github.com/tianon/dockerfiles.git#86b3da9272e1859c33ef1b6d62d32a0a28601366:speedtest",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/speedtest",
-              "org.opencontainers.image.version": "1.2.0"
-            },
-            "platform": {
-              "architecture": "arm",
-              "os": "linux",
-              "variant": "v7"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:arm32v7-27e910ec1532245992cde17edfd761bf254dc3de37c43b8822366ae99e4806a0@sha256:c7e46c0360b028924d7656390762f8aa1fee30ab7d1ac5e112ea71cadb50d1ea",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:c7e46c0360b028924d7656390762f8aa1fee30ab7d1ac5e112ea71cadb50d1ea",
-            "size": 1331
-          }
-        }
-      },
+      "img": "tianon/zz-staging:arm32v7-2f72ebfe25825569104852a091bd0558424b348d0d6989afa84eea1059bc1ba0",
+      "resolved": null,
       "sourceId": "f6fb743515d257456edf2716d3154b39441427bdf0e1ec7ee0b062acd883e5d0",
       "arch": "arm32v7",
       "parents": {
-        "alpine:3.18": "sha256:9909a171ac287c316f771a4f1d1384df96957ed772bc39caf6deb6e3e360316f"
+        "alpine:3.18": "sha256:211fe64069acea47ea680c0943b5a77be1819d0e85365011595391f7562caf27"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:9909a171ac287c316f771a4f1d1384df96957ed772bc39caf6deb6e3e360316f",
+            "ref": "alpine:3.18@sha256:211fe64069acea47ea680c0943b5a77be1819d0e85365011595391f7562caf27",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:9909a171ac287c316f771a4f1d1384df96957ed772bc39caf6deb6e3e360316f",
+              "digest": "sha256:211fe64069acea47ea680c0943b5a77be1819d0e85365011595391f7562caf27",
               "size": 528,
               "platform": {
                 "architecture": "arm",
@@ -15134,10 +14415,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -15190,52 +14471,23 @@
       }
     }
   },
-  "5bce14922bcc86d82b6b85226db0870919303b9d4a8e401c20735231bcc60b2f": {
-    "buildId": "5bce14922bcc86d82b6b85226db0870919303b9d4a8e401c20735231bcc60b2f",
+  "bdab14e6920956ad34ac7cffdd579a648a66fdadf7b726d11b102e9068a9b70f": {
+    "buildId": "bdab14e6920956ad34ac7cffdd579a648a66fdadf7b726d11b102e9068a9b70f",
     "build": {
-      "img": "tianon/zz-staging:arm64v8-5bce14922bcc86d82b6b85226db0870919303b9d4a8e401c20735231bcc60b2f",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:arm64v8-5bce14922bcc86d82b6b85226db0870919303b9d4a8e401c20735231bcc60b2f@sha256:c1edbc80562c605c7739c311c66221cd8c2cece3ee3e7638d62613c4d088f49e",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:c1edbc80562c605c7739c311c66221cd8c2cece3ee3e7638d62613c4d088f49e",
-            "size": 1285,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "arm64v8",
-              "org.opencontainers.image.revision": "86b3da9272e1859c33ef1b6d62d32a0a28601366",
-              "org.opencontainers.image.source": "https://github.com/tianon/dockerfiles.git#86b3da9272e1859c33ef1b6d62d32a0a28601366:speedtest",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/speedtest",
-              "org.opencontainers.image.version": "1.2.0"
-            },
-            "platform": {
-              "architecture": "arm64",
-              "os": "linux",
-              "variant": "v8"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:arm64v8-5bce14922bcc86d82b6b85226db0870919303b9d4a8e401c20735231bcc60b2f@sha256:b8f41535116e7db973d4746cbc830f6357720b274618b9d2b6e743a29199b846",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:b8f41535116e7db973d4746cbc830f6357720b274618b9d2b6e743a29199b846",
-            "size": 1308
-          }
-        }
-      },
+      "img": "tianon/zz-staging:arm64v8-bdab14e6920956ad34ac7cffdd579a648a66fdadf7b726d11b102e9068a9b70f",
+      "resolved": null,
       "sourceId": "f6fb743515d257456edf2716d3154b39441427bdf0e1ec7ee0b062acd883e5d0",
       "arch": "arm64v8",
       "parents": {
-        "alpine:3.18": "sha256:6ce9a9a256a3495ae60ab0059ed1c7aee5ee89450477f2223f6ea7f6296df555"
+        "alpine:3.18": "sha256:d4ade3639c27579321046d78cc44ec978cea8357d56932611984f601d27e30ac"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:6ce9a9a256a3495ae60ab0059ed1c7aee5ee89450477f2223f6ea7f6296df555",
+            "ref": "alpine:3.18@sha256:d4ade3639c27579321046d78cc44ec978cea8357d56932611984f601d27e30ac",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:6ce9a9a256a3495ae60ab0059ed1c7aee5ee89450477f2223f6ea7f6296df555",
+              "digest": "sha256:d4ade3639c27579321046d78cc44ec978cea8357d56932611984f601d27e30ac",
               "size": 528,
               "platform": {
                 "architecture": "arm64",
@@ -15245,10 +14497,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -15354,10 +14606,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -15462,10 +14714,10 @@
             }
           },
           "index": {
-            "ref": "nginx:alpine@sha256:db353d0f0c479c91bd15e01fc68ed0f33d9c4c52f3415e63332c3d0bf7a4bb77",
+            "ref": "nginx:alpine@sha256:7ff6328df2ec44ddbdea027add0ed4a63dbc38d27d3f4f6b5b5b08d484d5297d",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:db353d0f0c479c91bd15e01fc68ed0f33d9c4c52f3415e63332c3d0bf7a4bb77",
+              "digest": "sha256:7ff6328df2ec44ddbdea027add0ed4a63dbc38d27d3f4f6b5b5b08d484d5297d",
               "size": 1645
             }
           }
@@ -15621,51 +14873,23 @@
       }
     }
   },
-  "bce2ac10645e8b96f7827e5503b6e21fc286c0ea1b06a78d7aa078e88e3b6744": {
-    "buildId": "bce2ac10645e8b96f7827e5503b6e21fc286c0ea1b06a78d7aa078e88e3b6744",
+  "846e1f41371e7bb785aed41620099393a2a045e83f43390e5155bb0b3ddd5a7e": {
+    "buildId": "846e1f41371e7bb785aed41620099393a2a045e83f43390e5155bb0b3ddd5a7e",
     "build": {
-      "img": "tianon/zz-staging:amd64-bce2ac10645e8b96f7827e5503b6e21fc286c0ea1b06a78d7aa078e88e3b6744",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:amd64-bce2ac10645e8b96f7827e5503b6e21fc286c0ea1b06a78d7aa078e88e3b6744@sha256:37d81bb782b8f20c3c9061051cb0939a0ad9e6c4df3f07c6b67f53a5b382c44c",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:37d81bb782b8f20c3c9061051cb0939a0ad9e6c4df3f07c6b67f53a5b382c44c",
-            "size": 1291,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "amd64",
-              "org.opencontainers.image.revision": "f344047799407d38a611ab0f47bb647cda9cc2ca",
-              "org.opencontainers.image.source": "https://github.com/tianon/docker-syncthing.git#f344047799407d38a611ab0f47bb647cda9cc2ca:1-rc",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/syncthing",
-              "org.opencontainers.image.version": "1.27.0-rc.2"
-            },
-            "platform": {
-              "architecture": "amd64",
-              "os": "linux"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:amd64-bce2ac10645e8b96f7827e5503b6e21fc286c0ea1b06a78d7aa078e88e3b6744@sha256:fa4b686bb125ff0a8822898eebcffc1b3d5a14dc396cef171a4748b3b175cfeb",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:fa4b686bb125ff0a8822898eebcffc1b3d5a14dc396cef171a4748b3b175cfeb",
-            "size": 1312
-          }
-        }
-      },
+      "img": "tianon/zz-staging:amd64-846e1f41371e7bb785aed41620099393a2a045e83f43390e5155bb0b3ddd5a7e",
+      "resolved": null,
       "sourceId": "2fbbf0178f267f8504077528e3a0a07ecaa3c8c99b7e8c33708509c50267d6c4",
       "arch": "amd64",
       "parents": {
-        "alpine:3.18": "sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86"
+        "alpine:3.18": "sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86",
+            "ref": "alpine:3.18@sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86",
+              "digest": "sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389",
               "size": 528,
               "platform": {
                 "architecture": "amd64",
@@ -15674,10 +14898,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -15727,37 +14951,23 @@
       }
     }
   },
-  "5eec02058faff06cb1c121a694c37c8abbc3bd7751ee3a51f3314cdb4418f17c": {
-    "buildId": "5eec02058faff06cb1c121a694c37c8abbc3bd7751ee3a51f3314cdb4418f17c",
+  "a9d6af0d3527cfe420b5de20e5976e784a17620356f8081bc8e08ed416b6953b": {
+    "buildId": "a9d6af0d3527cfe420b5de20e5976e784a17620356f8081bc8e08ed416b6953b",
     "build": {
-      "img": "tianon/zz-staging:arm32v6-5eec02058faff06cb1c121a694c37c8abbc3bd7751ee3a51f3314cdb4418f17c",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:arm32v6-5eec02058faff06cb1c121a694c37c8abbc3bd7751ee3a51f3314cdb4418f17c@sha256:da6287dfc140c3f7cea708bba429e7ca8eb6c72a23ef3e8cbe9116e36e8eebaf",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:da6287dfc140c3f7cea708bba429e7ca8eb6c72a23ef3e8cbe9116e36e8eebaf",
-            "size": 863,
-            "platform": {
-              "architecture": "arm",
-              "os": "linux",
-              "variant": "v6"
-            }
-          }
-        }
-      },
+      "img": "tianon/zz-staging:arm32v6-a9d6af0d3527cfe420b5de20e5976e784a17620356f8081bc8e08ed416b6953b",
+      "resolved": null,
       "sourceId": "2fbbf0178f267f8504077528e3a0a07ecaa3c8c99b7e8c33708509c50267d6c4",
       "arch": "arm32v6",
       "parents": {
-        "alpine:3.18": "sha256:777e2106170c66742ddbe77f703badb7dc94d9a5b1dc2c4a01538fad9aef56bb"
+        "alpine:3.18": "sha256:1832ef473ede9a923cc6affdf13b54a1be6561ad2ce3c3684910260a7582d36b"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:777e2106170c66742ddbe77f703badb7dc94d9a5b1dc2c4a01538fad9aef56bb",
+            "ref": "alpine:3.18@sha256:1832ef473ede9a923cc6affdf13b54a1be6561ad2ce3c3684910260a7582d36b",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:777e2106170c66742ddbe77f703badb7dc94d9a5b1dc2c4a01538fad9aef56bb",
+              "digest": "sha256:1832ef473ede9a923cc6affdf13b54a1be6561ad2ce3c3684910260a7582d36b",
               "size": 528,
               "platform": {
                 "architecture": "arm",
@@ -15767,10 +14977,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -15821,52 +15031,23 @@
       }
     }
   },
-  "09dff2740c2b05d904976bfb138f94b9e97354f005f77ba0812190ece9530778": {
-    "buildId": "09dff2740c2b05d904976bfb138f94b9e97354f005f77ba0812190ece9530778",
+  "333fe0f1060a5864ac5c17a1e8f7ea376a494d6091d53e3f6a55a94efc0c126c": {
+    "buildId": "333fe0f1060a5864ac5c17a1e8f7ea376a494d6091d53e3f6a55a94efc0c126c",
     "build": {
-      "img": "tianon/zz-staging:arm32v7-09dff2740c2b05d904976bfb138f94b9e97354f005f77ba0812190ece9530778",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:arm32v7-09dff2740c2b05d904976bfb138f94b9e97354f005f77ba0812190ece9530778@sha256:9671322b1fcfcb55da23ee2afe3b9a0045bf996a78c66cf598fc4625d6815215",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:9671322b1fcfcb55da23ee2afe3b9a0045bf996a78c66cf598fc4625d6815215",
-            "size": 1293,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "arm32v7",
-              "org.opencontainers.image.revision": "f344047799407d38a611ab0f47bb647cda9cc2ca",
-              "org.opencontainers.image.source": "https://github.com/tianon/docker-syncthing.git#f344047799407d38a611ab0f47bb647cda9cc2ca:1-rc",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/syncthing",
-              "org.opencontainers.image.version": "1.27.0-rc.2"
-            },
-            "platform": {
-              "architecture": "arm",
-              "os": "linux",
-              "variant": "v7"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:arm32v7-09dff2740c2b05d904976bfb138f94b9e97354f005f77ba0812190ece9530778@sha256:930f52c5cc954cdba8e0877bf8496ba1592f1f104d091538617f00a80f96d823",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:930f52c5cc954cdba8e0877bf8496ba1592f1f104d091538617f00a80f96d823",
-            "size": 1337
-          }
-        }
-      },
+      "img": "tianon/zz-staging:arm32v7-333fe0f1060a5864ac5c17a1e8f7ea376a494d6091d53e3f6a55a94efc0c126c",
+      "resolved": null,
       "sourceId": "2fbbf0178f267f8504077528e3a0a07ecaa3c8c99b7e8c33708509c50267d6c4",
       "arch": "arm32v7",
       "parents": {
-        "alpine:3.18": "sha256:9909a171ac287c316f771a4f1d1384df96957ed772bc39caf6deb6e3e360316f"
+        "alpine:3.18": "sha256:211fe64069acea47ea680c0943b5a77be1819d0e85365011595391f7562caf27"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:9909a171ac287c316f771a4f1d1384df96957ed772bc39caf6deb6e3e360316f",
+            "ref": "alpine:3.18@sha256:211fe64069acea47ea680c0943b5a77be1819d0e85365011595391f7562caf27",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:9909a171ac287c316f771a4f1d1384df96957ed772bc39caf6deb6e3e360316f",
+              "digest": "sha256:211fe64069acea47ea680c0943b5a77be1819d0e85365011595391f7562caf27",
               "size": 528,
               "platform": {
                 "architecture": "arm",
@@ -15876,10 +15057,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -15930,52 +15111,23 @@
       }
     }
   },
-  "fafd8d1c62d94c123153bbab661636b46fc264ecbaaecc793f53b10e70c89e0d": {
-    "buildId": "fafd8d1c62d94c123153bbab661636b46fc264ecbaaecc793f53b10e70c89e0d",
+  "eb2a1ca5a2073891ed402314e83bd2807612d00cb7a98939dffdf6a02698237c": {
+    "buildId": "eb2a1ca5a2073891ed402314e83bd2807612d00cb7a98939dffdf6a02698237c",
     "build": {
-      "img": "tianon/zz-staging:arm64v8-fafd8d1c62d94c123153bbab661636b46fc264ecbaaecc793f53b10e70c89e0d",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:arm64v8-fafd8d1c62d94c123153bbab661636b46fc264ecbaaecc793f53b10e70c89e0d@sha256:113e4ee7cdcd65166a81b04d56a52c16ddf0d8b1487546252b0fc744d98b7bfd",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:113e4ee7cdcd65166a81b04d56a52c16ddf0d8b1487546252b0fc744d98b7bfd",
-            "size": 1292,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "arm64v8",
-              "org.opencontainers.image.revision": "f344047799407d38a611ab0f47bb647cda9cc2ca",
-              "org.opencontainers.image.source": "https://github.com/tianon/docker-syncthing.git#f344047799407d38a611ab0f47bb647cda9cc2ca:1-rc",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/syncthing",
-              "org.opencontainers.image.version": "1.27.0-rc.2"
-            },
-            "platform": {
-              "architecture": "arm64",
-              "os": "linux",
-              "variant": "v8"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:arm64v8-fafd8d1c62d94c123153bbab661636b46fc264ecbaaecc793f53b10e70c89e0d@sha256:d2f590bee8fd27d0abcdce7047f81fa1f6c12f804aab3c28c6d4734581224ea1",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:d2f590bee8fd27d0abcdce7047f81fa1f6c12f804aab3c28c6d4734581224ea1",
-            "size": 1314
-          }
-        }
-      },
+      "img": "tianon/zz-staging:arm64v8-eb2a1ca5a2073891ed402314e83bd2807612d00cb7a98939dffdf6a02698237c",
+      "resolved": null,
       "sourceId": "2fbbf0178f267f8504077528e3a0a07ecaa3c8c99b7e8c33708509c50267d6c4",
       "arch": "arm64v8",
       "parents": {
-        "alpine:3.18": "sha256:6ce9a9a256a3495ae60ab0059ed1c7aee5ee89450477f2223f6ea7f6296df555"
+        "alpine:3.18": "sha256:d4ade3639c27579321046d78cc44ec978cea8357d56932611984f601d27e30ac"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:6ce9a9a256a3495ae60ab0059ed1c7aee5ee89450477f2223f6ea7f6296df555",
+            "ref": "alpine:3.18@sha256:d4ade3639c27579321046d78cc44ec978cea8357d56932611984f601d27e30ac",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:6ce9a9a256a3495ae60ab0059ed1c7aee5ee89450477f2223f6ea7f6296df555",
+              "digest": "sha256:d4ade3639c27579321046d78cc44ec978cea8357d56932611984f601d27e30ac",
               "size": 528,
               "platform": {
                 "architecture": "arm64",
@@ -15985,10 +15137,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -16092,10 +15244,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -16145,51 +15297,23 @@
       }
     }
   },
-  "5f6afda1aaeebb5752c4a170029730d45dcf1216ab043530fa30ea7aef6514be": {
-    "buildId": "5f6afda1aaeebb5752c4a170029730d45dcf1216ab043530fa30ea7aef6514be",
+  "675f6d9d960a4e70bd7b037c2e386015a65b82f06b6f65859cc091dfb02a8dd9": {
+    "buildId": "675f6d9d960a4e70bd7b037c2e386015a65b82f06b6f65859cc091dfb02a8dd9",
     "build": {
-      "img": "tianon/zz-staging:ppc64le-5f6afda1aaeebb5752c4a170029730d45dcf1216ab043530fa30ea7aef6514be",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:ppc64le-5f6afda1aaeebb5752c4a170029730d45dcf1216ab043530fa30ea7aef6514be@sha256:3242620d880f2943e08bc0d84f60e3d676867f9f4596f6a76acb60b9623adab3",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:3242620d880f2943e08bc0d84f60e3d676867f9f4596f6a76acb60b9623adab3",
-            "size": 1292,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "ppc64le",
-              "org.opencontainers.image.revision": "f344047799407d38a611ab0f47bb647cda9cc2ca",
-              "org.opencontainers.image.source": "https://github.com/tianon/docker-syncthing.git#f344047799407d38a611ab0f47bb647cda9cc2ca:1-rc",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/syncthing",
-              "org.opencontainers.image.version": "1.27.0-rc.2"
-            },
-            "platform": {
-              "architecture": "ppc64le",
-              "os": "linux"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:ppc64le-5f6afda1aaeebb5752c4a170029730d45dcf1216ab043530fa30ea7aef6514be@sha256:055662ee3f14eacd916c629c3b3f877638e628cfe632f0e62e69c1363064281f",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:055662ee3f14eacd916c629c3b3f877638e628cfe632f0e62e69c1363064281f",
-            "size": 1316
-          }
-        }
-      },
+      "img": "tianon/zz-staging:ppc64le-675f6d9d960a4e70bd7b037c2e386015a65b82f06b6f65859cc091dfb02a8dd9",
+      "resolved": null,
       "sourceId": "2fbbf0178f267f8504077528e3a0a07ecaa3c8c99b7e8c33708509c50267d6c4",
       "arch": "ppc64le",
       "parents": {
-        "alpine:3.18": "sha256:39ac038d955f9d66f98b998aa52843493c03f0373888a988f25e5ed039949aff"
+        "alpine:3.18": "sha256:1698bcd6bf339e1578dfb9f0034dff615e3eec8404517045046ecbeb84ad01d6"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:39ac038d955f9d66f98b998aa52843493c03f0373888a988f25e5ed039949aff",
+            "ref": "alpine:3.18@sha256:1698bcd6bf339e1578dfb9f0034dff615e3eec8404517045046ecbeb84ad01d6",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:39ac038d955f9d66f98b998aa52843493c03f0373888a988f25e5ed039949aff",
+              "digest": "sha256:1698bcd6bf339e1578dfb9f0034dff615e3eec8404517045046ecbeb84ad01d6",
               "size": 528,
               "platform": {
                 "architecture": "ppc64le",
@@ -16198,10 +15322,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -16251,51 +15375,23 @@
       }
     }
   },
-  "465d24753efc671764d97efb3e702ad3960dfafafca9b6a8578c372007cc612b": {
-    "buildId": "465d24753efc671764d97efb3e702ad3960dfafafca9b6a8578c372007cc612b",
+  "4292d4b485cadeacae60e7a9ded35ea8055066fd7a38e18563820ba49e4a5392": {
+    "buildId": "4292d4b485cadeacae60e7a9ded35ea8055066fd7a38e18563820ba49e4a5392",
     "build": {
-      "img": "tianon/zz-staging:s390x-465d24753efc671764d97efb3e702ad3960dfafafca9b6a8578c372007cc612b",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:s390x-465d24753efc671764d97efb3e702ad3960dfafafca9b6a8578c372007cc612b@sha256:855e1031c95a1e7dd7edc850926e09887205d0fa2c9ebea15abb88a18a475a24",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:855e1031c95a1e7dd7edc850926e09887205d0fa2c9ebea15abb88a18a475a24",
-            "size": 1291,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "s390x",
-              "org.opencontainers.image.revision": "f344047799407d38a611ab0f47bb647cda9cc2ca",
-              "org.opencontainers.image.source": "https://github.com/tianon/docker-syncthing.git#f344047799407d38a611ab0f47bb647cda9cc2ca:1-rc",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/syncthing",
-              "org.opencontainers.image.version": "1.27.0-rc.2"
-            },
-            "platform": {
-              "architecture": "s390x",
-              "os": "linux"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:s390x-465d24753efc671764d97efb3e702ad3960dfafafca9b6a8578c372007cc612b@sha256:e95940f64fe7099b6ecc8dd309bd0c64cdc4884b5f55bdc2e55b4e5339a313b0",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:e95940f64fe7099b6ecc8dd309bd0c64cdc4884b5f55bdc2e55b4e5339a313b0",
-            "size": 1312
-          }
-        }
-      },
+      "img": "tianon/zz-staging:s390x-4292d4b485cadeacae60e7a9ded35ea8055066fd7a38e18563820ba49e4a5392",
+      "resolved": null,
       "sourceId": "2fbbf0178f267f8504077528e3a0a07ecaa3c8c99b7e8c33708509c50267d6c4",
       "arch": "s390x",
       "parents": {
-        "alpine:3.18": "sha256:4bfee8cb4c809bcb21aa730ce26a2302d3888002ff2d70ec5fd569e7ffdc1a7d"
+        "alpine:3.18": "sha256:5c63479aeed37522de78284d99dcd32f9ad288b04a56236f44e78b3b3f62ebd2"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:4bfee8cb4c809bcb21aa730ce26a2302d3888002ff2d70ec5fd569e7ffdc1a7d",
+            "ref": "alpine:3.18@sha256:5c63479aeed37522de78284d99dcd32f9ad288b04a56236f44e78b3b3f62ebd2",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:4bfee8cb4c809bcb21aa730ce26a2302d3888002ff2d70ec5fd569e7ffdc1a7d",
+              "digest": "sha256:5c63479aeed37522de78284d99dcd32f9ad288b04a56236f44e78b3b3f62ebd2",
               "size": 528,
               "platform": {
                 "architecture": "s390x",
@@ -16304,10 +15400,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -16357,51 +15453,23 @@
       }
     }
   },
-  "8243e60c3da727d2c6f0630dda1773dfbc6f6e2fb2a2b0d7150142f1fd8f1d4e": {
-    "buildId": "8243e60c3da727d2c6f0630dda1773dfbc6f6e2fb2a2b0d7150142f1fd8f1d4e",
+  "1cdb4d30ca3697cddb0540b018c117e839b8b4fb820535b0c1a0e71be15eeed2": {
+    "buildId": "1cdb4d30ca3697cddb0540b018c117e839b8b4fb820535b0c1a0e71be15eeed2",
     "build": {
-      "img": "tianon/zz-staging:amd64-8243e60c3da727d2c6f0630dda1773dfbc6f6e2fb2a2b0d7150142f1fd8f1d4e",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:amd64-8243e60c3da727d2c6f0630dda1773dfbc6f6e2fb2a2b0d7150142f1fd8f1d4e@sha256:3be3696b605a179fdb86cc0cfe177d9cf8baf70047501c972bfa3f1fc7a21d61",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:3be3696b605a179fdb86cc0cfe177d9cf8baf70047501c972bfa3f1fc7a21d61",
-            "size": 1283,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "amd64",
-              "org.opencontainers.image.revision": "5c225c598e3d912aacaa7af5f3f2b35823ca8347",
-              "org.opencontainers.image.source": "https://github.com/tianon/docker-syncthing.git#5c225c598e3d912aacaa7af5f3f2b35823ca8347:1",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/syncthing",
-              "org.opencontainers.image.version": "1.26.1"
-            },
-            "platform": {
-              "architecture": "amd64",
-              "os": "linux"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:amd64-8243e60c3da727d2c6f0630dda1773dfbc6f6e2fb2a2b0d7150142f1fd8f1d4e@sha256:191eddfebadfa14f68d3d5651e13e034bb5020553aec7e6ad8e972f156dd9510",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:191eddfebadfa14f68d3d5651e13e034bb5020553aec7e6ad8e972f156dd9510",
-            "size": 1304
-          }
-        }
-      },
+      "img": "tianon/zz-staging:amd64-1cdb4d30ca3697cddb0540b018c117e839b8b4fb820535b0c1a0e71be15eeed2",
+      "resolved": null,
       "sourceId": "78e7c298cd9c5ed36a39bb4694d2eeac084cc21cd251929146b64af0a11369f6",
       "arch": "amd64",
       "parents": {
-        "alpine:3.18": "sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86"
+        "alpine:3.18": "sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86",
+            "ref": "alpine:3.18@sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86",
+              "digest": "sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389",
               "size": 528,
               "platform": {
                 "architecture": "amd64",
@@ -16410,10 +15478,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -16465,37 +15533,23 @@
       }
     }
   },
-  "a294e3ecf92eeb109b3c7845edd78d83229e5a52c16bfc50cf646e77eeb1a2b4": {
-    "buildId": "a294e3ecf92eeb109b3c7845edd78d83229e5a52c16bfc50cf646e77eeb1a2b4",
+  "daa6bb581763ff8488b4fbcb3b878353a6f738b56e1d1f94c6e735e80898f2b3": {
+    "buildId": "daa6bb581763ff8488b4fbcb3b878353a6f738b56e1d1f94c6e735e80898f2b3",
     "build": {
-      "img": "tianon/zz-staging:arm32v6-a294e3ecf92eeb109b3c7845edd78d83229e5a52c16bfc50cf646e77eeb1a2b4",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:arm32v6-a294e3ecf92eeb109b3c7845edd78d83229e5a52c16bfc50cf646e77eeb1a2b4@sha256:f03d98bce86a8218be1a67dd8a01e352c61201d0ba389aafb88ef74b47abd2ae",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:f03d98bce86a8218be1a67dd8a01e352c61201d0ba389aafb88ef74b47abd2ae",
-            "size": 863,
-            "platform": {
-              "architecture": "arm",
-              "os": "linux",
-              "variant": "v6"
-            }
-          }
-        }
-      },
+      "img": "tianon/zz-staging:arm32v6-daa6bb581763ff8488b4fbcb3b878353a6f738b56e1d1f94c6e735e80898f2b3",
+      "resolved": null,
       "sourceId": "78e7c298cd9c5ed36a39bb4694d2eeac084cc21cd251929146b64af0a11369f6",
       "arch": "arm32v6",
       "parents": {
-        "alpine:3.18": "sha256:777e2106170c66742ddbe77f703badb7dc94d9a5b1dc2c4a01538fad9aef56bb"
+        "alpine:3.18": "sha256:1832ef473ede9a923cc6affdf13b54a1be6561ad2ce3c3684910260a7582d36b"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:777e2106170c66742ddbe77f703badb7dc94d9a5b1dc2c4a01538fad9aef56bb",
+            "ref": "alpine:3.18@sha256:1832ef473ede9a923cc6affdf13b54a1be6561ad2ce3c3684910260a7582d36b",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:777e2106170c66742ddbe77f703badb7dc94d9a5b1dc2c4a01538fad9aef56bb",
+              "digest": "sha256:1832ef473ede9a923cc6affdf13b54a1be6561ad2ce3c3684910260a7582d36b",
               "size": 528,
               "platform": {
                 "architecture": "arm",
@@ -16505,10 +15559,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -16561,52 +15615,23 @@
       }
     }
   },
-  "aa75fae8c0ab408601839dc762910775d8ac71a6ca70ba28def1b511fad8d30c": {
-    "buildId": "aa75fae8c0ab408601839dc762910775d8ac71a6ca70ba28def1b511fad8d30c",
+  "e6038fa48d51b3dfc4e318016e91dee71f7a6cead49bc7871bee6c91a4f3ca24": {
+    "buildId": "e6038fa48d51b3dfc4e318016e91dee71f7a6cead49bc7871bee6c91a4f3ca24",
     "build": {
-      "img": "tianon/zz-staging:arm32v7-aa75fae8c0ab408601839dc762910775d8ac71a6ca70ba28def1b511fad8d30c",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:arm32v7-aa75fae8c0ab408601839dc762910775d8ac71a6ca70ba28def1b511fad8d30c@sha256:dc291628b3062a6c44e99207af9ec70f05f735a9180706085d4a5fe004d397f1",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:dc291628b3062a6c44e99207af9ec70f05f735a9180706085d4a5fe004d397f1",
-            "size": 1285,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "arm32v7",
-              "org.opencontainers.image.revision": "5c225c598e3d912aacaa7af5f3f2b35823ca8347",
-              "org.opencontainers.image.source": "https://github.com/tianon/docker-syncthing.git#5c225c598e3d912aacaa7af5f3f2b35823ca8347:1",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/syncthing",
-              "org.opencontainers.image.version": "1.26.1"
-            },
-            "platform": {
-              "architecture": "arm",
-              "os": "linux",
-              "variant": "v7"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:arm32v7-aa75fae8c0ab408601839dc762910775d8ac71a6ca70ba28def1b511fad8d30c@sha256:ea4c8715324b3f03030bc251fa37ba468731adc08b5759550ac01d615d0e0193",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:ea4c8715324b3f03030bc251fa37ba468731adc08b5759550ac01d615d0e0193",
-            "size": 1329
-          }
-        }
-      },
+      "img": "tianon/zz-staging:arm32v7-e6038fa48d51b3dfc4e318016e91dee71f7a6cead49bc7871bee6c91a4f3ca24",
+      "resolved": null,
       "sourceId": "78e7c298cd9c5ed36a39bb4694d2eeac084cc21cd251929146b64af0a11369f6",
       "arch": "arm32v7",
       "parents": {
-        "alpine:3.18": "sha256:9909a171ac287c316f771a4f1d1384df96957ed772bc39caf6deb6e3e360316f"
+        "alpine:3.18": "sha256:211fe64069acea47ea680c0943b5a77be1819d0e85365011595391f7562caf27"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:9909a171ac287c316f771a4f1d1384df96957ed772bc39caf6deb6e3e360316f",
+            "ref": "alpine:3.18@sha256:211fe64069acea47ea680c0943b5a77be1819d0e85365011595391f7562caf27",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:9909a171ac287c316f771a4f1d1384df96957ed772bc39caf6deb6e3e360316f",
+              "digest": "sha256:211fe64069acea47ea680c0943b5a77be1819d0e85365011595391f7562caf27",
               "size": 528,
               "platform": {
                 "architecture": "arm",
@@ -16616,10 +15641,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -16672,52 +15697,23 @@
       }
     }
   },
-  "3c2c01fcc8dd56cd2630748a48d59ea7096e761c7d311fe00f2d833ff65ae1e7": {
-    "buildId": "3c2c01fcc8dd56cd2630748a48d59ea7096e761c7d311fe00f2d833ff65ae1e7",
+  "d52acc4769fe5c03a299086ab457634c5a0ce4c770294f9d058b23d716ab44bd": {
+    "buildId": "d52acc4769fe5c03a299086ab457634c5a0ce4c770294f9d058b23d716ab44bd",
     "build": {
-      "img": "tianon/zz-staging:arm64v8-3c2c01fcc8dd56cd2630748a48d59ea7096e761c7d311fe00f2d833ff65ae1e7",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:arm64v8-3c2c01fcc8dd56cd2630748a48d59ea7096e761c7d311fe00f2d833ff65ae1e7@sha256:bd797e1eea197198d15525e4ebc473537b8da50f3596914ce60f68fc50c2d114",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:bd797e1eea197198d15525e4ebc473537b8da50f3596914ce60f68fc50c2d114",
-            "size": 1284,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "arm64v8",
-              "org.opencontainers.image.revision": "5c225c598e3d912aacaa7af5f3f2b35823ca8347",
-              "org.opencontainers.image.source": "https://github.com/tianon/docker-syncthing.git#5c225c598e3d912aacaa7af5f3f2b35823ca8347:1",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/syncthing",
-              "org.opencontainers.image.version": "1.26.1"
-            },
-            "platform": {
-              "architecture": "arm64",
-              "os": "linux",
-              "variant": "v8"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:arm64v8-3c2c01fcc8dd56cd2630748a48d59ea7096e761c7d311fe00f2d833ff65ae1e7@sha256:8408b12f6c3d9f4eb5508b28dd15ce18eee93754fa85008ef5b7f2c8e76d6b96",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:8408b12f6c3d9f4eb5508b28dd15ce18eee93754fa85008ef5b7f2c8e76d6b96",
-            "size": 1306
-          }
-        }
-      },
+      "img": "tianon/zz-staging:arm64v8-d52acc4769fe5c03a299086ab457634c5a0ce4c770294f9d058b23d716ab44bd",
+      "resolved": null,
       "sourceId": "78e7c298cd9c5ed36a39bb4694d2eeac084cc21cd251929146b64af0a11369f6",
       "arch": "arm64v8",
       "parents": {
-        "alpine:3.18": "sha256:6ce9a9a256a3495ae60ab0059ed1c7aee5ee89450477f2223f6ea7f6296df555"
+        "alpine:3.18": "sha256:d4ade3639c27579321046d78cc44ec978cea8357d56932611984f601d27e30ac"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:6ce9a9a256a3495ae60ab0059ed1c7aee5ee89450477f2223f6ea7f6296df555",
+            "ref": "alpine:3.18@sha256:d4ade3639c27579321046d78cc44ec978cea8357d56932611984f601d27e30ac",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:6ce9a9a256a3495ae60ab0059ed1c7aee5ee89450477f2223f6ea7f6296df555",
+              "digest": "sha256:d4ade3639c27579321046d78cc44ec978cea8357d56932611984f601d27e30ac",
               "size": 528,
               "platform": {
                 "architecture": "arm64",
@@ -16727,10 +15723,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -16836,10 +15832,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -16891,51 +15887,23 @@
       }
     }
   },
-  "88a83d066632768f40e5efd9abebd327d1eded2602afb9de9ebb1115d6acd7b4": {
-    "buildId": "88a83d066632768f40e5efd9abebd327d1eded2602afb9de9ebb1115d6acd7b4",
+  "8f917ca78f95ef450d1febcea290b33815f4584fe5020cfcc783fbe492d66561": {
+    "buildId": "8f917ca78f95ef450d1febcea290b33815f4584fe5020cfcc783fbe492d66561",
     "build": {
-      "img": "tianon/zz-staging:ppc64le-88a83d066632768f40e5efd9abebd327d1eded2602afb9de9ebb1115d6acd7b4",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:ppc64le-88a83d066632768f40e5efd9abebd327d1eded2602afb9de9ebb1115d6acd7b4@sha256:bde63845c3e6260c96568d8ac771a9d5abc46711fde120771cb2f884d137c6bc",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:bde63845c3e6260c96568d8ac771a9d5abc46711fde120771cb2f884d137c6bc",
-            "size": 1284,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "ppc64le",
-              "org.opencontainers.image.revision": "5c225c598e3d912aacaa7af5f3f2b35823ca8347",
-              "org.opencontainers.image.source": "https://github.com/tianon/docker-syncthing.git#5c225c598e3d912aacaa7af5f3f2b35823ca8347:1",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/syncthing",
-              "org.opencontainers.image.version": "1.26.1"
-            },
-            "platform": {
-              "architecture": "ppc64le",
-              "os": "linux"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:ppc64le-88a83d066632768f40e5efd9abebd327d1eded2602afb9de9ebb1115d6acd7b4@sha256:840b8f380390135a49dc78cc7caa4aea1942f7c5297254dc088dd45e8fb452e3",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:840b8f380390135a49dc78cc7caa4aea1942f7c5297254dc088dd45e8fb452e3",
-            "size": 1308
-          }
-        }
-      },
+      "img": "tianon/zz-staging:ppc64le-8f917ca78f95ef450d1febcea290b33815f4584fe5020cfcc783fbe492d66561",
+      "resolved": null,
       "sourceId": "78e7c298cd9c5ed36a39bb4694d2eeac084cc21cd251929146b64af0a11369f6",
       "arch": "ppc64le",
       "parents": {
-        "alpine:3.18": "sha256:39ac038d955f9d66f98b998aa52843493c03f0373888a988f25e5ed039949aff"
+        "alpine:3.18": "sha256:1698bcd6bf339e1578dfb9f0034dff615e3eec8404517045046ecbeb84ad01d6"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:39ac038d955f9d66f98b998aa52843493c03f0373888a988f25e5ed039949aff",
+            "ref": "alpine:3.18@sha256:1698bcd6bf339e1578dfb9f0034dff615e3eec8404517045046ecbeb84ad01d6",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:39ac038d955f9d66f98b998aa52843493c03f0373888a988f25e5ed039949aff",
+              "digest": "sha256:1698bcd6bf339e1578dfb9f0034dff615e3eec8404517045046ecbeb84ad01d6",
               "size": 528,
               "platform": {
                 "architecture": "ppc64le",
@@ -16944,10 +15912,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -16999,51 +15967,23 @@
       }
     }
   },
-  "3181988b5d061c78ad28f8f34a08c01db0df19af04803d666074f19701bc4cd7": {
-    "buildId": "3181988b5d061c78ad28f8f34a08c01db0df19af04803d666074f19701bc4cd7",
+  "cdcb66d889b4357929920a37e55e5bf782dde97e1a2331e6d1ffdcb891f57076": {
+    "buildId": "cdcb66d889b4357929920a37e55e5bf782dde97e1a2331e6d1ffdcb891f57076",
     "build": {
-      "img": "tianon/zz-staging:s390x-3181988b5d061c78ad28f8f34a08c01db0df19af04803d666074f19701bc4cd7",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:s390x-3181988b5d061c78ad28f8f34a08c01db0df19af04803d666074f19701bc4cd7@sha256:471c0275a66accf8f623998bffd2435618924525de28efd1d6fb5f01cbd1e4f6",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:471c0275a66accf8f623998bffd2435618924525de28efd1d6fb5f01cbd1e4f6",
-            "size": 1283,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "s390x",
-              "org.opencontainers.image.revision": "5c225c598e3d912aacaa7af5f3f2b35823ca8347",
-              "org.opencontainers.image.source": "https://github.com/tianon/docker-syncthing.git#5c225c598e3d912aacaa7af5f3f2b35823ca8347:1",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/syncthing",
-              "org.opencontainers.image.version": "1.26.1"
-            },
-            "platform": {
-              "architecture": "s390x",
-              "os": "linux"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:s390x-3181988b5d061c78ad28f8f34a08c01db0df19af04803d666074f19701bc4cd7@sha256:cad4b97d4c5774b0cea08250abc109032080936cac52b14e03f6675dbc8c3234",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:cad4b97d4c5774b0cea08250abc109032080936cac52b14e03f6675dbc8c3234",
-            "size": 1304
-          }
-        }
-      },
+      "img": "tianon/zz-staging:s390x-cdcb66d889b4357929920a37e55e5bf782dde97e1a2331e6d1ffdcb891f57076",
+      "resolved": null,
       "sourceId": "78e7c298cd9c5ed36a39bb4694d2eeac084cc21cd251929146b64af0a11369f6",
       "arch": "s390x",
       "parents": {
-        "alpine:3.18": "sha256:4bfee8cb4c809bcb21aa730ce26a2302d3888002ff2d70ec5fd569e7ffdc1a7d"
+        "alpine:3.18": "sha256:5c63479aeed37522de78284d99dcd32f9ad288b04a56236f44e78b3b3f62ebd2"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:4bfee8cb4c809bcb21aa730ce26a2302d3888002ff2d70ec5fd569e7ffdc1a7d",
+            "ref": "alpine:3.18@sha256:5c63479aeed37522de78284d99dcd32f9ad288b04a56236f44e78b3b3f62ebd2",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:4bfee8cb4c809bcb21aa730ce26a2302d3888002ff2d70ec5fd569e7ffdc1a7d",
+              "digest": "sha256:5c63479aeed37522de78284d99dcd32f9ad288b04a56236f44e78b3b3f62ebd2",
               "size": 528,
               "platform": {
                 "architecture": "s390x",
@@ -17052,10 +15992,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -17215,51 +16155,23 @@
       }
     }
   },
-  "f9f4ed93411fadba2eb624ab8ab027a893bd71752052d33d81dabcccd5c24a66": {
-    "buildId": "f9f4ed93411fadba2eb624ab8ab027a893bd71752052d33d81dabcccd5c24a66",
+  "ed425e80b03a0a92c3c8b27348101737bcdb6e0a4276a2b1cb1ffc22b858bf3c": {
+    "buildId": "ed425e80b03a0a92c3c8b27348101737bcdb6e0a4276a2b1cb1ffc22b858bf3c",
     "build": {
-      "img": "tianon/zz-staging:amd64-f9f4ed93411fadba2eb624ab8ab027a893bd71752052d33d81dabcccd5c24a66",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:amd64-f9f4ed93411fadba2eb624ab8ab027a893bd71752052d33d81dabcccd5c24a66@sha256:9f83d1632c89be13f986da99934abce1901844a8a6b6d2c69b3b8a16a94f4754",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:9f83d1632c89be13f986da99934abce1901844a8a6b6d2c69b3b8a16a94f4754",
-            "size": 896,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "amd64",
-              "org.opencontainers.image.revision": "d73fda890a53018d4e3b55362aa5f57093c0c062",
-              "org.opencontainers.image.source": "https://github.com/tianon/dockerfiles.git#d73fda890a53018d4e3b55362aa5f57093c0c062:toybox",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/toybox",
-              "org.opencontainers.image.version": "0.8.10"
-            },
-            "platform": {
-              "architecture": "amd64",
-              "os": "linux"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:amd64-f9f4ed93411fadba2eb624ab8ab027a893bd71752052d33d81dabcccd5c24a66@sha256:c72370d88e4e6d58d647740288f5d85ce0cfa27b3e17153b0575b20d0e93951d",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:c72370d88e4e6d58d647740288f5d85ce0cfa27b3e17153b0575b20d0e93951d",
-            "size": 1300
-          }
-        }
-      },
+      "img": "tianon/zz-staging:amd64-ed425e80b03a0a92c3c8b27348101737bcdb6e0a4276a2b1cb1ffc22b858bf3c",
+      "resolved": null,
       "sourceId": "7337c3952cf19c86fe3acbe43c70f3291e8287658eebed8867e3a3db70d4bc71",
       "arch": "amd64",
       "parents": {
-        "alpine:3.18": "sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86"
+        "alpine:3.18": "sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86",
+            "ref": "alpine:3.18@sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86",
+              "digest": "sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389",
               "size": 528,
               "platform": {
                 "architecture": "amd64",
@@ -17268,10 +16180,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -17540,51 +16452,23 @@
       }
     }
   },
-  "ba79984d28cd2d3e20d482914ceef9df5f25ce79b17f92a82b4f60cd7df175c5": {
-    "buildId": "ba79984d28cd2d3e20d482914ceef9df5f25ce79b17f92a82b4f60cd7df175c5",
+  "2dc39dc1e22ec1e21631553830c68893f24fae60b27d3a474445cbf706377ccf": {
+    "buildId": "2dc39dc1e22ec1e21631553830c68893f24fae60b27d3a474445cbf706377ccf",
     "build": {
-      "img": "tianon/zz-staging:amd64-ba79984d28cd2d3e20d482914ceef9df5f25ce79b17f92a82b4f60cd7df175c5",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:amd64-ba79984d28cd2d3e20d482914ceef9df5f25ce79b17f92a82b4f60cd7df175c5@sha256:732681a3c4bbdda1a43cd1b02f4b4bab5312578f34dda1433030109640618a61",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:732681a3c4bbdda1a43cd1b02f4b4bab5312578f34dda1433030109640618a61",
-            "size": 1287,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "amd64",
-              "org.opencontainers.image.revision": "c5064c4fe855aab90bb868ce2473f8932234cdd8",
-              "org.opencontainers.image.source": "https://github.com/tianon/dockerfiles.git#c5064c4fe855aab90bb868ce2473f8932234cdd8:vultr-cli",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/vultr-cli",
-              "org.opencontainers.image.version": "2.20.0"
-            },
-            "platform": {
-              "architecture": "amd64",
-              "os": "linux"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:amd64-ba79984d28cd2d3e20d482914ceef9df5f25ce79b17f92a82b4f60cd7df175c5@sha256:514ac3985679c5242ef4ef63cd132066a164ca6c1c2aa5d4f02e5c32ed456c6a",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:514ac3985679c5242ef4ef63cd132066a164ca6c1c2aa5d4f02e5c32ed456c6a",
-            "size": 1307
-          }
-        }
-      },
+      "img": "tianon/zz-staging:amd64-2dc39dc1e22ec1e21631553830c68893f24fae60b27d3a474445cbf706377ccf",
+      "resolved": null,
       "sourceId": "e865fbc14ae899fc9a9002d120ae48f0e5c612f535c7a2f67f03d3374b8ebe18",
       "arch": "amd64",
       "parents": {
-        "alpine:3.18": "sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86"
+        "alpine:3.18": "sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86",
+            "ref": "alpine:3.18@sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:48d9183eb12a05c99bcc0bf44a003607b8e941e1d4f41f9ad12bdcc4b5672f86",
+              "digest": "sha256:d695c3de6fcd8cfe3a6222b0358425d40adfd129a8a47c3416faff1a8aece389",
               "size": 528,
               "platform": {
                 "architecture": "amd64",
@@ -17593,10 +16477,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -17648,37 +16532,23 @@
       }
     }
   },
-  "e43041d99c8a800c191c829a85c9e71094b471088e0ca3fa72ff0b2fd62d9c6b": {
-    "buildId": "e43041d99c8a800c191c829a85c9e71094b471088e0ca3fa72ff0b2fd62d9c6b",
+  "6d4a82c897eeca0f81e8175817cdfc404cc82163e3686b94e7c1e17a9c5d201c": {
+    "buildId": "6d4a82c897eeca0f81e8175817cdfc404cc82163e3686b94e7c1e17a9c5d201c",
     "build": {
-      "img": "tianon/zz-staging:arm32v6-e43041d99c8a800c191c829a85c9e71094b471088e0ca3fa72ff0b2fd62d9c6b",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:arm32v6-e43041d99c8a800c191c829a85c9e71094b471088e0ca3fa72ff0b2fd62d9c6b@sha256:2cf928d155af88efbf890450335cbfc292b933d12d3cea6800304722f4780c0f",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:2cf928d155af88efbf890450335cbfc292b933d12d3cea6800304722f4780c0f",
-            "size": 864,
-            "platform": {
-              "architecture": "arm",
-              "os": "linux",
-              "variant": "v6"
-            }
-          }
-        }
-      },
+      "img": "tianon/zz-staging:arm32v6-6d4a82c897eeca0f81e8175817cdfc404cc82163e3686b94e7c1e17a9c5d201c",
+      "resolved": null,
       "sourceId": "e865fbc14ae899fc9a9002d120ae48f0e5c612f535c7a2f67f03d3374b8ebe18",
       "arch": "arm32v6",
       "parents": {
-        "alpine:3.18": "sha256:777e2106170c66742ddbe77f703badb7dc94d9a5b1dc2c4a01538fad9aef56bb"
+        "alpine:3.18": "sha256:1832ef473ede9a923cc6affdf13b54a1be6561ad2ce3c3684910260a7582d36b"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:777e2106170c66742ddbe77f703badb7dc94d9a5b1dc2c4a01538fad9aef56bb",
+            "ref": "alpine:3.18@sha256:1832ef473ede9a923cc6affdf13b54a1be6561ad2ce3c3684910260a7582d36b",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:777e2106170c66742ddbe77f703badb7dc94d9a5b1dc2c4a01538fad9aef56bb",
+              "digest": "sha256:1832ef473ede9a923cc6affdf13b54a1be6561ad2ce3c3684910260a7582d36b",
               "size": 528,
               "platform": {
                 "architecture": "arm",
@@ -17688,10 +16558,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -17744,52 +16614,23 @@
       }
     }
   },
-  "1949fcfbf8843c87e5921d5c524fadf43767b5ddcb4e1ad35c28389b0a2c8a03": {
-    "buildId": "1949fcfbf8843c87e5921d5c524fadf43767b5ddcb4e1ad35c28389b0a2c8a03",
+  "c4d067ef54e030ea02671399d658934bd137509870933b8e002c5d5460112679": {
+    "buildId": "c4d067ef54e030ea02671399d658934bd137509870933b8e002c5d5460112679",
     "build": {
-      "img": "tianon/zz-staging:arm32v7-1949fcfbf8843c87e5921d5c524fadf43767b5ddcb4e1ad35c28389b0a2c8a03",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:arm32v7-1949fcfbf8843c87e5921d5c524fadf43767b5ddcb4e1ad35c28389b0a2c8a03@sha256:220753e6815abb2f9abf78452be36bce836fa896053b4040d62eab9d614c75be",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:220753e6815abb2f9abf78452be36bce836fa896053b4040d62eab9d614c75be",
-            "size": 1289,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "arm32v7",
-              "org.opencontainers.image.revision": "c5064c4fe855aab90bb868ce2473f8932234cdd8",
-              "org.opencontainers.image.source": "https://github.com/tianon/dockerfiles.git#c5064c4fe855aab90bb868ce2473f8932234cdd8:vultr-cli",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/vultr-cli",
-              "org.opencontainers.image.version": "2.20.0"
-            },
-            "platform": {
-              "architecture": "arm",
-              "os": "linux",
-              "variant": "v7"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:arm32v7-1949fcfbf8843c87e5921d5c524fadf43767b5ddcb4e1ad35c28389b0a2c8a03@sha256:54efbe1e4ddebf12743402f9e9d09d5dd27b947192d33148cb65c18a2fc60db4",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:54efbe1e4ddebf12743402f9e9d09d5dd27b947192d33148cb65c18a2fc60db4",
-            "size": 1332
-          }
-        }
-      },
+      "img": "tianon/zz-staging:arm32v7-c4d067ef54e030ea02671399d658934bd137509870933b8e002c5d5460112679",
+      "resolved": null,
       "sourceId": "e865fbc14ae899fc9a9002d120ae48f0e5c612f535c7a2f67f03d3374b8ebe18",
       "arch": "arm32v7",
       "parents": {
-        "alpine:3.18": "sha256:9909a171ac287c316f771a4f1d1384df96957ed772bc39caf6deb6e3e360316f"
+        "alpine:3.18": "sha256:211fe64069acea47ea680c0943b5a77be1819d0e85365011595391f7562caf27"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:9909a171ac287c316f771a4f1d1384df96957ed772bc39caf6deb6e3e360316f",
+            "ref": "alpine:3.18@sha256:211fe64069acea47ea680c0943b5a77be1819d0e85365011595391f7562caf27",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:9909a171ac287c316f771a4f1d1384df96957ed772bc39caf6deb6e3e360316f",
+              "digest": "sha256:211fe64069acea47ea680c0943b5a77be1819d0e85365011595391f7562caf27",
               "size": 528,
               "platform": {
                 "architecture": "arm",
@@ -17799,10 +16640,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
@@ -17855,52 +16696,23 @@
       }
     }
   },
-  "652690855ac7f037091c3df1768d71fec6a79e3b6c370731de0a111fc0fd2dcb": {
-    "buildId": "652690855ac7f037091c3df1768d71fec6a79e3b6c370731de0a111fc0fd2dcb",
+  "79919ce4f4132ff624c945c954e5ce10619671cc1bd7beca4ea323cec25b538a": {
+    "buildId": "79919ce4f4132ff624c945c954e5ce10619671cc1bd7beca4ea323cec25b538a",
     "build": {
-      "img": "tianon/zz-staging:arm64v8-652690855ac7f037091c3df1768d71fec6a79e3b6c370731de0a111fc0fd2dcb",
-      "resolved": {
-        "manifest": {
-          "ref": "tianon/zz-staging:arm64v8-652690855ac7f037091c3df1768d71fec6a79e3b6c370731de0a111fc0fd2dcb@sha256:84c20ef4822823b2afc87a2e2393ad18997672518902f58dacbd40aeaa6bbcee",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.manifest.v1+json",
-            "digest": "sha256:84c20ef4822823b2afc87a2e2393ad18997672518902f58dacbd40aeaa6bbcee",
-            "size": 1289,
-            "annotations": {
-              "com.docker.library.bashbrew.arch": "arm64v8",
-              "org.opencontainers.image.revision": "c5064c4fe855aab90bb868ce2473f8932234cdd8",
-              "org.opencontainers.image.source": "https://github.com/tianon/dockerfiles.git#c5064c4fe855aab90bb868ce2473f8932234cdd8:vultr-cli",
-              "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/vultr-cli",
-              "org.opencontainers.image.version": "2.20.0"
-            },
-            "platform": {
-              "architecture": "arm64",
-              "os": "linux",
-              "variant": "v8"
-            }
-          }
-        },
-        "index": {
-          "ref": "tianon/zz-staging:arm64v8-652690855ac7f037091c3df1768d71fec6a79e3b6c370731de0a111fc0fd2dcb@sha256:76e0332b3c03394db2b9b12d9fff1a3aa21c1467d655d240885e9a2cb4c52016",
-          "desc": {
-            "mediaType": "application/vnd.oci.image.index.v1+json",
-            "digest": "sha256:76e0332b3c03394db2b9b12d9fff1a3aa21c1467d655d240885e9a2cb4c52016",
-            "size": 1309
-          }
-        }
-      },
+      "img": "tianon/zz-staging:arm64v8-79919ce4f4132ff624c945c954e5ce10619671cc1bd7beca4ea323cec25b538a",
+      "resolved": null,
       "sourceId": "e865fbc14ae899fc9a9002d120ae48f0e5c612f535c7a2f67f03d3374b8ebe18",
       "arch": "arm64v8",
       "parents": {
-        "alpine:3.18": "sha256:6ce9a9a256a3495ae60ab0059ed1c7aee5ee89450477f2223f6ea7f6296df555"
+        "alpine:3.18": "sha256:d4ade3639c27579321046d78cc44ec978cea8357d56932611984f601d27e30ac"
       },
       "resolvedParents": {
         "alpine:3.18": {
           "manifest": {
-            "ref": "alpine:3.18@sha256:6ce9a9a256a3495ae60ab0059ed1c7aee5ee89450477f2223f6ea7f6296df555",
+            "ref": "alpine:3.18@sha256:d4ade3639c27579321046d78cc44ec978cea8357d56932611984f601d27e30ac",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-              "digest": "sha256:6ce9a9a256a3495ae60ab0059ed1c7aee5ee89450477f2223f6ea7f6296df555",
+              "digest": "sha256:d4ade3639c27579321046d78cc44ec978cea8357d56932611984f601d27e30ac",
               "size": 528,
               "platform": {
                 "architecture": "arm64",
@@ -17910,10 +16722,10 @@
             }
           },
           "index": {
-            "ref": "alpine:3.18@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+            "ref": "alpine:3.18@sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
             "desc": {
               "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
-              "digest": "sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978",
+              "digest": "sha256:69e0a8b6d2048be90290c992957a3cde2e87e955e5bb9c27d228c78c46c7840f",
               "size": 1638
             }
           }
