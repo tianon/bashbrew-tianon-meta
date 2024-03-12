@@ -701,9 +701,9 @@
       }
     }
   },
-  "cc009bd66e45fc71bc79a2be0a2ae263c49b2bcd48be3116a2e014ccc72c7b6f": {
-    "sourceId": "cc009bd66e45fc71bc79a2be0a2ae263c49b2bcd48be3116a2e014ccc72c7b6f",
-    "reproducibleGitChecksum": "17cd10d58b132e8cbad8e7636957d034f91e11193b446558afb2edec652a0bdc",
+  "92bb64aa2bd9032989c0d8dda87a98d8284f2d10f5dc5de9ab095448f4be44d2": {
+    "sourceId": "92bb64aa2bd9032989c0d8dda87a98d8284f2d10f5dc5de9ab095448f4be44d2",
+    "reproducibleGitChecksum": "41f4f1750f463d242b5dcf6c16a6ecb6b7551e6985a0fd64e785eb0806fae252",
     "tags": [
       "tianon/docker-master:latest",
       "tianon/docker-master:dind"
@@ -711,11 +711,11 @@
     "entry": {
       "GitRepo": "https://github.com/tianon/dockerfiles.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "a2e331a97d90cf9ef28be515dac7bcdcc2e06b0f",
+      "GitCommit": "c3c8d7e85e82d3c5ed7214763ef95f3700dedb54",
       "Directory": "docker-master",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1710178796
+      "SOURCE_DATE_EPOCH": 1710250735
     },
     "arches": {
       "amd64": {
@@ -775,7 +775,7 @@
         },
         "parents": {
           "tianon/docker-master:dind": {
-            "sourceId": "cc009bd66e45fc71bc79a2be0a2ae263c49b2bcd48be3116a2e014ccc72c7b6f",
+            "sourceId": "92bb64aa2bd9032989c0d8dda87a98d8284f2d10f5dc5de9ab095448f4be44d2",
             "pin": null
           }
         }
@@ -3964,6 +3964,31 @@
         "platform": {
           "architecture": "amd64",
           "os": "linux"
+        },
+        "parents": {
+          "tianon/nolibc:latest": {
+            "sourceId": "1db0f8705ebbaa2c288f8d3588d668b8233c33c4377c3a1a8ec280cb3354b787",
+            "pin": null
+          },
+          "scratch": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm64v8": {
+        "archTags": [],
+        "froms": [
+          "tianon/nolibc:latest",
+          "scratch",
+          "tianon/nolibc:latest"
+        ],
+        "lastStageFrom": "scratch",
+        "platformString": "linux/arm64/v8",
+        "platform": {
+          "architecture": "arm64",
+          "os": "linux",
+          "variant": "v8"
         },
         "parents": {
           "tianon/nolibc:latest": {
