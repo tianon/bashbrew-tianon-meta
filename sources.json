@@ -3351,6 +3351,126 @@
       }
     }
   },
+  "c7a0f847644af897735df10de2539a8733c3f25bd421c4b4d3b3e5535dbf7e5d": {
+    "sourceId": "c7a0f847644af897735df10de2539a8733c3f25bd421c4b4d3b3e5535dbf7e5d",
+    "reproducibleGitChecksum": "5f0a90963821bd4e0cd38671c687f6fea9ac129779662b446513ad79914dd3e9",
+    "tags": [
+      "tianon/qemu:7.2.11",
+      "tianon/qemu:7.2",
+      "tianon/qemu:7",
+      "tianon/qemu:7.2.11-bookworm",
+      "tianon/qemu:7.2-bookworm",
+      "tianon/qemu:7-bookworm"
+    ],
+    "entry": {
+      "GitRepo": "https://github.com/tianon/docker-qemu.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "a80319e9a4923233418f10cf0843ea918c004497",
+      "Directory": "7.2",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1713982855
+    },
+    "arches": {
+      "amd64": {
+        "archTags": [],
+        "froms": [
+          "debian:bookworm-slim"
+        ],
+        "lastStageFrom": "debian:bookworm-slim",
+        "platformString": "linux/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "parents": {
+          "debian:bookworm-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      }
+    }
+  },
+  "f8799824c702408f79db8b11f26f38a33d48a99780afe42d21eeedbd44860539": {
+    "sourceId": "f8799824c702408f79db8b11f26f38a33d48a99780afe42d21eeedbd44860539",
+    "reproducibleGitChecksum": "5f0a90963821bd4e0cd38671c687f6fea9ac129779662b446513ad79914dd3e9",
+    "tags": [
+      "tianon/qemu:7.2.11-native",
+      "tianon/qemu:7.2-native",
+      "tianon/qemu:7-native",
+      "tianon/qemu:7.2.11-native-bookworm",
+      "tianon/qemu:7.2-native-bookworm",
+      "tianon/qemu:7-native-bookworm"
+    ],
+    "entry": {
+      "GitRepo": "https://github.com/tianon/docker-qemu.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "a80319e9a4923233418f10cf0843ea918c004497",
+      "Directory": "7.2",
+      "File": "Dockerfile.native",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1713982855
+    },
+    "arches": {
+      "amd64": {
+        "archTags": [],
+        "froms": [
+          "debian:bookworm-slim"
+        ],
+        "lastStageFrom": "debian:bookworm-slim",
+        "platformString": "linux/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "parents": {
+          "debian:bookworm-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm32v7": {
+        "archTags": [],
+        "froms": [
+          "debian:bookworm-slim"
+        ],
+        "lastStageFrom": "debian:bookworm-slim",
+        "platformString": "linux/arm/v7",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v7"
+        },
+        "parents": {
+          "debian:bookworm-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm64v8": {
+        "archTags": [],
+        "froms": [
+          "debian:bookworm-slim"
+        ],
+        "lastStageFrom": "debian:bookworm-slim",
+        "platformString": "linux/arm64/v8",
+        "platform": {
+          "architecture": "arm64",
+          "os": "linux",
+          "variant": "v8"
+        },
+        "parents": {
+          "debian:bookworm-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      }
+    }
+  },
   "4e4cef6066e41031347022a632a31bb9c0c01f954a302e8c95beb741efe9a785": {
     "sourceId": "4e4cef6066e41031347022a632a31bb9c0c01f954a302e8c95beb741efe9a785",
     "reproducibleGitChecksum": "b8c6c51940ec59ae38461c6a553516435e73fe155bb6d66084f69689f4dc44c2",
@@ -4116,153 +4236,6 @@
         "platformString": "linux/amd64",
         "platform": {
           "architecture": "amd64",
-          "os": "linux"
-        },
-        "parents": {
-          "tianon/nolibc:latest": {
-            "sourceId": "65760fc08381e84bd3f06f32593a76ea4ce0bc8918754c3765d2b670559b3e7e",
-            "pin": null
-          },
-          "scratch": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "arm32v5": {
-        "archTags": [],
-        "froms": [
-          "tianon/nolibc:latest",
-          "scratch",
-          "tianon/nolibc:latest"
-        ],
-        "lastStageFrom": "scratch",
-        "platformString": "linux/arm/v5",
-        "platform": {
-          "architecture": "arm",
-          "os": "linux",
-          "variant": "v5"
-        },
-        "parents": {
-          "tianon/nolibc:latest": {
-            "sourceId": "65760fc08381e84bd3f06f32593a76ea4ce0bc8918754c3765d2b670559b3e7e",
-            "pin": null
-          },
-          "scratch": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "arm32v7": {
-        "archTags": [],
-        "froms": [
-          "tianon/nolibc:latest",
-          "scratch",
-          "tianon/nolibc:latest"
-        ],
-        "lastStageFrom": "scratch",
-        "platformString": "linux/arm/v7",
-        "platform": {
-          "architecture": "arm",
-          "os": "linux",
-          "variant": "v7"
-        },
-        "parents": {
-          "tianon/nolibc:latest": {
-            "sourceId": "65760fc08381e84bd3f06f32593a76ea4ce0bc8918754c3765d2b670559b3e7e",
-            "pin": null
-          },
-          "scratch": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "arm64v8": {
-        "archTags": [],
-        "froms": [
-          "tianon/nolibc:latest",
-          "scratch",
-          "tianon/nolibc:latest"
-        ],
-        "lastStageFrom": "scratch",
-        "platformString": "linux/arm64/v8",
-        "platform": {
-          "architecture": "arm64",
-          "os": "linux",
-          "variant": "v8"
-        },
-        "parents": {
-          "tianon/nolibc:latest": {
-            "sourceId": "65760fc08381e84bd3f06f32593a76ea4ce0bc8918754c3765d2b670559b3e7e",
-            "pin": null
-          },
-          "scratch": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "i386": {
-        "archTags": [],
-        "froms": [
-          "tianon/nolibc:latest",
-          "scratch",
-          "tianon/nolibc:latest"
-        ],
-        "lastStageFrom": "scratch",
-        "platformString": "linux/386",
-        "platform": {
-          "architecture": "386",
-          "os": "linux"
-        },
-        "parents": {
-          "tianon/nolibc:latest": {
-            "sourceId": "65760fc08381e84bd3f06f32593a76ea4ce0bc8918754c3765d2b670559b3e7e",
-            "pin": null
-          },
-          "scratch": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "ppc64le": {
-        "archTags": [],
-        "froms": [
-          "tianon/nolibc:latest",
-          "scratch",
-          "tianon/nolibc:latest"
-        ],
-        "lastStageFrom": "scratch",
-        "platformString": "linux/ppc64le",
-        "platform": {
-          "architecture": "ppc64le",
-          "os": "linux"
-        },
-        "parents": {
-          "tianon/nolibc:latest": {
-            "sourceId": "65760fc08381e84bd3f06f32593a76ea4ce0bc8918754c3765d2b670559b3e7e",
-            "pin": null
-          },
-          "scratch": {
-            "sourceId": null,
-            "pin": null
-          }
-        }
-      },
-      "s390x": {
-        "archTags": [],
-        "froms": [
-          "tianon/nolibc:latest",
-          "scratch",
-          "tianon/nolibc:latest"
-        ],
-        "lastStageFrom": "scratch",
-        "platformString": "linux/s390x",
-        "platform": {
-          "architecture": "s390x",
           "os": "linux"
         },
         "parents": {
