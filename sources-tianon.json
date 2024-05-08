@@ -448,17 +448,17 @@
       }
     }
   },
-  "f2adaa69b4b21f7f8c7c396971e6ed64bdf4bf7c9bed992d0a48471c6eb386bc": {
-    "sourceId": "f2adaa69b4b21f7f8c7c396971e6ed64bdf4bf7c9bed992d0a48471c6eb386bc",
-    "reproducibleGitChecksum": "0afebc0a5b4879fcc860644f9bcdf5af0cbc040982db404fcea093efc3e76e13",
+  "3b0693d0d9e170f0497c35f6a395b05db70232c0f9b4f969d0acc0f1212123e2": {
+    "sourceId": "3b0693d0d9e170f0497c35f6a395b05db70232c0f9b4f969d0acc0f1212123e2",
+    "reproducibleGitChecksum": "246ae2ab56ab89ac122bc2caf40dd3fbbd454ba57c722aa45a9f2b2d4b72cc07",
     "entry": {
       "GitRepo": "https://github.com/tianon/dockerfiles.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "d9f20d8d167b7d25e69232afb12d1ef8b90442df",
+      "GitCommit": "64b8c18319922383cdd7672efab1793fd3fe1aa2",
       "Directory": "docker-master",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1715103464
+      "SOURCE_DATE_EPOCH": 1715161083
     },
     "arches": {
       "amd64": {
@@ -522,7 +522,7 @@
         },
         "parents": {
           "tianon/docker-master:dind": {
-            "sourceId": "f2adaa69b4b21f7f8c7c396971e6ed64bdf4bf7c9bed992d0a48471c6eb386bc",
+            "sourceId": "3b0693d0d9e170f0497c35f6a395b05db70232c0f9b4f969d0acc0f1212123e2",
             "pin": null
           }
         }
@@ -4418,6 +4418,60 @@
         "platformString": "linux/386",
         "platform": {
           "architecture": "386",
+          "os": "linux"
+        },
+        "parents": {
+          "tianon/nolibc:latest": {
+            "sourceId": "a70483a6d0759bdbe6da8914f584274a776ab5975239aa603a53fde9b6fa885d",
+            "pin": null
+          },
+          "scratch": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "ppc64le": {
+        "tags": [
+          "tianon/sleeping-beauty:nolibc"
+        ],
+        "archTags": [],
+        "froms": [
+          "tianon/nolibc:latest",
+          "scratch",
+          "tianon/nolibc:latest"
+        ],
+        "lastStageFrom": "scratch",
+        "platformString": "linux/ppc64le",
+        "platform": {
+          "architecture": "ppc64le",
+          "os": "linux"
+        },
+        "parents": {
+          "tianon/nolibc:latest": {
+            "sourceId": "a70483a6d0759bdbe6da8914f584274a776ab5975239aa603a53fde9b6fa885d",
+            "pin": null
+          },
+          "scratch": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "s390x": {
+        "tags": [
+          "tianon/sleeping-beauty:nolibc"
+        ],
+        "archTags": [],
+        "froms": [
+          "tianon/nolibc:latest",
+          "scratch",
+          "tianon/nolibc:latest"
+        ],
+        "lastStageFrom": "scratch",
+        "platformString": "linux/s390x",
+        "platform": {
+          "architecture": "s390x",
           "os": "linux"
         },
         "parents": {
