@@ -3738,25 +3738,25 @@
       }
     }
   },
-  "0d1b1d7392d5dd2adc6eddff4a18b032a1ccb46366daa52e5bfcab4029a88acd": {
-    "sourceId": "0d1b1d7392d5dd2adc6eddff4a18b032a1ccb46366daa52e5bfcab4029a88acd",
-    "reproducibleGitChecksum": "32842dcab66883fffdd036184dce25c2cfceb86b99600986db0216c258a3769e",
+  "f935e3ccf31d621837b9e77a9aa79072bc65fe5fc07b8451d7326b18e6d259d8": {
+    "sourceId": "f935e3ccf31d621837b9e77a9aa79072bc65fe5fc07b8451d7326b18e6d259d8",
+    "reproducibleGitChecksum": "8a99723ffdbd9a2e4c02cb02cb43362977bc195ca6fddfc22b38d826acf8defe",
     "entry": {
       "GitRepo": "https://github.com/tianon/docker-qemu.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "3fa803cd83e85812397cb4bddb471b69d53f6837",
+      "GitCommit": "ca928c64edd177a3777a27b656a5de6561396fed",
       "Directory": "8.2",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1713981026
+      "SOURCE_DATE_EPOCH": 1715659422
     },
     "arches": {
       "amd64": {
         "tags": [
-          "tianon/qemu:8.2.3",
+          "tianon/qemu:8.2.4",
           "tianon/qemu:8.2",
           "tianon/qemu:8",
-          "tianon/qemu:8.2.3-bookworm",
+          "tianon/qemu:8.2.4-bookworm",
           "tianon/qemu:8.2-bookworm",
           "tianon/qemu:8-bookworm"
         ],
@@ -3779,25 +3779,25 @@
       }
     }
   },
-  "33c445966ba3b62ae8877e8985f82191779e0bd3c7e26bee1f2494d0a9e2e562": {
-    "sourceId": "33c445966ba3b62ae8877e8985f82191779e0bd3c7e26bee1f2494d0a9e2e562",
-    "reproducibleGitChecksum": "32842dcab66883fffdd036184dce25c2cfceb86b99600986db0216c258a3769e",
+  "8a9b791e2f147f45ae19fe8253bb080f839e7be0015e34833777aab9cda71f2b": {
+    "sourceId": "8a9b791e2f147f45ae19fe8253bb080f839e7be0015e34833777aab9cda71f2b",
+    "reproducibleGitChecksum": "8a99723ffdbd9a2e4c02cb02cb43362977bc195ca6fddfc22b38d826acf8defe",
     "entry": {
       "GitRepo": "https://github.com/tianon/docker-qemu.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "3fa803cd83e85812397cb4bddb471b69d53f6837",
+      "GitCommit": "ca928c64edd177a3777a27b656a5de6561396fed",
       "Directory": "8.2",
       "File": "Dockerfile.native",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1713981026
+      "SOURCE_DATE_EPOCH": 1715659422
     },
     "arches": {
       "amd64": {
         "tags": [
-          "tianon/qemu:8.2.3-native",
+          "tianon/qemu:8.2.4-native",
           "tianon/qemu:8.2-native",
           "tianon/qemu:8-native",
-          "tianon/qemu:8.2.3-native-bookworm",
+          "tianon/qemu:8.2.4-native-bookworm",
           "tianon/qemu:8.2-native-bookworm",
           "tianon/qemu:8-native-bookworm"
         ],
@@ -3820,10 +3820,10 @@
       },
       "arm32v7": {
         "tags": [
-          "tianon/qemu:8.2.3-native",
+          "tianon/qemu:8.2.4-native",
           "tianon/qemu:8.2-native",
           "tianon/qemu:8-native",
-          "tianon/qemu:8.2.3-native-bookworm",
+          "tianon/qemu:8.2.4-native-bookworm",
           "tianon/qemu:8.2-native-bookworm",
           "tianon/qemu:8-native-bookworm"
         ],
@@ -3847,10 +3847,10 @@
       },
       "arm64v8": {
         "tags": [
-          "tianon/qemu:8.2.3-native",
+          "tianon/qemu:8.2.4-native",
           "tianon/qemu:8.2-native",
           "tianon/qemu:8-native",
-          "tianon/qemu:8.2.3-native-bookworm",
+          "tianon/qemu:8.2.4-native-bookworm",
           "tianon/qemu:8.2-native-bookworm",
           "tianon/qemu:8-native-bookworm"
         ],
@@ -4418,6 +4418,60 @@
         "platformString": "linux/386",
         "platform": {
           "architecture": "386",
+          "os": "linux"
+        },
+        "parents": {
+          "tianon/nolibc:latest": {
+            "sourceId": "a70483a6d0759bdbe6da8914f584274a776ab5975239aa603a53fde9b6fa885d",
+            "pin": null
+          },
+          "scratch": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "ppc64le": {
+        "tags": [
+          "tianon/sleeping-beauty:nolibc"
+        ],
+        "archTags": [],
+        "froms": [
+          "tianon/nolibc:latest",
+          "scratch",
+          "tianon/nolibc:latest"
+        ],
+        "lastStageFrom": "scratch",
+        "platformString": "linux/ppc64le",
+        "platform": {
+          "architecture": "ppc64le",
+          "os": "linux"
+        },
+        "parents": {
+          "tianon/nolibc:latest": {
+            "sourceId": "a70483a6d0759bdbe6da8914f584274a776ab5975239aa603a53fde9b6fa885d",
+            "pin": null
+          },
+          "scratch": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "s390x": {
+        "tags": [
+          "tianon/sleeping-beauty:nolibc"
+        ],
+        "archTags": [],
+        "froms": [
+          "tianon/nolibc:latest",
+          "scratch",
+          "tianon/nolibc:latest"
+        ],
+        "lastStageFrom": "scratch",
+        "platformString": "linux/s390x",
+        "platform": {
+          "architecture": "s390x",
           "os": "linux"
         },
         "parents": {
