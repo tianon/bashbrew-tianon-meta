@@ -580,6 +580,78 @@
           }
         }
       },
+      "mips64le": {
+        "tags": [
+          "tianon/buildkit:0.14.0",
+          "tianon/buildkit:0.14",
+          "tianon/buildkit:0",
+          "tianon/buildkit:latest"
+        ],
+        "archTags": [],
+        "froms": [
+          "infosiftr/moby:latest"
+        ],
+        "lastStageFrom": "infosiftr/moby:latest",
+        "platformString": "linux/mips64le",
+        "platform": {
+          "architecture": "mips64le",
+          "os": "linux"
+        },
+        "parents": {
+          "infosiftr/moby:latest": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "ppc64le": {
+        "tags": [
+          "tianon/buildkit:0.14.0",
+          "tianon/buildkit:0.14",
+          "tianon/buildkit:0",
+          "tianon/buildkit:latest"
+        ],
+        "archTags": [],
+        "froms": [
+          "infosiftr/moby:latest"
+        ],
+        "lastStageFrom": "infosiftr/moby:latest",
+        "platformString": "linux/ppc64le",
+        "platform": {
+          "architecture": "ppc64le",
+          "os": "linux"
+        },
+        "parents": {
+          "infosiftr/moby:latest": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "riscv64": {
+        "tags": [
+          "tianon/buildkit:0.14.0",
+          "tianon/buildkit:0.14",
+          "tianon/buildkit:0",
+          "tianon/buildkit:latest"
+        ],
+        "archTags": [],
+        "froms": [
+          "infosiftr/moby:latest"
+        ],
+        "lastStageFrom": "infosiftr/moby:latest",
+        "platformString": "linux/riscv64",
+        "platform": {
+          "architecture": "riscv64",
+          "os": "linux"
+        },
+        "parents": {
+          "infosiftr/moby:latest": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
       "s390x": {
         "tags": [
           "tianon/buildkit:0.14.0",
@@ -2206,23 +2278,23 @@
       }
     }
   },
-  "ea885561666f39d74a019b86d6eb35e3832bb8a08e33b90c4a4499662d5b474a": {
-    "sourceId": "ea885561666f39d74a019b86d6eb35e3832bb8a08e33b90c4a4499662d5b474a",
-    "reproducibleGitChecksum": "39d561b831e4c824e64933aa608e8a819feb1ddd7747df8885abd49c38e02de6",
+  "82e4f4a667b1b337fc455f9f015c1461ce1989dd8f0bdf0775c8bfd65326a789": {
+    "sourceId": "82e4f4a667b1b337fc455f9f015c1461ce1989dd8f0bdf0775c8bfd65326a789",
+    "reproducibleGitChecksum": "20e6921a4ca00044878266271e1dfc4026a8c7aea48cf7da9a153919979f7b07",
     "entry": {
       "GitRepo": "https://github.com/tianon/dockerfiles.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "e7a9b010b4193e73fc01993861823e6619d75737",
+      "GitCommit": "66c6e16007fceed9da2ac02b613d91e19208e866",
       "Directory": "microsoft-edge/beta",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1718061952
+      "SOURCE_DATE_EPOCH": 1718257141
     },
     "arches": {
       "amd64": {
         "tags": [
-          "tianon/microsoft-edge:126.0.2592.49-1-beta",
-          "tianon/microsoft-edge:126.0.2592.49-beta",
+          "tianon/microsoft-edge:126.0.2592.53-1-beta",
+          "tianon/microsoft-edge:126.0.2592.53-beta",
           "tianon/microsoft-edge:126.0.2592-beta",
           "tianon/microsoft-edge:126.0-beta",
           "tianon/microsoft-edge:126-beta",
@@ -5046,6 +5118,33 @@
         "platformString": "linux/386",
         "platform": {
           "architecture": "386",
+          "os": "linux"
+        },
+        "parents": {
+          "tianon/nolibc:latest": {
+            "sourceId": "1517223808c5d33114834f8ea62587965417147a61723f0c868627ab170ead5d",
+            "pin": null
+          },
+          "scratch": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "ppc64le": {
+        "tags": [
+          "tianon/sleeping-beauty:nolibc"
+        ],
+        "archTags": [],
+        "froms": [
+          "tianon/nolibc:latest",
+          "scratch",
+          "tianon/nolibc:latest"
+        ],
+        "lastStageFrom": "scratch",
+        "platformString": "linux/ppc64le",
+        "platform": {
+          "architecture": "ppc64le",
           "os": "linux"
         },
         "parents": {
