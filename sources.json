@@ -457,6 +457,30 @@
       "SOURCE_DATE_EPOCH": 1718148323
     },
     "arches": {
+      "amd64": {
+        "tags": [
+          "tianon/buildkit:0.14.0",
+          "tianon/buildkit:0.14",
+          "tianon/buildkit:0",
+          "tianon/buildkit:latest"
+        ],
+        "archTags": [],
+        "froms": [
+          "infosiftr/moby:latest"
+        ],
+        "lastStageFrom": "infosiftr/moby:latest",
+        "platformString": "linux/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "parents": {
+          "infosiftr/moby:latest": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
       "arm32v5": {
         "tags": [
           "tianon/buildkit:0.14.0",
@@ -547,6 +571,30 @@
         "platformString": "linux/386",
         "platform": {
           "architecture": "386",
+          "os": "linux"
+        },
+        "parents": {
+          "infosiftr/moby:latest": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "s390x": {
+        "tags": [
+          "tianon/buildkit:0.14.0",
+          "tianon/buildkit:0.14",
+          "tianon/buildkit:0",
+          "tianon/buildkit:latest"
+        ],
+        "archTags": [],
+        "froms": [
+          "infosiftr/moby:latest"
+        ],
+        "lastStageFrom": "infosiftr/moby:latest",
+        "platformString": "linux/s390x",
+        "platform": {
+          "architecture": "s390x",
           "os": "linux"
         },
         "parents": {
@@ -4873,6 +4921,33 @@
       "SOURCE_DATE_EPOCH": 1709021435
     },
     "arches": {
+      "amd64": {
+        "tags": [
+          "tianon/sleeping-beauty:nolibc"
+        ],
+        "archTags": [],
+        "froms": [
+          "tianon/nolibc:latest",
+          "scratch",
+          "tianon/nolibc:latest"
+        ],
+        "lastStageFrom": "scratch",
+        "platformString": "linux/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "parents": {
+          "tianon/nolibc:latest": {
+            "sourceId": "1517223808c5d33114834f8ea62587965417147a61723f0c868627ab170ead5d",
+            "pin": null
+          },
+          "scratch": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
       "arm32v5": {
         "tags": [
           "tianon/sleeping-beauty:nolibc"
@@ -4971,6 +5046,33 @@
         "platformString": "linux/386",
         "platform": {
           "architecture": "386",
+          "os": "linux"
+        },
+        "parents": {
+          "tianon/nolibc:latest": {
+            "sourceId": "1517223808c5d33114834f8ea62587965417147a61723f0c868627ab170ead5d",
+            "pin": null
+          },
+          "scratch": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "s390x": {
+        "tags": [
+          "tianon/sleeping-beauty:nolibc"
+        ],
+        "archTags": [],
+        "froms": [
+          "tianon/nolibc:latest",
+          "scratch",
+          "tianon/nolibc:latest"
+        ],
+        "lastStageFrom": "scratch",
+        "platformString": "linux/s390x",
+        "platform": {
+          "architecture": "s390x",
           "os": "linux"
         },
         "parents": {
