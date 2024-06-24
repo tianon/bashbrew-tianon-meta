@@ -872,17 +872,17 @@
       }
     }
   },
-  "902c1e6cfebb4fa60ba11c5f0438c81ac2606c7da581a7eb2cfb2f99e7ffcf64": {
-    "sourceId": "902c1e6cfebb4fa60ba11c5f0438c81ac2606c7da581a7eb2cfb2f99e7ffcf64",
-    "reproducibleGitChecksum": "3bd9171ce7225b76387cb054ccb0e09fcabbc22dea78c93ecf66cc91279f08a3",
+  "d5a5cc334ea5b3218b01e71a4b0b42acd4c6ee808978a4b5692478acef219872": {
+    "sourceId": "d5a5cc334ea5b3218b01e71a4b0b42acd4c6ee808978a4b5692478acef219872",
+    "reproducibleGitChecksum": "6ba633cc0614349d1cb660598014d0e4c651b1a1a1cd39c69345c94e7a4ad693",
     "entry": {
       "GitRepo": "https://github.com/tianon/dockerfiles.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "b3aa41e1e0e2f4a0239bc5b396b218fcab24f70a",
+      "GitCommit": "1e7cc8effebe0d60d7ad5012298dc3feddf686ee",
       "Directory": "docker-master",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1718991499
+      "SOURCE_DATE_EPOCH": 1719236278
     },
     "arches": {
       "amd64": {
@@ -932,7 +932,8 @@
     "arches": {
       "amd64": {
         "tags": [
-          "tianon/docker-master:containerd"
+          "tianon/docker-master:containerd",
+          "tianon/docker-master.sync-conflict-20240624-161452-6P7Y52O:containerd"
         ],
         "archTags": [],
         "froms": [
@@ -946,7 +947,52 @@
         },
         "parents": {
           "tianon/docker-master:dind": {
-            "sourceId": "902c1e6cfebb4fa60ba11c5f0438c81ac2606c7da581a7eb2cfb2f99e7ffcf64",
+            "sourceId": "d5a5cc334ea5b3218b01e71a4b0b42acd4c6ee808978a4b5692478acef219872",
+            "pin": null
+          }
+        }
+      }
+    }
+  },
+  "902c1e6cfebb4fa60ba11c5f0438c81ac2606c7da581a7eb2cfb2f99e7ffcf64": {
+    "sourceId": "902c1e6cfebb4fa60ba11c5f0438c81ac2606c7da581a7eb2cfb2f99e7ffcf64",
+    "reproducibleGitChecksum": "3bd9171ce7225b76387cb054ccb0e09fcabbc22dea78c93ecf66cc91279f08a3",
+    "entry": {
+      "GitRepo": "https://github.com/tianon/dockerfiles.git",
+      "GitFetch": "refs/heads/master",
+      "GitCommit": "b3aa41e1e0e2f4a0239bc5b396b218fcab24f70a",
+      "Directory": "docker-master",
+      "File": "Dockerfile",
+      "Builder": "",
+      "SOURCE_DATE_EPOCH": 1718991499
+    },
+    "arches": {
+      "amd64": {
+        "tags": [
+          "tianon/docker-master.sync-conflict-20240624-161452-6P7Y52O:latest",
+          "tianon/docker-master.sync-conflict-20240624-161452-6P7Y52O:dind"
+        ],
+        "archTags": [],
+        "froms": [
+          "golang:1.21-bullseye",
+          "golang:1.21-bullseye",
+          "alpine:3.19",
+          "golang:1.21-bullseye",
+          "golang:1.21-bullseye"
+        ],
+        "lastStageFrom": "alpine:3.19",
+        "platformString": "linux/amd64",
+        "platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "parents": {
+          "golang:1.21-bullseye": {
+            "sourceId": null,
+            "pin": null
+          },
+          "alpine:3.19": {
+            "sourceId": null,
             "pin": null
           }
         }
