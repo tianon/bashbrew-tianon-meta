@@ -249,6 +249,36 @@
           }
         }
       },
+      "i386": {
+        "tags": [
+          "tianon/buildkit:0.15.2",
+          "tianon/buildkit:0.15",
+          "tianon/buildkit:0",
+          "tianon/buildkit:latest"
+        ],
+        "archTags": [],
+        "froms": [
+          "golang:1.21",
+          "infosiftr/moby:latest",
+          "golang:1.21"
+        ],
+        "lastStageFrom": "infosiftr/moby:latest",
+        "platformString": "linux/386",
+        "platform": {
+          "architecture": "386",
+          "os": "linux"
+        },
+        "parents": {
+          "golang:1.21": {
+            "sourceId": null,
+            "pin": null
+          },
+          "infosiftr/moby:latest": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
       "mips64le": {
         "tags": [
           "tianon/buildkit:0.15.2",
@@ -326,6 +356,36 @@
         "platformString": "linux/riscv64",
         "platform": {
           "architecture": "riscv64",
+          "os": "linux"
+        },
+        "parents": {
+          "golang:1.21": {
+            "sourceId": null,
+            "pin": null
+          },
+          "infosiftr/moby:latest": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "s390x": {
+        "tags": [
+          "tianon/buildkit:0.15.2",
+          "tianon/buildkit:0.15",
+          "tianon/buildkit:0",
+          "tianon/buildkit:latest"
+        ],
+        "archTags": [],
+        "froms": [
+          "golang:1.21",
+          "infosiftr/moby:latest",
+          "golang:1.21"
+        ],
+        "lastStageFrom": "infosiftr/moby:latest",
+        "platformString": "linux/s390x",
+        "platform": {
+          "architecture": "s390x",
           "os": "linux"
         },
         "parents": {
@@ -469,6 +529,34 @@
           }
         }
       },
+      "i386": {
+        "tags": [
+          "tianon/buildkit:0.13.2",
+          "tianon/buildkit:0.13"
+        ],
+        "archTags": [],
+        "froms": [
+          "golang:1.21",
+          "infosiftr/moby:latest",
+          "golang:1.21"
+        ],
+        "lastStageFrom": "infosiftr/moby:latest",
+        "platformString": "linux/386",
+        "platform": {
+          "architecture": "386",
+          "os": "linux"
+        },
+        "parents": {
+          "golang:1.21": {
+            "sourceId": null,
+            "pin": null
+          },
+          "infosiftr/moby:latest": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
       "mips64le": {
         "tags": [
           "tianon/buildkit:0.13.2",
@@ -540,6 +628,34 @@
         "platformString": "linux/riscv64",
         "platform": {
           "architecture": "riscv64",
+          "os": "linux"
+        },
+        "parents": {
+          "golang:1.21": {
+            "sourceId": null,
+            "pin": null
+          },
+          "infosiftr/moby:latest": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "s390x": {
+        "tags": [
+          "tianon/buildkit:0.13.2",
+          "tianon/buildkit:0.13"
+        ],
+        "archTags": [],
+        "froms": [
+          "golang:1.21",
+          "infosiftr/moby:latest",
+          "golang:1.21"
+        ],
+        "lastStageFrom": "infosiftr/moby:latest",
+        "platformString": "linux/s390x",
+        "platform": {
+          "architecture": "s390x",
           "os": "linux"
         },
         "parents": {
@@ -5027,6 +5143,87 @@
           "architecture": "arm64",
           "os": "linux",
           "variant": "v8"
+        },
+        "parents": {
+          "tianon/nolibc:latest": {
+            "sourceId": "eac45fc81f76227added970123834106097967460b450ac66a788c50d09649cf",
+            "pin": null
+          },
+          "scratch": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "i386": {
+        "tags": [
+          "tianon/sleeping-beauty:nolibc"
+        ],
+        "archTags": [],
+        "froms": [
+          "tianon/nolibc:latest",
+          "scratch",
+          "tianon/nolibc:latest"
+        ],
+        "lastStageFrom": "scratch",
+        "platformString": "linux/386",
+        "platform": {
+          "architecture": "386",
+          "os": "linux"
+        },
+        "parents": {
+          "tianon/nolibc:latest": {
+            "sourceId": "eac45fc81f76227added970123834106097967460b450ac66a788c50d09649cf",
+            "pin": null
+          },
+          "scratch": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "ppc64le": {
+        "tags": [
+          "tianon/sleeping-beauty:nolibc"
+        ],
+        "archTags": [],
+        "froms": [
+          "tianon/nolibc:latest",
+          "scratch",
+          "tianon/nolibc:latest"
+        ],
+        "lastStageFrom": "scratch",
+        "platformString": "linux/ppc64le",
+        "platform": {
+          "architecture": "ppc64le",
+          "os": "linux"
+        },
+        "parents": {
+          "tianon/nolibc:latest": {
+            "sourceId": "eac45fc81f76227added970123834106097967460b450ac66a788c50d09649cf",
+            "pin": null
+          },
+          "scratch": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "s390x": {
+        "tags": [
+          "tianon/sleeping-beauty:nolibc"
+        ],
+        "archTags": [],
+        "froms": [
+          "tianon/nolibc:latest",
+          "scratch",
+          "tianon/nolibc:latest"
+        ],
+        "lastStageFrom": "scratch",
+        "platformString": "linux/s390x",
+        "platform": {
+          "architecture": "s390x",
+          "os": "linux"
         },
         "parents": {
           "tianon/nolibc:latest": {
