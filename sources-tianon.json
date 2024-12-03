@@ -1962,17 +1962,17 @@
       }
     }
   },
-  "0cb8c8cf12ab4018977d8ba0d12f1e917fda4b141bc399f64cc44f3674da8efc": {
-    "sourceId": "0cb8c8cf12ab4018977d8ba0d12f1e917fda4b141bc399f64cc44f3674da8efc",
-    "reproducibleGitChecksum": "565d467f8c60aa8a7933f0c80ae8215896bdff0e885f5113409891f9030ba151",
+  "c8dacd7e90f1af968c8d74518dd54e69fe21abd7258cc310a71a774ebee83964": {
+    "sourceId": "c8dacd7e90f1af968c8d74518dd54e69fe21abd7258cc310a71a774ebee83964",
+    "reproducibleGitChecksum": "2ef13cfb4a29dd0523315f620ca74075e652ceaed104689032f9db2d89703cbd",
     "entry": {
       "GitRepo": "https://github.com/tianon/dockerfiles.git",
       "GitFetch": "refs/heads/master",
-      "GitCommit": "e2e3d73bdfec28b1b95e5d33835159783a5a9315",
+      "GitCommit": "c8a547d54fffe526500a2563ca06ff523edb5238",
       "Directory": "docker-master",
       "File": "Dockerfile",
       "Builder": "",
-      "SOURCE_DATE_EPOCH": 1733222267
+      "SOURCE_DATE_EPOCH": 1733236664
     },
     "arches": {
       "amd64": {
@@ -2036,7 +2036,7 @@
         },
         "parents": {
           "tianon/docker-master:dind": {
-            "sourceId": "0cb8c8cf12ab4018977d8ba0d12f1e917fda4b141bc399f64cc44f3674da8efc",
+            "sourceId": "c8dacd7e90f1af968c8d74518dd54e69fe21abd7258cc310a71a774ebee83964",
             "pin": null
           }
         }
@@ -6370,6 +6370,33 @@
         "platformString": "linux/386",
         "platform": {
           "architecture": "386",
+          "os": "linux"
+        },
+        "parents": {
+          "tianon/nolibc:latest": {
+            "sourceId": "ceef13be117517deea3b489450f8000a583044b810a98b5a8d59727d18a3aaad",
+            "pin": null
+          },
+          "scratch": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "ppc64le": {
+        "tags": [
+          "tianon/sleeping-beauty:nolibc"
+        ],
+        "archTags": [],
+        "froms": [
+          "tianon/nolibc:latest",
+          "scratch",
+          "tianon/nolibc:latest"
+        ],
+        "lastStageFrom": "scratch",
+        "platformString": "linux/ppc64le",
+        "platform": {
+          "architecture": "ppc64le",
           "os": "linux"
         },
         "parents": {
