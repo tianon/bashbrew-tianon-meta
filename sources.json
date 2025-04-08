@@ -1909,18 +1909,18 @@
       }
     }
   },
-  "cc6a9c8ae839681cf537e7dc53b91a34d1e6158888b5898259b984230dbb173c": {
-    "sourceId": "cc6a9c8ae839681cf537e7dc53b91a34d1e6158888b5898259b984230dbb173c",
-    "reproducibleGitChecksum": "6e5ae9589712aca074dcbdffb6fa4e2a033bb8aded50649b78a3869c873545dc",
+  "761e0944c829460ee51cccfc8f57ad6aa371cedf3a99b75b2cb30d8c1e5b777d": {
+    "sourceId": "761e0944c829460ee51cccfc8f57ad6aa371cedf3a99b75b2cb30d8c1e5b777d",
+    "reproducibleGitChecksum": "a80848acc839bd3774bc865ca141a5bc14560af8338650c4edd00b4b236597c8",
     "entries": [
       {
         "GitRepo": "https://github.com/tianon/dockerfiles.git",
         "GitFetch": "refs/heads/master",
-        "GitCommit": "e2c03f7e1e90bc91818ef181fd3cda0b7394a9e2",
+        "GitCommit": "1cd7a4607f4d06f267126d095fa68cb4e1a75f08",
         "Directory": "docker-master",
         "File": "Dockerfile",
         "Builder": "",
-        "SOURCE_DATE_EPOCH": 1744105072
+        "SOURCE_DATE_EPOCH": 1744119484
       }
     ],
     "arches": {
@@ -1987,7 +1987,7 @@
         },
         "parents": {
           "tianon/docker-master:dind": {
-            "sourceId": "cc6a9c8ae839681cf537e7dc53b91a34d1e6158888b5898259b984230dbb173c",
+            "sourceId": "761e0944c829460ee51cccfc8f57ad6aa371cedf3a99b75b2cb30d8c1e5b777d",
             "pin": null
           }
         }
@@ -6282,6 +6282,33 @@
         "platformString": "linux/ppc64le",
         "platform": {
           "architecture": "ppc64le",
+          "os": "linux"
+        },
+        "parents": {
+          "tianon/nolibc:latest": {
+            "sourceId": "3dc9e85b123239f3a4f9c3aad2940982eb4bee3f9cb5e9487d3cfd73240a6d5d",
+            "pin": null
+          },
+          "scratch": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "s390x": {
+        "tags": [
+          "tianon/sleeping-beauty:nolibc"
+        ],
+        "archTags": [],
+        "froms": [
+          "tianon/nolibc:latest",
+          "scratch",
+          "tianon/nolibc:latest"
+        ],
+        "lastStageFrom": "scratch",
+        "platformString": "linux/s390x",
+        "platform": {
+          "architecture": "s390x",
           "os": "linux"
         },
         "parents": {
