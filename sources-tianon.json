@@ -3796,18 +3796,18 @@
       }
     }
   },
-  "0ed14ba6d558fa9afc88ab5da825a3cf4fdfbcc84a33544e3809378cb4b4ac35": {
-    "sourceId": "0ed14ba6d558fa9afc88ab5da825a3cf4fdfbcc84a33544e3809378cb4b4ac35",
-    "reproducibleGitChecksum": "0b1a22a101a405290290d6640763e4f481e7472fffa575a368867ad7a1f0dba0",
+  "c285d35f983c3bf1b4344797b2565c4d2aa0d45bc45dc53fc36dd017dd8a9612": {
+    "sourceId": "c285d35f983c3bf1b4344797b2565c4d2aa0d45bc45dc53fc36dd017dd8a9612",
+    "reproducibleGitChecksum": "7f297ce0690fc0a5dfc10e63e91b758f1870b1f29769afb0a7ce261c38492879",
     "entries": [
       {
         "GitRepo": "https://github.com/tianon/docker-moosefs.git",
         "GitFetch": "refs/heads/master",
-        "GitCommit": "832335e773bcdb769ffe7046446e54f6cac646ff",
+        "GitCommit": "262a82acda9f7e4f85871bc6c780f332e6fce5fe",
         "Directory": "4",
         "File": "Dockerfile",
         "Builder": "",
-        "SOURCE_DATE_EPOCH": 1751359890
+        "SOURCE_DATE_EPOCH": 1751359967
       }
     ],
     "arches": {
@@ -6697,6 +6697,33 @@
             "pin": null
           }
         }
+      },
+      "s390x": {
+        "tags": [
+          "tianon/sleeping-beauty:nolibc"
+        ],
+        "archTags": [],
+        "froms": [
+          "tianon/nolibc:latest",
+          "scratch",
+          "tianon/nolibc:latest"
+        ],
+        "lastStageFrom": "scratch",
+        "platformString": "linux/s390x",
+        "platform": {
+          "architecture": "s390x",
+          "os": "linux"
+        },
+        "parents": {
+          "tianon/nolibc:latest": {
+            "sourceId": "3cabaf292c8794bd30280f151500efab10804057802110791247b69e2a0e86ea",
+            "pin": null
+          },
+          "scratch": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
       }
     }
   },
@@ -7656,6 +7683,68 @@
           }
         }
       },
+      "arm32v6": {
+        "tags": [
+          "tianon/toybox:0.8.12",
+          "tianon/toybox:0.8",
+          "tianon/toybox:0",
+          "tianon/toybox:latest"
+        ],
+        "archTags": [],
+        "froms": [
+          "alpine:3.22",
+          "scratch",
+          "alpine:3.22"
+        ],
+        "lastStageFrom": "scratch",
+        "platformString": "linux/arm/v6",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v6"
+        },
+        "parents": {
+          "alpine:3.22": {
+            "sourceId": null,
+            "pin": null
+          },
+          "scratch": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm32v7": {
+        "tags": [
+          "tianon/toybox:0.8.12",
+          "tianon/toybox:0.8",
+          "tianon/toybox:0",
+          "tianon/toybox:latest"
+        ],
+        "archTags": [],
+        "froms": [
+          "alpine:3.22",
+          "scratch",
+          "alpine:3.22"
+        ],
+        "lastStageFrom": "scratch",
+        "platformString": "linux/arm/v7",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v7"
+        },
+        "parents": {
+          "alpine:3.22": {
+            "sourceId": null,
+            "pin": null
+          },
+          "scratch": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
       "arm64v8": {
         "tags": [
           "tianon/toybox:0.8.12",
@@ -7675,6 +7764,126 @@
           "architecture": "arm64",
           "os": "linux",
           "variant": "v8"
+        },
+        "parents": {
+          "alpine:3.22": {
+            "sourceId": null,
+            "pin": null
+          },
+          "scratch": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "i386": {
+        "tags": [
+          "tianon/toybox:0.8.12",
+          "tianon/toybox:0.8",
+          "tianon/toybox:0",
+          "tianon/toybox:latest"
+        ],
+        "archTags": [],
+        "froms": [
+          "alpine:3.22",
+          "scratch",
+          "alpine:3.22"
+        ],
+        "lastStageFrom": "scratch",
+        "platformString": "linux/386",
+        "platform": {
+          "architecture": "386",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.22": {
+            "sourceId": null,
+            "pin": null
+          },
+          "scratch": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "ppc64le": {
+        "tags": [
+          "tianon/toybox:0.8.12",
+          "tianon/toybox:0.8",
+          "tianon/toybox:0",
+          "tianon/toybox:latest"
+        ],
+        "archTags": [],
+        "froms": [
+          "alpine:3.22",
+          "scratch",
+          "alpine:3.22"
+        ],
+        "lastStageFrom": "scratch",
+        "platformString": "linux/ppc64le",
+        "platform": {
+          "architecture": "ppc64le",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.22": {
+            "sourceId": null,
+            "pin": null
+          },
+          "scratch": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "riscv64": {
+        "tags": [
+          "tianon/toybox:0.8.12",
+          "tianon/toybox:0.8",
+          "tianon/toybox:0",
+          "tianon/toybox:latest"
+        ],
+        "archTags": [],
+        "froms": [
+          "alpine:3.22",
+          "scratch",
+          "alpine:3.22"
+        ],
+        "lastStageFrom": "scratch",
+        "platformString": "linux/riscv64",
+        "platform": {
+          "architecture": "riscv64",
+          "os": "linux"
+        },
+        "parents": {
+          "alpine:3.22": {
+            "sourceId": null,
+            "pin": null
+          },
+          "scratch": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "s390x": {
+        "tags": [
+          "tianon/toybox:0.8.12",
+          "tianon/toybox:0.8",
+          "tianon/toybox:0",
+          "tianon/toybox:latest"
+        ],
+        "archTags": [],
+        "froms": [
+          "alpine:3.22",
+          "scratch",
+          "alpine:3.22"
+        ],
+        "lastStageFrom": "scratch",
+        "platformString": "linux/s390x",
+        "platform": {
+          "architecture": "s390x",
+          "os": "linux"
         },
         "parents": {
           "alpine:3.22": {
