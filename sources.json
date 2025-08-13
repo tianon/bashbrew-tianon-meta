@@ -950,7 +950,7 @@
           }
         }
       },
-      "riscv64": {
+      "i386": {
         "tags": [
           "tianon/buildkit:0.23.2",
           "tianon/buildkit:0.23",
@@ -962,9 +962,9 @@
           "infosiftr/moby:latest"
         ],
         "lastStageFrom": "infosiftr/moby:latest",
-        "platformString": "linux/riscv64",
+        "platformString": "linux/386",
         "platform": {
-          "architecture": "riscv64",
+          "architecture": "386",
           "os": "linux"
         },
         "parents": {
@@ -1037,7 +1037,7 @@
           }
         }
       },
-      "riscv64": {
+      "i386": {
         "tags": [
           "tianon/buildkit:0.16.0",
           "tianon/buildkit:0.16"
@@ -1047,9 +1047,9 @@
           "infosiftr/moby:latest"
         ],
         "lastStageFrom": "infosiftr/moby:latest",
-        "platformString": "linux/riscv64",
+        "platformString": "linux/386",
         "platform": {
-          "architecture": "riscv64",
+          "architecture": "386",
           "os": "linux"
         },
         "parents": {
@@ -1120,7 +1120,7 @@
           }
         }
       },
-      "riscv64": {
+      "i386": {
         "tags": [
           "tianon/buildkit:0.13.2",
           "tianon/buildkit:0.13"
@@ -1130,9 +1130,9 @@
           "infosiftr/moby:latest"
         ],
         "lastStageFrom": "infosiftr/moby:latest",
-        "platformString": "linux/riscv64",
+        "platformString": "linux/386",
         "platform": {
-          "architecture": "riscv64",
+          "architecture": "386",
           "os": "linux"
         },
         "parents": {
@@ -6299,6 +6299,33 @@
         "platformString": "linux/amd64",
         "platform": {
           "architecture": "amd64",
+          "os": "linux"
+        },
+        "parents": {
+          "tianon/nolibc:latest": {
+            "sourceId": "ef762448509e0fd5aed34d7960e6869276e16d9065e32744072083ad03d3ebb9",
+            "pin": null
+          },
+          "scratch": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "i386": {
+        "tags": [
+          "tianon/sleeping-beauty:nolibc"
+        ],
+        "archTags": [],
+        "froms": [
+          "tianon/nolibc:latest",
+          "scratch",
+          "tianon/nolibc:latest"
+        ],
+        "lastStageFrom": "scratch",
+        "platformString": "linux/386",
+        "platform": {
+          "architecture": "386",
           "os": "linux"
         },
         "parents": {
