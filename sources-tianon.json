@@ -2327,24 +2327,24 @@
       }
     }
   },
-  "034c96b74b40a40c989f41f9cfd2be79568af6522d4a52ca89e6f89ed38cb3c0": {
-    "sourceId": "034c96b74b40a40c989f41f9cfd2be79568af6522d4a52ca89e6f89ed38cb3c0",
-    "reproducibleGitChecksum": "cd3775fb4690b9aa7e8fe9d9c0eb7f686a1f71a013d4188e5349d3d7f6ea289c",
+  "acf6a99f0000c893cc16fa87278252c36280cce65277486b7ee232582b48e163": {
+    "sourceId": "acf6a99f0000c893cc16fa87278252c36280cce65277486b7ee232582b48e163",
+    "reproducibleGitChecksum": "272e3ea74896690ebc48898cff5a36400fb4a20e27903424fb9d071c198d38e4",
     "entries": [
       {
         "GitRepo": "https://github.com/tianon/dockerfiles.git",
         "GitFetch": "refs/heads/master",
-        "GitCommit": "5d8b3950e99b46c5d4fb41a2a944e03952ec1e73",
+        "GitCommit": "dc75a9144a08ab0cf9c7caa1ad425572cd658a1c",
         "Directory": "docker-desktop",
         "File": "Dockerfile",
         "Builder": "classic",
-        "SOURCE_DATE_EPOCH": 1755298879
+        "SOURCE_DATE_EPOCH": 1755754255
       }
     ],
     "arches": {
       "amd64": {
         "tags": [
-          "tianon/docker-desktop:4.44.2",
+          "tianon/docker-desktop:4.44.3",
           "tianon/docker-desktop:4.44",
           "tianon/docker-desktop:4",
           "tianon/docker-desktop:latest"
@@ -2360,6 +2360,37 @@
         "platform": {
           "architecture": "amd64",
           "os": "linux"
+        },
+        "parents": {
+          "rust:1.89-slim-trixie": {
+            "sourceId": null,
+            "pin": null
+          },
+          "debian:trixie-slim": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm64v8": {
+        "tags": [
+          "tianon/docker-desktop:4.44.3",
+          "tianon/docker-desktop:4.44",
+          "tianon/docker-desktop:4",
+          "tianon/docker-desktop:latest"
+        ],
+        "archTags": [],
+        "froms": [
+          "rust:1.89-slim-trixie",
+          "debian:trixie-slim",
+          "rust:1.89-slim-trixie"
+        ],
+        "lastStageFrom": "debian:trixie-slim",
+        "platformString": "linux/arm64/v8",
+        "platform": {
+          "architecture": "arm64",
+          "os": "linux",
+          "variant": "v8"
         },
         "parents": {
           "rust:1.89-slim-trixie": {
