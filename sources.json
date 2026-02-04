@@ -984,6 +984,30 @@
             "pin": null
           }
         }
+      },
+      "riscv64": {
+        "tags": [
+          "tianon/buildkit:0.27.1",
+          "tianon/buildkit:0.27",
+          "tianon/buildkit:0",
+          "tianon/buildkit:latest"
+        ],
+        "archTags": [],
+        "froms": [
+          "infosiftr/moby:latest"
+        ],
+        "lastStageFrom": "infosiftr/moby:latest",
+        "platformString": "linux/riscv64",
+        "platform": {
+          "architecture": "riscv64",
+          "os": "linux"
+        },
+        "parents": {
+          "infosiftr/moby:latest": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
       }
     }
   },
@@ -1091,6 +1115,28 @@
             "pin": null
           }
         }
+      },
+      "riscv64": {
+        "tags": [
+          "tianon/buildkit:0.16.0",
+          "tianon/buildkit:0.16"
+        ],
+        "archTags": [],
+        "froms": [
+          "infosiftr/moby:latest"
+        ],
+        "lastStageFrom": "infosiftr/moby:latest",
+        "platformString": "linux/riscv64",
+        "platform": {
+          "architecture": "riscv64",
+          "os": "linux"
+        },
+        "parents": {
+          "infosiftr/moby:latest": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
       }
     }
   },
@@ -1190,6 +1236,28 @@
         "platformString": "linux/386",
         "platform": {
           "architecture": "386",
+          "os": "linux"
+        },
+        "parents": {
+          "infosiftr/moby:latest": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "riscv64": {
+        "tags": [
+          "tianon/buildkit:0.13.2",
+          "tianon/buildkit:0.13"
+        ],
+        "archTags": [],
+        "froms": [
+          "infosiftr/moby:latest"
+        ],
+        "lastStageFrom": "infosiftr/moby:latest",
+        "platformString": "linux/riscv64",
+        "platform": {
+          "architecture": "riscv64",
           "os": "linux"
         },
         "parents": {
@@ -6699,6 +6767,34 @@
           }
         }
       },
+      "arm32v7": {
+        "tags": [
+          "tianon/sleeping-beauty:nolibc"
+        ],
+        "archTags": [],
+        "froms": [
+          "tianon/nolibc:latest",
+          "scratch",
+          "tianon/nolibc:latest"
+        ],
+        "lastStageFrom": "scratch",
+        "platformString": "linux/arm/v7",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v7"
+        },
+        "parents": {
+          "tianon/nolibc:latest": {
+            "sourceId": "ec2e3b19517e33fc5ec83fa1ffa0f4b2bcbb43d24651059201bfce17fbe9d455",
+            "pin": null
+          },
+          "scratch": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
       "arm64v8": {
         "tags": [
           "tianon/sleeping-beauty:nolibc"
@@ -7580,24 +7676,24 @@
       }
     }
   },
-  "a771a7b32e4a7f20346786ff79c3dca9cf327f57542ffd47b17bf3e32a658ba8": {
-    "sourceId": "a771a7b32e4a7f20346786ff79c3dca9cf327f57542ffd47b17bf3e32a658ba8",
-    "reproducibleGitChecksum": "e9162dede3cf716c14e40fe2b241d3bf6869ad52bcd6171ffc1c6e5d16c6272f",
+  "068da7bea8f3bd4d164e5c7af0e8138bda9209fd535d256ac51bcaa0b3defe8a": {
+    "sourceId": "068da7bea8f3bd4d164e5c7af0e8138bda9209fd535d256ac51bcaa0b3defe8a",
+    "reproducibleGitChecksum": "21283f9494dab26693b6cbad5c4c45a74c286275012ac836367b5e3687cabb80",
     "entries": [
       {
         "GitRepo": "https://github.com/tianon/docker-syncthing.git",
         "GitFetch": "refs/heads/master",
-        "GitCommit": "533fec05723639a0f0e88e0c7514f8d4ffabfb3e",
+        "GitCommit": "c79be23fcbea6a425f3e9ce8b648fc6e4ee3a557",
         "Directory": "2",
         "File": "Dockerfile",
         "Builder": "",
-        "SOURCE_DATE_EPOCH": 1767715932
+        "SOURCE_DATE_EPOCH": 1770199931
       }
     ],
     "arches": {
       "amd64": {
         "tags": [
-          "tianon/syncthing:2.0.13",
+          "tianon/syncthing:2.0.14",
           "tianon/syncthing:2.0",
           "tianon/syncthing:2",
           "tianon/syncthing:latest"
@@ -7621,7 +7717,7 @@
       },
       "arm32v6": {
         "tags": [
-          "tianon/syncthing:2.0.13",
+          "tianon/syncthing:2.0.14",
           "tianon/syncthing:2.0",
           "tianon/syncthing:2",
           "tianon/syncthing:latest"
@@ -7646,7 +7742,7 @@
       },
       "arm32v7": {
         "tags": [
-          "tianon/syncthing:2.0.13",
+          "tianon/syncthing:2.0.14",
           "tianon/syncthing:2.0",
           "tianon/syncthing:2",
           "tianon/syncthing:latest"
@@ -7671,7 +7767,7 @@
       },
       "arm64v8": {
         "tags": [
-          "tianon/syncthing:2.0.13",
+          "tianon/syncthing:2.0.14",
           "tianon/syncthing:2.0",
           "tianon/syncthing:2",
           "tianon/syncthing:latest"
@@ -7696,7 +7792,7 @@
       },
       "i386": {
         "tags": [
-          "tianon/syncthing:2.0.13",
+          "tianon/syncthing:2.0.14",
           "tianon/syncthing:2.0",
           "tianon/syncthing:2",
           "tianon/syncthing:latest"
@@ -7720,7 +7816,7 @@
       },
       "ppc64le": {
         "tags": [
-          "tianon/syncthing:2.0.13",
+          "tianon/syncthing:2.0.14",
           "tianon/syncthing:2.0",
           "tianon/syncthing:2",
           "tianon/syncthing:latest"
@@ -7744,7 +7840,7 @@
       },
       "riscv64": {
         "tags": [
-          "tianon/syncthing:2.0.13",
+          "tianon/syncthing:2.0.14",
           "tianon/syncthing:2.0",
           "tianon/syncthing:2",
           "tianon/syncthing:latest"
@@ -7768,7 +7864,7 @@
       },
       "s390x": {
         "tags": [
-          "tianon/syncthing:2.0.13",
+          "tianon/syncthing:2.0.14",
           "tianon/syncthing:2.0",
           "tianon/syncthing:2",
           "tianon/syncthing:latest"
