@@ -694,6 +694,36 @@
 					}
 				}
 			},
+			"mips64le": {
+				"tags": [
+					"tianon/buildkit:0.29.0",
+					"tianon/buildkit:0.29",
+					"tianon/buildkit:0",
+					"tianon/buildkit:latest"
+				],
+				"archTags": [],
+				"froms": [
+					"golang:1.25",
+					"infosiftr/moby:latest",
+					"golang:1.25"
+				],
+				"lastStageFrom": "infosiftr/moby:latest",
+				"platformString": "linux/mips64le",
+				"platform": {
+					"architecture": "mips64le",
+					"os": "linux"
+				},
+				"parents": {
+					"golang:1.25": {
+						"sourceId": null,
+						"pin": null
+					},
+					"infosiftr/moby:latest": {
+						"sourceId": null,
+						"pin": null
+					}
+				}
+			},
 			"riscv64": {
 				"tags": [
 					"tianon/buildkit:0.29.0",
@@ -871,6 +901,34 @@
 				"platformString": "linux/386",
 				"platform": {
 					"architecture": "386",
+					"os": "linux"
+				},
+				"parents": {
+					"golang:1.25": {
+						"sourceId": null,
+						"pin": null
+					},
+					"infosiftr/moby:latest": {
+						"sourceId": null,
+						"pin": null
+					}
+				}
+			},
+			"mips64le": {
+				"tags": [
+					"tianon/buildkit:0.29.0-rc1",
+					"tianon/buildkit:rc"
+				],
+				"archTags": [],
+				"froms": [
+					"golang:1.25",
+					"infosiftr/moby:latest",
+					"golang:1.25"
+				],
+				"lastStageFrom": "infosiftr/moby:latest",
+				"platformString": "linux/mips64le",
+				"platform": {
+					"architecture": "mips64le",
 					"os": "linux"
 				},
 				"parents": {
@@ -1072,6 +1130,34 @@
 					}
 				}
 			},
+			"mips64le": {
+				"tags": [
+					"tianon/buildkit:0.16.0",
+					"tianon/buildkit:0.16"
+				],
+				"archTags": [],
+				"froms": [
+					"golang:1.21",
+					"infosiftr/moby:latest",
+					"golang:1.21"
+				],
+				"lastStageFrom": "infosiftr/moby:latest",
+				"platformString": "linux/mips64le",
+				"platform": {
+					"architecture": "mips64le",
+					"os": "linux"
+				},
+				"parents": {
+					"golang:1.21": {
+						"sourceId": null,
+						"pin": null
+					},
+					"infosiftr/moby:latest": {
+						"sourceId": null,
+						"pin": null
+					}
+				}
+			},
 			"riscv64": {
 				"tags": [
 					"tianon/buildkit:0.16.0",
@@ -1247,6 +1333,34 @@
 				"platformString": "linux/386",
 				"platform": {
 					"architecture": "386",
+					"os": "linux"
+				},
+				"parents": {
+					"golang:1.21": {
+						"sourceId": null,
+						"pin": null
+					},
+					"infosiftr/moby:latest": {
+						"sourceId": null,
+						"pin": null
+					}
+				}
+			},
+			"mips64le": {
+				"tags": [
+					"tianon/buildkit:0.13.2",
+					"tianon/buildkit:0.13"
+				],
+				"archTags": [],
+				"froms": [
+					"golang:1.21",
+					"infosiftr/moby:latest",
+					"golang:1.21"
+				],
+				"lastStageFrom": "infosiftr/moby:latest",
+				"platformString": "linux/mips64le",
+				"platform": {
+					"architecture": "mips64le",
 					"os": "linux"
 				},
 				"parents": {
@@ -7074,6 +7188,34 @@
 				"platform": {
 					"architecture": "amd64",
 					"os": "linux"
+				},
+				"parents": {
+					"tianon/nolibc:latest": {
+						"sourceId": "80ca2c89eacc46754dada74e7bb788599e63d289f897019b1de6366c099792e2",
+						"pin": null
+					},
+					"scratch": {
+						"sourceId": null,
+						"pin": null
+					}
+				}
+			},
+			"arm32v5": {
+				"tags": [
+					"tianon/sleeping-beauty:nolibc"
+				],
+				"archTags": [],
+				"froms": [
+					"tianon/nolibc:latest",
+					"scratch",
+					"tianon/nolibc:latest"
+				],
+				"lastStageFrom": "scratch",
+				"platformString": "linux/arm/v5",
+				"platform": {
+					"architecture": "arm",
+					"os": "linux",
+					"variant": "v5"
 				},
 				"parents": {
 					"tianon/nolibc:latest": {
