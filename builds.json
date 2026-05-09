@@ -607,7 +607,68 @@
 		"buildId": "5e6fa694e74925ebdc41a94861b698408e67f53f92d3b8d54ac21e0ec322de86",
 		"build": {
 			"img": "tianon/zz-staging:arm32v7-5e6fa694e74925ebdc41a94861b698408e67f53f92d3b8d54ac21e0ec322de86",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:a3abeaf46348caf769090282585040d19268e56250950efa4b704c309ae519f9",
+						"size": 3063,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm32v7",
+							"org.opencontainers.image.base.digest": "sha256:26b3b2d062679e908991b577333eac289599a226847725e747be730925987a20",
+							"org.opencontainers.image.base.name": "debian:trixie-slim",
+							"org.opencontainers.image.created": "2026-05-09T01:45:53Z",
+							"org.opencontainers.image.ref.name": "tianon/zz-staging:arm32v7-5e6fa694e74925ebdc41a94861b698408e67f53f92d3b8d54ac21e0ec322de86@sha256:a3abeaf46348caf769090282585040d19268e56250950efa4b704c309ae519f9",
+							"org.opencontainers.image.revision": "dc881c6dcd338ab8286555023d54fcee8e53e3ac",
+							"org.opencontainers.image.source": "https://github.com/tianon/dockerfiles.git#dc881c6dcd338ab8286555023d54fcee8e53e3ac:infosiftr-moby",
+							"org.opencontainers.image.url": "https://hub.docker.com/r/infosiftr/moby",
+							"org.opencontainers.image.version": "23.0.18"
+						},
+						"platform": {
+							"architecture": "arm",
+							"os": "linux",
+							"variant": "v7"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:b7b74724865b5d18c23d5d2c4d7d7fa59ba87fc9b0566eabf58df4089899f26d",
+						"size": 838,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm32v7",
+							"org.opencontainers.image.ref.name": "tianon/zz-staging:arm32v7-5e6fa694e74925ebdc41a94861b698408e67f53f92d3b8d54ac21e0ec322de86@sha256:b7b74724865b5d18c23d5d2c4d7d7fa59ba87fc9b0566eabf58df4089899f26d",
+							"vnd.docker.reference.digest": "sha256:a3abeaf46348caf769090282585040d19268e56250950efa4b704c309ae519f9",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:22cd9ec049fe69ed48f3751b2daaac5a1650806e24dab20f4a5c2bbc09e0df38",
+						"size": 3430,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm32v7",
+							"org.opencontainers.image.ref.name": "tianon/zz-staging:arm32v7-5e6fa694e74925ebdc41a94861b698408e67f53f92d3b8d54ac21e0ec322de86@sha256:22cd9ec049fe69ed48f3751b2daaac5a1650806e24dab20f4a5c2bbc09e0df38",
+							"vnd.docker.reference.digest": "sha256:a3abeaf46348caf769090282585040d19268e56250950efa4b704c309ae519f9"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						},
+						"artifactType": "application/vnd.dev.cosign.artifact.sig.v1+json"
+					}
+				],
+				"annotations": {
+					"com.docker.official-images.bashbrew.signed-by.label": "YubiKey 4239413 Slot 82",
+					"com.docker.official-images.bashbrew.signed-by.pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEG+1HMsDDAFXQrPkPi80/P4XmMsWJ\ndD5BxdeI7uvLPArqhqsB38LcTLiZ2iTwiITRwyqHlbnjXdvByWJAdaUWNQ==\n-----END PUBLIC KEY-----",
+					"org.opencontainers.image.ref.name": "tianon/zz-staging:arm32v7-5e6fa694e74925ebdc41a94861b698408e67f53f92d3b8d54ac21e0ec322de86@sha256:b89f15947db793c0034944d62ace0c151ca1ddfacbff370fe765d64ea520e619"
+				}
+			},
 			"sourceId": "4922aafd5e1f73166416ca575a11728ade7a50dac18ea2bb8f87a6748df32fe7",
 			"arch": "arm32v7",
 			"parents": {
@@ -658,7 +719,18 @@
 						"org.opencontainers.image.ref.name": "debian:trixie-slim@sha256:109e2c65005bf160609e4ba6acf7783752f8502ad218e298253428690b9eaa4b"
 					}
 				}
-			}
+			},
+			"prodSignatures": [
+				{
+					"mediaType": "application/vnd.dev.cosign.simplesigning.v1+json",
+					"digest": "sha256:3d27eb5970bbcdd5df77a5bcdfd15241d218ed60079f19a9e9b3c6eb3ac9b7df",
+					"size": 1329,
+					"annotations": {
+						"dev.cosignproject.cosign/signature": "MEUCIQDvh57q4pVzKpbZhIzgquG47e/Kzg0Hafnd/MpuYBO8NwIgIG2ws6YfYeexStNDVhpmaoUa5+3qh26YOzUhyJP4L2Q=",
+						"vnd.docker.reference.digest": "sha256:a3abeaf46348caf769090282585040d19268e56250950efa4b704c309ae519f9"
+					}
+				}
+			]
 		},
 		"source": {
 			"sourceId": "4922aafd5e1f73166416ca575a11728ade7a50dac18ea2bb8f87a6748df32fe7",
@@ -1707,7 +1779,68 @@
 		"buildId": "19efd243649ea24e2997eff45ef9332d621df106beab0f36139e765c3d8b22b1",
 		"build": {
 			"img": "tianon/zz-staging:arm32v7-19efd243649ea24e2997eff45ef9332d621df106beab0f36139e765c3d8b22b1",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:bc17fe37769f691607f7cfc9508b19f644f4966e9bd5abf1ed9d8382e56fd05e",
+						"size": 2298,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm32v7",
+							"org.opencontainers.image.base.digest": "sha256:26b3b2d062679e908991b577333eac289599a226847725e747be730925987a20",
+							"org.opencontainers.image.base.name": "debian:trixie-slim",
+							"org.opencontainers.image.created": "2026-05-09T01:47:59Z",
+							"org.opencontainers.image.ref.name": "tianon/zz-staging:arm32v7-19efd243649ea24e2997eff45ef9332d621df106beab0f36139e765c3d8b22b1@sha256:bc17fe37769f691607f7cfc9508b19f644f4966e9bd5abf1ed9d8382e56fd05e",
+							"org.opencontainers.image.revision": "04d28fac01c26e2ca5b6042951a175df52bc6527",
+							"org.opencontainers.image.source": "https://github.com/tianon/dockerfiles.git#04d28fac01c26e2ca5b6042951a175df52bc6527:adsb/readsb",
+							"org.opencontainers.image.url": "https://hub.docker.com/r/tianon/adsb",
+							"org.opencontainers.image.version": "readsb-3.16"
+						},
+						"platform": {
+							"architecture": "arm",
+							"os": "linux",
+							"variant": "v7"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:94018002a1d5e4c87af0c07c205ec9ecf6afb5e3b5a4af138dda4bbc3d9796b1",
+						"size": 838,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm32v7",
+							"org.opencontainers.image.ref.name": "tianon/zz-staging:arm32v7-19efd243649ea24e2997eff45ef9332d621df106beab0f36139e765c3d8b22b1@sha256:94018002a1d5e4c87af0c07c205ec9ecf6afb5e3b5a4af138dda4bbc3d9796b1",
+							"vnd.docker.reference.digest": "sha256:bc17fe37769f691607f7cfc9508b19f644f4966e9bd5abf1ed9d8382e56fd05e",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:8a48b224bad6252cf16d4aa14983f1099834d3be76e1f99e8f6cd268cd030fde",
+						"size": 3428,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm32v7",
+							"org.opencontainers.image.ref.name": "tianon/zz-staging:arm32v7-19efd243649ea24e2997eff45ef9332d621df106beab0f36139e765c3d8b22b1@sha256:8a48b224bad6252cf16d4aa14983f1099834d3be76e1f99e8f6cd268cd030fde",
+							"vnd.docker.reference.digest": "sha256:bc17fe37769f691607f7cfc9508b19f644f4966e9bd5abf1ed9d8382e56fd05e"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						},
+						"artifactType": "application/vnd.dev.cosign.artifact.sig.v1+json"
+					}
+				],
+				"annotations": {
+					"com.docker.official-images.bashbrew.signed-by.label": "YubiKey 4239413 Slot 82",
+					"com.docker.official-images.bashbrew.signed-by.pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEG+1HMsDDAFXQrPkPi80/P4XmMsWJ\ndD5BxdeI7uvLPArqhqsB38LcTLiZ2iTwiITRwyqHlbnjXdvByWJAdaUWNQ==\n-----END PUBLIC KEY-----",
+					"org.opencontainers.image.ref.name": "tianon/zz-staging:arm32v7-19efd243649ea24e2997eff45ef9332d621df106beab0f36139e765c3d8b22b1@sha256:33f1f24064be12685b0e931cf51c8ef8e457dd0572fcd8bfffc53a07c2411b79"
+				}
+			},
 			"sourceId": "245a0acb33a289208f103ac10067187915cec3854cdc1bdef4dc77118b12291f",
 			"arch": "arm32v7",
 			"parents": {
@@ -1758,7 +1891,18 @@
 						"org.opencontainers.image.ref.name": "debian:trixie-slim@sha256:109e2c65005bf160609e4ba6acf7783752f8502ad218e298253428690b9eaa4b"
 					}
 				}
-			}
+			},
+			"prodSignatures": [
+				{
+					"mediaType": "application/vnd.dev.cosign.simplesigning.v1+json",
+					"digest": "sha256:d1473367c630b0d3f9ba0817a24696d092de3ce042955a1cc5ca2dece7b62088",
+					"size": 1328,
+					"annotations": {
+						"dev.cosignproject.cosign/signature": "MEUCIQCrcynsK5eFNnnP+V5KL8tOU7WVlMSMeW+n9QhS7DsW0wIgftOKXoac1yg+GPvm8zx5+RoFEBjepHZVSmYeDfFS8ZA=",
+						"vnd.docker.reference.digest": "sha256:bc17fe37769f691607f7cfc9508b19f644f4966e9bd5abf1ed9d8382e56fd05e"
+					}
+				}
+			]
 		},
 		"source": {
 			"sourceId": "245a0acb33a289208f103ac10067187915cec3854cdc1bdef4dc77118b12291f",
@@ -26925,7 +27069,68 @@
 		"buildId": "51dc5d1459044c00d7c0e25b2013ef8f37d4c6e6ba24b83612ee59621b42bcdd",
 		"build": {
 			"img": "tianon/zz-staging:arm64v8-51dc5d1459044c00d7c0e25b2013ef8f37d4c6e6ba24b83612ee59621b42bcdd",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:eaf4b1b044eababfe4d4a01962deb507c457770e680d96b229a2a57a7928afb7",
+						"size": 1915,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.base.digest": "sha256:b336514d078279b73836602c7d199d8aa9405afb97080ada9a6087b44200ddd2",
+							"org.opencontainers.image.base.name": "debian:trixie-slim",
+							"org.opencontainers.image.created": "2026-05-09T01:45:18Z",
+							"org.opencontainers.image.ref.name": "tianon/zz-staging:arm64v8-51dc5d1459044c00d7c0e25b2013ef8f37d4c6e6ba24b83612ee59621b42bcdd@sha256:eaf4b1b044eababfe4d4a01962deb507c457770e680d96b229a2a57a7928afb7",
+							"org.opencontainers.image.revision": "1d778d057b5454aaba573cc0d487ee6251db1c2e",
+							"org.opencontainers.image.source": "https://github.com/tianon/docker-qemu.git#1d778d057b5454aaba573cc0d487ee6251db1c2e:10.2",
+							"org.opencontainers.image.url": "https://hub.docker.com/r/tianon/qemu",
+							"org.opencontainers.image.version": "10.2.2-native"
+						},
+						"platform": {
+							"architecture": "arm64",
+							"os": "linux",
+							"variant": "v8"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:b8f23e297c6581a4eacc047d59533c4aed3c02c72418bf3b929ef58b55b5e22d",
+						"size": 838,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.ref.name": "tianon/zz-staging:arm64v8-51dc5d1459044c00d7c0e25b2013ef8f37d4c6e6ba24b83612ee59621b42bcdd@sha256:b8f23e297c6581a4eacc047d59533c4aed3c02c72418bf3b929ef58b55b5e22d",
+							"vnd.docker.reference.digest": "sha256:eaf4b1b044eababfe4d4a01962deb507c457770e680d96b229a2a57a7928afb7",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:ef81d89a2a3b98025cd06587730fcd81fea806a6a54483fd0673f482ca8c08b9",
+						"size": 3425,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.ref.name": "tianon/zz-staging:arm64v8-51dc5d1459044c00d7c0e25b2013ef8f37d4c6e6ba24b83612ee59621b42bcdd@sha256:ef81d89a2a3b98025cd06587730fcd81fea806a6a54483fd0673f482ca8c08b9",
+							"vnd.docker.reference.digest": "sha256:eaf4b1b044eababfe4d4a01962deb507c457770e680d96b229a2a57a7928afb7"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						},
+						"artifactType": "application/vnd.dev.cosign.artifact.sig.v1+json"
+					}
+				],
+				"annotations": {
+					"com.docker.official-images.bashbrew.signed-by.label": "YubiKey 4239413 Slot 82",
+					"com.docker.official-images.bashbrew.signed-by.pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEG+1HMsDDAFXQrPkPi80/P4XmMsWJ\ndD5BxdeI7uvLPArqhqsB38LcTLiZ2iTwiITRwyqHlbnjXdvByWJAdaUWNQ==\n-----END PUBLIC KEY-----",
+					"org.opencontainers.image.ref.name": "tianon/zz-staging:arm64v8-51dc5d1459044c00d7c0e25b2013ef8f37d4c6e6ba24b83612ee59621b42bcdd@sha256:e428d0f0c3980ee5777bcc604ce240a9c695711e3efc2b4c1ee24ab1d1c06530"
+				}
+			},
 			"sourceId": "2a3e2c1803593f91b7ead89fe6fdb46334f80eda077d4c41828c48f56661fa34",
 			"arch": "arm64v8",
 			"parents": {
@@ -26976,7 +27181,18 @@
 						"org.opencontainers.image.ref.name": "debian:trixie-slim@sha256:109e2c65005bf160609e4ba6acf7783752f8502ad218e298253428690b9eaa4b"
 					}
 				}
-			}
+			},
+			"prodSignatures": [
+				{
+					"mediaType": "application/vnd.dev.cosign.simplesigning.v1+json",
+					"digest": "sha256:b25348771991331388d17b6307d8e6ee861345374bc88836e3359c7f35684301",
+					"size": 1327,
+					"annotations": {
+						"dev.cosignproject.cosign/signature": "MEQCIDeOVndFlI334G90hi3Al48G927vfgMW4rfJuhmCdJLjAiBsgLcZYv6unuANFwgr8p1hqPOCYdOoqs4+7p+VSMDsfA==",
+						"vnd.docker.reference.digest": "sha256:eaf4b1b044eababfe4d4a01962deb507c457770e680d96b229a2a57a7928afb7"
+					}
+				}
+			]
 		},
 		"source": {
 			"sourceId": "2a3e2c1803593f91b7ead89fe6fdb46334f80eda077d4c41828c48f56661fa34",
@@ -27577,7 +27793,68 @@
 		"buildId": "b81ef3a0d4459db7255d860ec537fd9028af5e58a32992df935223ee10c041c2",
 		"build": {
 			"img": "tianon/zz-staging:arm64v8-b81ef3a0d4459db7255d860ec537fd9028af5e58a32992df935223ee10c041c2",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:cc0fc14b8c2d0ce566d13b38b520ccf43f5c5931ce0694c2db4cd0cb4d503efb",
+						"size": 1915,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.base.digest": "sha256:b336514d078279b73836602c7d199d8aa9405afb97080ada9a6087b44200ddd2",
+							"org.opencontainers.image.base.name": "debian:trixie-slim",
+							"org.opencontainers.image.created": "2026-05-09T01:45:26Z",
+							"org.opencontainers.image.ref.name": "tianon/zz-staging:arm64v8-b81ef3a0d4459db7255d860ec537fd9028af5e58a32992df935223ee10c041c2@sha256:cc0fc14b8c2d0ce566d13b38b520ccf43f5c5931ce0694c2db4cd0cb4d503efb",
+							"org.opencontainers.image.revision": "011efb8e04ef5e1c115911d9c04ae41a23fd4521",
+							"org.opencontainers.image.source": "https://github.com/tianon/docker-qemu.git#011efb8e04ef5e1c115911d9c04ae41a23fd4521:11.0",
+							"org.opencontainers.image.url": "https://hub.docker.com/r/tianon/qemu",
+							"org.opencontainers.image.version": "11.0.0-native"
+						},
+						"platform": {
+							"architecture": "arm64",
+							"os": "linux",
+							"variant": "v8"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:60366c5f3bfebfb345d46ddc35dccb5defdc229cc3efbf7b7bd4022729c7ffc0",
+						"size": 838,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.ref.name": "tianon/zz-staging:arm64v8-b81ef3a0d4459db7255d860ec537fd9028af5e58a32992df935223ee10c041c2@sha256:60366c5f3bfebfb345d46ddc35dccb5defdc229cc3efbf7b7bd4022729c7ffc0",
+							"vnd.docker.reference.digest": "sha256:cc0fc14b8c2d0ce566d13b38b520ccf43f5c5931ce0694c2db4cd0cb4d503efb",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:b0c2b5f0b9c5d464716609d9b2e780b61448775b8870d71306e2a3c0277f2f8f",
+						"size": 3425,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.ref.name": "tianon/zz-staging:arm64v8-b81ef3a0d4459db7255d860ec537fd9028af5e58a32992df935223ee10c041c2@sha256:b0c2b5f0b9c5d464716609d9b2e780b61448775b8870d71306e2a3c0277f2f8f",
+							"vnd.docker.reference.digest": "sha256:cc0fc14b8c2d0ce566d13b38b520ccf43f5c5931ce0694c2db4cd0cb4d503efb"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						},
+						"artifactType": "application/vnd.dev.cosign.artifact.sig.v1+json"
+					}
+				],
+				"annotations": {
+					"com.docker.official-images.bashbrew.signed-by.label": "YubiKey 4239413 Slot 82",
+					"com.docker.official-images.bashbrew.signed-by.pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEG+1HMsDDAFXQrPkPi80/P4XmMsWJ\ndD5BxdeI7uvLPArqhqsB38LcTLiZ2iTwiITRwyqHlbnjXdvByWJAdaUWNQ==\n-----END PUBLIC KEY-----",
+					"org.opencontainers.image.ref.name": "tianon/zz-staging:arm64v8-b81ef3a0d4459db7255d860ec537fd9028af5e58a32992df935223ee10c041c2@sha256:057edac0bed597baa626f842436c1de2d51d0dcdb6469aa061ee2ead2e685f10"
+				}
+			},
 			"sourceId": "16aa4a4e10bec528e829026b17394c153c7884e28ef4aba28d37f4791a6f0390",
 			"arch": "arm64v8",
 			"parents": {
@@ -27628,7 +27905,18 @@
 						"org.opencontainers.image.ref.name": "debian:trixie-slim@sha256:109e2c65005bf160609e4ba6acf7783752f8502ad218e298253428690b9eaa4b"
 					}
 				}
-			}
+			},
+			"prodSignatures": [
+				{
+					"mediaType": "application/vnd.dev.cosign.simplesigning.v1+json",
+					"digest": "sha256:ed18fda8e4cf9606492eafcd740ec5fff32d0979e73823c7c3b4abf5a10f92f0",
+					"size": 1327,
+					"annotations": {
+						"dev.cosignproject.cosign/signature": "MEUCIQDvYw+q24FJfchA22cuSd5zUQyVi3RwMuRC8DRkOCKjjgIgXQBhsRxa/55OKTbG7SeNCIzJgXItp+UQSHfOpUKkK50=",
+						"vnd.docker.reference.digest": "sha256:cc0fc14b8c2d0ce566d13b38b520ccf43f5c5931ce0694c2db4cd0cb4d503efb"
+					}
+				}
+			]
 		},
 		"source": {
 			"sourceId": "16aa4a4e10bec528e829026b17394c153c7884e28ef4aba28d37f4791a6f0390",
@@ -28227,7 +28515,68 @@
 		"buildId": "30127072bc99a0ea01552afec85d8cdf30e0a41d7a7f7718e3a91bbff570dbaf",
 		"build": {
 			"img": "tianon/zz-staging:arm64v8-30127072bc99a0ea01552afec85d8cdf30e0a41d7a7f7718e3a91bbff570dbaf",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:745a003dc2344f3eb939688ad443a48ed37e41a11961b03f3f55e0d8e0a557d6",
+						"size": 1914,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.base.digest": "sha256:b336514d078279b73836602c7d199d8aa9405afb97080ada9a6087b44200ddd2",
+							"org.opencontainers.image.base.name": "debian:trixie-slim",
+							"org.opencontainers.image.created": "2026-05-09T01:45:35Z",
+							"org.opencontainers.image.ref.name": "tianon/zz-staging:arm64v8-30127072bc99a0ea01552afec85d8cdf30e0a41d7a7f7718e3a91bbff570dbaf@sha256:745a003dc2344f3eb939688ad443a48ed37e41a11961b03f3f55e0d8e0a557d6",
+							"org.opencontainers.image.revision": "e3e9df5040a4fe4961195ce5132e646d0d083806",
+							"org.opencontainers.image.source": "https://github.com/tianon/docker-qemu.git#e3e9df5040a4fe4961195ce5132e646d0d083806:7.2",
+							"org.opencontainers.image.url": "https://hub.docker.com/r/tianon/qemu",
+							"org.opencontainers.image.version": "7.2.22-native"
+						},
+						"platform": {
+							"architecture": "arm64",
+							"os": "linux",
+							"variant": "v8"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:79e27a2149a8a64290a067fc54634b6f9694c2bbfdcede255aac8c273804012f",
+						"size": 838,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.ref.name": "tianon/zz-staging:arm64v8-30127072bc99a0ea01552afec85d8cdf30e0a41d7a7f7718e3a91bbff570dbaf@sha256:79e27a2149a8a64290a067fc54634b6f9694c2bbfdcede255aac8c273804012f",
+							"vnd.docker.reference.digest": "sha256:745a003dc2344f3eb939688ad443a48ed37e41a11961b03f3f55e0d8e0a557d6",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:1ffc8465a3a8378ea2ab5954a478475fc625e866989e81bd6e148db65324c3a9",
+						"size": 3420,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.ref.name": "tianon/zz-staging:arm64v8-30127072bc99a0ea01552afec85d8cdf30e0a41d7a7f7718e3a91bbff570dbaf@sha256:1ffc8465a3a8378ea2ab5954a478475fc625e866989e81bd6e148db65324c3a9",
+							"vnd.docker.reference.digest": "sha256:745a003dc2344f3eb939688ad443a48ed37e41a11961b03f3f55e0d8e0a557d6"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						},
+						"artifactType": "application/vnd.dev.cosign.artifact.sig.v1+json"
+					}
+				],
+				"annotations": {
+					"com.docker.official-images.bashbrew.signed-by.label": "YubiKey 4239413 Slot 82",
+					"com.docker.official-images.bashbrew.signed-by.pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEG+1HMsDDAFXQrPkPi80/P4XmMsWJ\ndD5BxdeI7uvLPArqhqsB38LcTLiZ2iTwiITRwyqHlbnjXdvByWJAdaUWNQ==\n-----END PUBLIC KEY-----",
+					"org.opencontainers.image.ref.name": "tianon/zz-staging:arm64v8-30127072bc99a0ea01552afec85d8cdf30e0a41d7a7f7718e3a91bbff570dbaf@sha256:6067d78909245e15fbf950782be3ac96b88f15a3713b8d94b2226a705c488b96"
+				}
+			},
 			"sourceId": "2187f4e6f27acd3c578337fd7c360d3a0b803348f0b9fa5b2a0b6282620331fe",
 			"arch": "arm64v8",
 			"parents": {
@@ -28278,7 +28627,18 @@
 						"org.opencontainers.image.ref.name": "debian:trixie-slim@sha256:109e2c65005bf160609e4ba6acf7783752f8502ad218e298253428690b9eaa4b"
 					}
 				}
-			}
+			},
+			"prodSignatures": [
+				{
+					"mediaType": "application/vnd.dev.cosign.simplesigning.v1+json",
+					"digest": "sha256:addc9031c5f19d46b54448038e63a3e7736818ae38fbfb6651df50f204869693",
+					"size": 1326,
+					"annotations": {
+						"dev.cosignproject.cosign/signature": "MEUCIQCeu4hIFhszo1myAGif99QQsCryNvc4zGNDpfPEiLdt9QIgIAOIo4KVcsKB+S7e+TenxSMRvMvyV98COAUNiDFnsb0=",
+						"vnd.docker.reference.digest": "sha256:745a003dc2344f3eb939688ad443a48ed37e41a11961b03f3f55e0d8e0a557d6"
+					}
+				}
+			]
 		},
 		"source": {
 			"sourceId": "2187f4e6f27acd3c578337fd7c360d3a0b803348f0b9fa5b2a0b6282620331fe",
@@ -28873,7 +29233,68 @@
 		"buildId": "4eeb8f28358011e17025b38ec72278934332ca2e9d44d30d8aee32af30621c3d",
 		"build": {
 			"img": "tianon/zz-staging:arm64v8-4eeb8f28358011e17025b38ec72278934332ca2e9d44d30d8aee32af30621c3d",
-			"resolved": null,
+			"resolved": {
+				"schemaVersion": 2,
+				"mediaType": "application/vnd.oci.image.index.v1+json",
+				"manifests": [
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:6eb504ea896658f6ccd5a9b3d4a836b45c945fe164aad4dba96eed17c809e735",
+						"size": 1913,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.base.digest": "sha256:b336514d078279b73836602c7d199d8aa9405afb97080ada9a6087b44200ddd2",
+							"org.opencontainers.image.base.name": "debian:trixie-slim",
+							"org.opencontainers.image.created": "2026-05-09T01:45:44Z",
+							"org.opencontainers.image.ref.name": "tianon/zz-staging:arm64v8-4eeb8f28358011e17025b38ec72278934332ca2e9d44d30d8aee32af30621c3d@sha256:6eb504ea896658f6ccd5a9b3d4a836b45c945fe164aad4dba96eed17c809e735",
+							"org.opencontainers.image.revision": "96fe67b023013dde242cea0adda71478beebe269",
+							"org.opencontainers.image.source": "https://github.com/tianon/docker-qemu.git#96fe67b023013dde242cea0adda71478beebe269:9.2",
+							"org.opencontainers.image.url": "https://hub.docker.com/r/tianon/qemu",
+							"org.opencontainers.image.version": "9.2.4-native"
+						},
+						"platform": {
+							"architecture": "arm64",
+							"os": "linux",
+							"variant": "v8"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:d7a6f8d75b5551d997bc53f976e69faca16bd5cd120b496530f2ec276315cb5b",
+						"size": 838,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.ref.name": "tianon/zz-staging:arm64v8-4eeb8f28358011e17025b38ec72278934332ca2e9d44d30d8aee32af30621c3d@sha256:d7a6f8d75b5551d997bc53f976e69faca16bd5cd120b496530f2ec276315cb5b",
+							"vnd.docker.reference.digest": "sha256:6eb504ea896658f6ccd5a9b3d4a836b45c945fe164aad4dba96eed17c809e735",
+							"vnd.docker.reference.type": "attestation-manifest"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						}
+					},
+					{
+						"mediaType": "application/vnd.oci.image.manifest.v1+json",
+						"digest": "sha256:9fb9223d4646f7d42e31224a3f145797e6371b63d15b85c07d2a55fa42bae814",
+						"size": 3419,
+						"annotations": {
+							"com.docker.official-images.bashbrew.arch": "arm64v8",
+							"org.opencontainers.image.ref.name": "tianon/zz-staging:arm64v8-4eeb8f28358011e17025b38ec72278934332ca2e9d44d30d8aee32af30621c3d@sha256:9fb9223d4646f7d42e31224a3f145797e6371b63d15b85c07d2a55fa42bae814",
+							"vnd.docker.reference.digest": "sha256:6eb504ea896658f6ccd5a9b3d4a836b45c945fe164aad4dba96eed17c809e735"
+						},
+						"platform": {
+							"architecture": "unknown",
+							"os": "unknown"
+						},
+						"artifactType": "application/vnd.dev.cosign.artifact.sig.v1+json"
+					}
+				],
+				"annotations": {
+					"com.docker.official-images.bashbrew.signed-by.label": "YubiKey 4239413 Slot 82",
+					"com.docker.official-images.bashbrew.signed-by.pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEG+1HMsDDAFXQrPkPi80/P4XmMsWJ\ndD5BxdeI7uvLPArqhqsB38LcTLiZ2iTwiITRwyqHlbnjXdvByWJAdaUWNQ==\n-----END PUBLIC KEY-----",
+					"org.opencontainers.image.ref.name": "tianon/zz-staging:arm64v8-4eeb8f28358011e17025b38ec72278934332ca2e9d44d30d8aee32af30621c3d@sha256:cf0adc27148442476393d97c732f0f76aa8188d0e56408cec1b4153b0f3b8ec0"
+				}
+			},
 			"sourceId": "9df955fc923a34e3e292eb7df5823c7c246cb9bab0cd72863284c05b90f3d8d7",
 			"arch": "arm64v8",
 			"parents": {
@@ -28924,7 +29345,18 @@
 						"org.opencontainers.image.ref.name": "debian:trixie-slim@sha256:109e2c65005bf160609e4ba6acf7783752f8502ad218e298253428690b9eaa4b"
 					}
 				}
-			}
+			},
+			"prodSignatures": [
+				{
+					"mediaType": "application/vnd.dev.cosign.simplesigning.v1+json",
+					"digest": "sha256:fc1eb2eb4ccecb9d82ce9ddcb532a950c7df69bd6650277943284b0f6d970e4f",
+					"size": 1324,
+					"annotations": {
+						"dev.cosignproject.cosign/signature": "MEQCIAPeZszxx6slIj83diKzCrX9TZoL6pm5NhB4JnJv13WTAiAcYn5dwZqrz0ycv/vpSrGr+2KZAaiwiLeZDzVeZu6kjA==",
+						"vnd.docker.reference.digest": "sha256:6eb504ea896658f6ccd5a9b3d4a836b45c945fe164aad4dba96eed17c809e735"
+					}
+				}
+			]
 		},
 		"source": {
 			"sourceId": "9df955fc923a34e3e292eb7df5823c7c246cb9bab0cd72863284c05b90f3d8d7",
