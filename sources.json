@@ -904,6 +904,31 @@
           }
         }
       },
+      "arm32v5": {
+        "tags": [
+          "tianon/buildkit:0.30.0",
+          "tianon/buildkit:0.30",
+          "tianon/buildkit:0",
+          "tianon/buildkit:latest"
+        ],
+        "archTags": [],
+        "froms": [
+          "infosiftr/moby:latest"
+        ],
+        "lastStageFrom": "infosiftr/moby:latest",
+        "platformString": "linux/arm/v5",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v5"
+        },
+        "parents": {
+          "infosiftr/moby:latest": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
       "arm32v7": {
         "tags": [
           "tianon/buildkit:0.30.0",
@@ -1041,6 +1066,29 @@
           }
         }
       },
+      "arm32v5": {
+        "tags": [
+          "tianon/buildkit:0.30.0-rc2",
+          "tianon/buildkit:rc"
+        ],
+        "archTags": [],
+        "froms": [
+          "infosiftr/moby:latest"
+        ],
+        "lastStageFrom": "infosiftr/moby:latest",
+        "platformString": "linux/arm/v5",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v5"
+        },
+        "parents": {
+          "infosiftr/moby:latest": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
       "arm32v7": {
         "tags": [
           "tianon/buildkit:0.30.0-rc2",
@@ -1170,6 +1218,29 @@
           }
         }
       },
+      "arm32v5": {
+        "tags": [
+          "tianon/buildkit:0.16.0",
+          "tianon/buildkit:0.16"
+        ],
+        "archTags": [],
+        "froms": [
+          "infosiftr/moby:latest"
+        ],
+        "lastStageFrom": "infosiftr/moby:latest",
+        "platformString": "linux/arm/v5",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v5"
+        },
+        "parents": {
+          "infosiftr/moby:latest": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
       "arm32v7": {
         "tags": [
           "tianon/buildkit:0.16.0",
@@ -1291,6 +1362,29 @@
         "platform": {
           "architecture": "amd64",
           "os": "linux"
+        },
+        "parents": {
+          "infosiftr/moby:latest": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm32v5": {
+        "tags": [
+          "tianon/buildkit:0.13.2",
+          "tianon/buildkit:0.13"
+        ],
+        "archTags": [],
+        "froms": [
+          "infosiftr/moby:latest"
+        ],
+        "lastStageFrom": "infosiftr/moby:latest",
+        "platformString": "linux/arm/v5",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v5"
         },
         "parents": {
           "infosiftr/moby:latest": {
@@ -2391,18 +2485,18 @@
       }
     }
   },
-  "804c4a0f009a0a9a01c9c04a48586649b030867a9ec466ba44f74fde78f3575c": {
-    "sourceId": "804c4a0f009a0a9a01c9c04a48586649b030867a9ec466ba44f74fde78f3575c",
-    "reproducibleGitChecksum": "37d3dd88985666e40a5b6ac711799911255b64c23e6a6553e98178f24c28ce4d",
+  "5ac8ac0936dbdac8f0d16769482dcef7d9fb8d2a8e0982c6cb553b78c152b2c2": {
+    "sourceId": "5ac8ac0936dbdac8f0d16769482dcef7d9fb8d2a8e0982c6cb553b78c152b2c2",
+    "reproducibleGitChecksum": "99f0b8c06f1443cdc977f9b0cc1e30d2623089ab8f5e4fe615c4a36a08e0be38",
     "entries": [
       {
         "GitRepo": "https://github.com/tianon/dockerfiles.git",
         "GitFetch": "refs/heads/master",
-        "GitCommit": "d42cc2027a0425a726d37067e50620be3e909e32",
+        "GitCommit": "571eb71fed53b5c2b43bf6b0be699e9733c353bf",
         "Directory": "docker-master",
         "File": "Dockerfile",
         "Builder": "",
-        "SOURCE_DATE_EPOCH": 1781170670
+        "SOURCE_DATE_EPOCH": 1781185060
       }
     ],
     "arches": {
@@ -2469,7 +2563,7 @@
         },
         "parents": {
           "tianon/docker-master:dind": {
-            "sourceId": "804c4a0f009a0a9a01c9c04a48586649b030867a9ec466ba44f74fde78f3575c",
+            "sourceId": "5ac8ac0936dbdac8f0d16769482dcef7d9fb8d2a8e0982c6cb553b78c152b2c2",
             "pin": null
           }
         }
@@ -6959,6 +7053,33 @@
         "platformString": "linux/386",
         "platform": {
           "architecture": "386",
+          "os": "linux"
+        },
+        "parents": {
+          "tianon/nolibc:latest": {
+            "sourceId": "7a4ef2b3920e04989fa10e709d64d951405eae91270a1a5caeec6c5bd1c28b02",
+            "pin": null
+          },
+          "scratch": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "riscv64": {
+        "tags": [
+          "tianon/sleeping-beauty:nolibc"
+        ],
+        "archTags": [],
+        "froms": [
+          "tianon/nolibc:latest",
+          "scratch",
+          "tianon/nolibc:latest"
+        ],
+        "lastStageFrom": "scratch",
+        "platformString": "linux/riscv64",
+        "platform": {
+          "architecture": "riscv64",
           "os": "linux"
         },
         "parents": {
