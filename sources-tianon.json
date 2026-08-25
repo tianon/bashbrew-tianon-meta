@@ -694,6 +694,36 @@
 					}
 				}
 			},
+			"ppc64le": {
+				"tags": [
+					"tianon/buildkit:0.32.2",
+					"tianon/buildkit:0.32",
+					"tianon/buildkit:0",
+					"tianon/buildkit:latest"
+				],
+				"archTags": [],
+				"froms": [
+					"golang:1.26",
+					"infosiftr/moby:latest",
+					"golang:1.26"
+				],
+				"lastStageFrom": "infosiftr/moby:latest",
+				"platformString": "linux/ppc64le",
+				"platform": {
+					"architecture": "ppc64le",
+					"os": "linux"
+				},
+				"parents": {
+					"golang:1.26": {
+						"sourceId": null,
+						"pin": null
+					},
+					"infosiftr/moby:latest": {
+						"sourceId": null,
+						"pin": null
+					}
+				}
+			},
 			"riscv64": {
 				"tags": [
 					"tianon/buildkit:0.32.2",
@@ -884,6 +914,34 @@
 					}
 				}
 			},
+			"ppc64le": {
+				"tags": [
+					"tianon/buildkit:0.16.0",
+					"tianon/buildkit:0.16"
+				],
+				"archTags": [],
+				"froms": [
+					"golang:1.21",
+					"infosiftr/moby:latest",
+					"golang:1.21"
+				],
+				"lastStageFrom": "infosiftr/moby:latest",
+				"platformString": "linux/ppc64le",
+				"platform": {
+					"architecture": "ppc64le",
+					"os": "linux"
+				},
+				"parents": {
+					"golang:1.21": {
+						"sourceId": null,
+						"pin": null
+					},
+					"infosiftr/moby:latest": {
+						"sourceId": null,
+						"pin": null
+					}
+				}
+			},
 			"riscv64": {
 				"tags": [
 					"tianon/buildkit:0.16.0",
@@ -1059,6 +1117,34 @@
 				"platformString": "linux/386",
 				"platform": {
 					"architecture": "386",
+					"os": "linux"
+				},
+				"parents": {
+					"golang:1.21": {
+						"sourceId": null,
+						"pin": null
+					},
+					"infosiftr/moby:latest": {
+						"sourceId": null,
+						"pin": null
+					}
+				}
+			},
+			"ppc64le": {
+				"tags": [
+					"tianon/buildkit:0.13.2",
+					"tianon/buildkit:0.13"
+				],
+				"archTags": [],
+				"froms": [
+					"golang:1.21",
+					"infosiftr/moby:latest",
+					"golang:1.21"
+				],
+				"lastStageFrom": "infosiftr/moby:latest",
+				"platformString": "linux/ppc64le",
+				"platform": {
+					"architecture": "ppc64le",
 					"os": "linux"
 				},
 				"parents": {
@@ -2245,18 +2331,18 @@
 			}
 		}
 	},
-	"d486546c1b2cb87ee8048c12ddf51872a595b89676318fbfde31f9d063e92b8a": {
-		"sourceId": "d486546c1b2cb87ee8048c12ddf51872a595b89676318fbfde31f9d063e92b8a",
-		"reproducibleGitChecksum": "53ed56bdd006a04a52a285e075447f7f3aa2e5d2e6557125902873264ad72fb1",
+	"cecfc7581b0d1a0a8e05785d04abd03ea71e8a11dbc9ce8936242e46be92eba7": {
+		"sourceId": "cecfc7581b0d1a0a8e05785d04abd03ea71e8a11dbc9ce8936242e46be92eba7",
+		"reproducibleGitChecksum": "0f4f5be9962b5ebe3d4e59d59e5433b1048b06108a78afa858f5d940578c4a3f",
 		"entries": [
 			{
 				"GitRepo": "https://github.com/tianon/dockerfiles.git",
 				"GitFetch": "refs/heads/master",
-				"GitCommit": "759f90934f7008ebd0b3f47a76cde289f0c38be0",
+				"GitCommit": "f43b0e002da7f5c492afd754cd614edb5af1507b",
 				"Directory": "docker-master",
 				"File": "Dockerfile",
 				"Builder": "",
-				"SOURCE_DATE_EPOCH": 1787636253
+				"SOURCE_DATE_EPOCH": 1787650673
 			}
 		],
 		"arches": {
@@ -2323,7 +2409,7 @@
 				},
 				"parents": {
 					"tianon/docker-master:dind": {
-						"sourceId": "d486546c1b2cb87ee8048c12ddf51872a595b89676318fbfde31f9d063e92b8a",
+						"sourceId": "cecfc7581b0d1a0a8e05785d04abd03ea71e8a11dbc9ce8936242e46be92eba7",
 						"pin": null
 					}
 				}
@@ -6720,6 +6806,34 @@
 				"platform": {
 					"architecture": "amd64",
 					"os": "linux"
+				},
+				"parents": {
+					"tianon/nolibc:latest": {
+						"sourceId": "5cfdbe3989ef84935d622a464e1c23edab2fddf2b4406c3522a313f0a23c20ed",
+						"pin": null
+					},
+					"scratch": {
+						"sourceId": null,
+						"pin": null
+					}
+				}
+			},
+			"arm32v5": {
+				"tags": [
+					"tianon/sleeping-beauty:nolibc"
+				],
+				"archTags": [],
+				"froms": [
+					"tianon/nolibc:latest",
+					"scratch",
+					"tianon/nolibc:latest"
+				],
+				"lastStageFrom": "scratch",
+				"platformString": "linux/arm/v5",
+				"platform": {
+					"architecture": "arm",
+					"os": "linux",
+					"variant": "v5"
 				},
 				"parents": {
 					"tianon/nolibc:latest": {
