@@ -1003,6 +1003,30 @@
           }
         }
       },
+      "ppc64le": {
+        "tags": [
+          "tianon/buildkit:0.33.0",
+          "tianon/buildkit:0.33",
+          "tianon/buildkit:0",
+          "tianon/buildkit:latest"
+        ],
+        "archTags": [],
+        "froms": [
+          "infosiftr/moby:latest"
+        ],
+        "lastStageFrom": "infosiftr/moby:latest",
+        "platformString": "linux/ppc64le",
+        "platform": {
+          "architecture": "ppc64le",
+          "os": "linux"
+        },
+        "parents": {
+          "infosiftr/moby:latest": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
       "riscv64": {
         "tags": [
           "tianon/buildkit:0.33.0",
@@ -1148,6 +1172,28 @@
         "platformString": "linux/386",
         "platform": {
           "architecture": "386",
+          "os": "linux"
+        },
+        "parents": {
+          "infosiftr/moby:latest": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "ppc64le": {
+        "tags": [
+          "tianon/buildkit:0.33.0-rc2",
+          "tianon/buildkit:rc"
+        ],
+        "archTags": [],
+        "froms": [
+          "infosiftr/moby:latest"
+        ],
+        "lastStageFrom": "infosiftr/moby:latest",
+        "platformString": "linux/ppc64le",
+        "platform": {
+          "architecture": "ppc64le",
           "os": "linux"
         },
         "parents": {
@@ -1309,6 +1355,28 @@
           }
         }
       },
+      "ppc64le": {
+        "tags": [
+          "tianon/buildkit:0.16.0",
+          "tianon/buildkit:0.16"
+        ],
+        "archTags": [],
+        "froms": [
+          "infosiftr/moby:latest"
+        ],
+        "lastStageFrom": "infosiftr/moby:latest",
+        "platformString": "linux/ppc64le",
+        "platform": {
+          "architecture": "ppc64le",
+          "os": "linux"
+        },
+        "parents": {
+          "infosiftr/moby:latest": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
       "riscv64": {
         "tags": [
           "tianon/buildkit:0.16.0",
@@ -1452,6 +1520,28 @@
         "platformString": "linux/386",
         "platform": {
           "architecture": "386",
+          "os": "linux"
+        },
+        "parents": {
+          "infosiftr/moby:latest": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "ppc64le": {
+        "tags": [
+          "tianon/buildkit:0.13.2",
+          "tianon/buildkit:0.13"
+        ],
+        "archTags": [],
+        "froms": [
+          "infosiftr/moby:latest"
+        ],
+        "lastStageFrom": "infosiftr/moby:latest",
+        "platformString": "linux/ppc64le",
+        "platform": {
+          "architecture": "ppc64le",
           "os": "linux"
         },
         "parents": {
@@ -2618,18 +2708,18 @@
       }
     }
   },
-  "e74d6eb5938c02a3b218f999aceec9036d2b4c667ea7bada563dce60d8f90200": {
-    "sourceId": "e74d6eb5938c02a3b218f999aceec9036d2b4c667ea7bada563dce60d8f90200",
-    "reproducibleGitChecksum": "a29d21840c64160771381778bc8f48393a8a49f54678796c58b642c51b224d50",
+  "73f185911124100315e7f9bbf1b442ef2319aa10d7295c98573ef43740559587": {
+    "sourceId": "73f185911124100315e7f9bbf1b442ef2319aa10d7295c98573ef43740559587",
+    "reproducibleGitChecksum": "b5cec4b46b7faa0051603c70fd96d13b8e61e5f7e438b1ad2d8b305fa41967a8",
     "entries": [
       {
         "GitRepo": "https://github.com/tianon/dockerfiles.git",
         "GitFetch": "refs/heads/master",
-        "GitCommit": "3acba86ad19f6c6be9eb5131925c9feb94a3462c",
+        "GitCommit": "1fb43674f5f5c7e06796d070aa58fedb328497e8",
         "Directory": "docker-master",
         "File": "Dockerfile",
         "Builder": "",
-        "SOURCE_DATE_EPOCH": 1789810674
+        "SOURCE_DATE_EPOCH": 1789825048
       }
     ],
     "arches": {
@@ -2696,7 +2786,7 @@
         },
         "parents": {
           "tianon/docker-master:dind": {
-            "sourceId": "e74d6eb5938c02a3b218f999aceec9036d2b4c667ea7bada563dce60d8f90200",
+            "sourceId": "73f185911124100315e7f9bbf1b442ef2319aa10d7295c98573ef43740559587",
             "pin": null
           }
         }
@@ -7093,6 +7183,34 @@
         "platform": {
           "architecture": "amd64",
           "os": "linux"
+        },
+        "parents": {
+          "tianon/nolibc:latest": {
+            "sourceId": "408c0dc6f477b5fc3439058b6ce7c5ca96c3bb13645e78f956633ec4cd230e4e",
+            "pin": null
+          },
+          "scratch": {
+            "sourceId": null,
+            "pin": null
+          }
+        }
+      },
+      "arm32v5": {
+        "tags": [
+          "tianon/sleeping-beauty:nolibc"
+        ],
+        "archTags": [],
+        "froms": [
+          "tianon/nolibc:latest",
+          "scratch",
+          "tianon/nolibc:latest"
+        ],
+        "lastStageFrom": "scratch",
+        "platformString": "linux/arm/v5",
+        "platform": {
+          "architecture": "arm",
+          "os": "linux",
+          "variant": "v5"
         },
         "parents": {
           "tianon/nolibc:latest": {
