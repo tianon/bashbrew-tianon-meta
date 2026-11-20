@@ -18479,7 +18479,7 @@
 						}
 					],
 					"annotations": {
-						"org.opencontainers.image.ref.name": "eclipse-temurin:21-jre@sha256:3bf8568ff6c403c5b18c868d133f1775e3c4fd29dc12f57ca7dffbdb6e0df9b2"
+						"org.opencontainers.image.ref.name": "eclipse-temurin:21-jre@sha256:d77e090ae1f6970c047b443c6f0a6c1358b0426d44432bb5a7753408cd43de0d"
 					}
 				}
 			},
@@ -18698,7 +18698,7 @@
 						}
 					],
 					"annotations": {
-						"org.opencontainers.image.ref.name": "eclipse-temurin:21-jre@sha256:3bf8568ff6c403c5b18c868d133f1775e3c4fd29dc12f57ca7dffbdb6e0df9b2"
+						"org.opencontainers.image.ref.name": "eclipse-temurin:21-jre@sha256:d77e090ae1f6970c047b443c6f0a6c1358b0426d44432bb5a7753408cd43de0d"
 					}
 				}
 			},
@@ -29985,6 +29985,782 @@
 			}
 		}
 	},
+	"5bb3ad0c82c8a272fc1fcede6fef9a82a769b4fa89aa4811046e3cca548a62e6": {
+		"buildId": "5bb3ad0c82c8a272fc1fcede6fef9a82a769b4fa89aa4811046e3cca548a62e6",
+		"build": {
+			"img": "tianon/zz-staging:amd64-5bb3ad0c82c8a272fc1fcede6fef9a82a769b4fa89aa4811046e3cca548a62e6",
+			"resolved": null,
+			"sourceId": "ea7275854814bb89d559ca07ac5a6f401260ce2b96e32cbce6c29bc74c2d2e3e",
+			"arch": "amd64",
+			"parents": {
+				"postgres:19-trixie": "sha256:d2c8a7d3d224a9c0335bf9f69ae6ad0b9aa7d88c4b64bab89f0f261332f6d4de"
+			},
+			"resolvedParents": {
+				"postgres:19-trixie": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:d2c8a7d3d224a9c0335bf9f69ae6ad0b9aa7d88c4b64bab89f0f261332f6d4de",
+							"size": 3251,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "amd64",
+								"org.opencontainers.image.base.digest": "sha256:7378260c0a098d27ac206225db5e7d92b8c7c84ea7afccc86eeb513756bbd392",
+								"org.opencontainers.image.base.name": "debian:trixie-slim",
+								"org.opencontainers.image.created": "2026-11-20T00:36:59Z",
+								"org.opencontainers.image.ref.name": "postgres:19-trixie@sha256:d2c8a7d3d224a9c0335bf9f69ae6ad0b9aa7d88c4b64bab89f0f261332f6d4de",
+								"org.opencontainers.image.revision": "8672300fdf4f4ce8a8eac7511031fd08b6d2c886",
+								"org.opencontainers.image.source": "https://github.com/docker-library/postgres.git#8672300fdf4f4ce8a8eac7511031fd08b6d2c886:19/trixie",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/postgres",
+								"org.opencontainers.image.version": "19.0"
+							},
+							"platform": {
+								"architecture": "amd64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:c80ea00161780113ccbb44f23f80954477105a43e17a2cc48fb2e403d5f0f72c",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "amd64",
+								"org.opencontainers.image.ref.name": "postgres:19-trixie@sha256:c80ea00161780113ccbb44f23f80954477105a43e17a2cc48fb2e403d5f0f72c",
+								"vnd.docker.reference.digest": "sha256:d2c8a7d3d224a9c0335bf9f69ae6ad0b9aa7d88c4b64bab89f0f261332f6d4de",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "postgres:19-trixie@sha256:bb6e70add742cd868fb62cb3b2f67d1dd2bdd2b65a521e778420748753687c60"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "ea7275854814bb89d559ca07ac5a6f401260ce2b96e32cbce6c29bc74c2d2e3e",
+			"reproducibleGitChecksum": "a555cfadf5b0562054d95d7f0226366ecb7e36970975e8d2ce5d5211f7715ebd",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/tianon/docker-postgres-upgrade.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "bf9f7385dfc150dd1bb360289c17f0e267009c15",
+					"Directory": "18-to-19",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1795206126
+				}
+			],
+			"arches": {
+				"amd64": {
+					"tags": [
+						"tianon/postgres-upgrade:18-to-19"
+					],
+					"archTags": [],
+					"froms": [
+						"postgres:19-trixie"
+					],
+					"lastStageFrom": "postgres:19-trixie",
+					"platformString": "linux/amd64",
+					"platform": {
+						"architecture": "amd64",
+						"os": "linux"
+					},
+					"parents": {
+						"postgres:19-trixie": {
+							"sourceId": null,
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"f0294d17c196933114748e5ab173d3ec0e26b5cb6414913a663ce57f2c9de9f3": {
+		"buildId": "f0294d17c196933114748e5ab173d3ec0e26b5cb6414913a663ce57f2c9de9f3",
+		"build": {
+			"img": "tianon/zz-staging:arm64v8-f0294d17c196933114748e5ab173d3ec0e26b5cb6414913a663ce57f2c9de9f3",
+			"resolved": null,
+			"sourceId": "ea7275854814bb89d559ca07ac5a6f401260ce2b96e32cbce6c29bc74c2d2e3e",
+			"arch": "arm64v8",
+			"parents": {
+				"postgres:19-trixie": "sha256:75428cce0b8556199c863b9b501c7958f1791e1536f4f60ee659d65331b3563e"
+			},
+			"resolvedParents": {
+				"postgres:19-trixie": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:75428cce0b8556199c863b9b501c7958f1791e1536f4f60ee659d65331b3563e",
+							"size": 3253,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "arm64v8",
+								"org.opencontainers.image.base.digest": "sha256:24a01011d10eba3a023bc8585b9650b8b29021240d4217c05b905e09ef4a5232",
+								"org.opencontainers.image.base.name": "debian:trixie-slim",
+								"org.opencontainers.image.created": "2026-11-20T00:37:01Z",
+								"org.opencontainers.image.ref.name": "postgres:19-trixie@sha256:75428cce0b8556199c863b9b501c7958f1791e1536f4f60ee659d65331b3563e",
+								"org.opencontainers.image.revision": "8672300fdf4f4ce8a8eac7511031fd08b6d2c886",
+								"org.opencontainers.image.source": "https://github.com/docker-library/postgres.git#8672300fdf4f4ce8a8eac7511031fd08b6d2c886:19/trixie",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/postgres",
+								"org.opencontainers.image.version": "19.0"
+							},
+							"platform": {
+								"architecture": "arm64",
+								"os": "linux",
+								"variant": "v8"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:8df2cec88825dfd9f957739f981834601b1ae238a630a045bbbb786f7411b42e",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "arm64v8",
+								"org.opencontainers.image.ref.name": "postgres:19-trixie@sha256:8df2cec88825dfd9f957739f981834601b1ae238a630a045bbbb786f7411b42e",
+								"vnd.docker.reference.digest": "sha256:75428cce0b8556199c863b9b501c7958f1791e1536f4f60ee659d65331b3563e",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "postgres:19-trixie@sha256:bb6e70add742cd868fb62cb3b2f67d1dd2bdd2b65a521e778420748753687c60"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "ea7275854814bb89d559ca07ac5a6f401260ce2b96e32cbce6c29bc74c2d2e3e",
+			"reproducibleGitChecksum": "a555cfadf5b0562054d95d7f0226366ecb7e36970975e8d2ce5d5211f7715ebd",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/tianon/docker-postgres-upgrade.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "bf9f7385dfc150dd1bb360289c17f0e267009c15",
+					"Directory": "18-to-19",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1795206126
+				}
+			],
+			"arches": {
+				"arm64v8": {
+					"tags": [
+						"tianon/postgres-upgrade:18-to-19"
+					],
+					"archTags": [],
+					"froms": [
+						"postgres:19-trixie"
+					],
+					"lastStageFrom": "postgres:19-trixie",
+					"platformString": "linux/arm64/v8",
+					"platform": {
+						"architecture": "arm64",
+						"os": "linux",
+						"variant": "v8"
+					},
+					"parents": {
+						"postgres:19-trixie": {
+							"sourceId": null,
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"f5cc870117d57720684a00184734af511ed578b160fe2eb783e2b00dc3cdcc55": {
+		"buildId": "f5cc870117d57720684a00184734af511ed578b160fe2eb783e2b00dc3cdcc55",
+		"build": {
+			"img": "tianon/zz-staging:amd64-f5cc870117d57720684a00184734af511ed578b160fe2eb783e2b00dc3cdcc55",
+			"resolved": null,
+			"sourceId": "55f8e97dbd05ac810707953a276a12a28fa7f0a17aef2e22cee626d13b3b1763",
+			"arch": "amd64",
+			"parents": {
+				"postgres:19-trixie": "sha256:d2c8a7d3d224a9c0335bf9f69ae6ad0b9aa7d88c4b64bab89f0f261332f6d4de"
+			},
+			"resolvedParents": {
+				"postgres:19-trixie": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:d2c8a7d3d224a9c0335bf9f69ae6ad0b9aa7d88c4b64bab89f0f261332f6d4de",
+							"size": 3251,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "amd64",
+								"org.opencontainers.image.base.digest": "sha256:7378260c0a098d27ac206225db5e7d92b8c7c84ea7afccc86eeb513756bbd392",
+								"org.opencontainers.image.base.name": "debian:trixie-slim",
+								"org.opencontainers.image.created": "2026-11-20T00:36:59Z",
+								"org.opencontainers.image.ref.name": "postgres:19-trixie@sha256:d2c8a7d3d224a9c0335bf9f69ae6ad0b9aa7d88c4b64bab89f0f261332f6d4de",
+								"org.opencontainers.image.revision": "8672300fdf4f4ce8a8eac7511031fd08b6d2c886",
+								"org.opencontainers.image.source": "https://github.com/docker-library/postgres.git#8672300fdf4f4ce8a8eac7511031fd08b6d2c886:19/trixie",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/postgres",
+								"org.opencontainers.image.version": "19.0"
+							},
+							"platform": {
+								"architecture": "amd64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:c80ea00161780113ccbb44f23f80954477105a43e17a2cc48fb2e403d5f0f72c",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "amd64",
+								"org.opencontainers.image.ref.name": "postgres:19-trixie@sha256:c80ea00161780113ccbb44f23f80954477105a43e17a2cc48fb2e403d5f0f72c",
+								"vnd.docker.reference.digest": "sha256:d2c8a7d3d224a9c0335bf9f69ae6ad0b9aa7d88c4b64bab89f0f261332f6d4de",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "postgres:19-trixie@sha256:bb6e70add742cd868fb62cb3b2f67d1dd2bdd2b65a521e778420748753687c60"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "55f8e97dbd05ac810707953a276a12a28fa7f0a17aef2e22cee626d13b3b1763",
+			"reproducibleGitChecksum": "ff06c1d2b5b73447590763f377466104c05db377dc2210e82ea1de9d6d94d6ea",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/tianon/docker-postgres-upgrade.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "bf9f7385dfc150dd1bb360289c17f0e267009c15",
+					"Directory": "17-to-19",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1795206126
+				}
+			],
+			"arches": {
+				"amd64": {
+					"tags": [
+						"tianon/postgres-upgrade:17-to-19"
+					],
+					"archTags": [],
+					"froms": [
+						"postgres:19-trixie"
+					],
+					"lastStageFrom": "postgres:19-trixie",
+					"platformString": "linux/amd64",
+					"platform": {
+						"architecture": "amd64",
+						"os": "linux"
+					},
+					"parents": {
+						"postgres:19-trixie": {
+							"sourceId": null,
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"7b26c32adf89200b8bedf184d5d3320b09d421ccb9e70dbad5b0a7adda88909a": {
+		"buildId": "7b26c32adf89200b8bedf184d5d3320b09d421ccb9e70dbad5b0a7adda88909a",
+		"build": {
+			"img": "tianon/zz-staging:arm64v8-7b26c32adf89200b8bedf184d5d3320b09d421ccb9e70dbad5b0a7adda88909a",
+			"resolved": null,
+			"sourceId": "55f8e97dbd05ac810707953a276a12a28fa7f0a17aef2e22cee626d13b3b1763",
+			"arch": "arm64v8",
+			"parents": {
+				"postgres:19-trixie": "sha256:75428cce0b8556199c863b9b501c7958f1791e1536f4f60ee659d65331b3563e"
+			},
+			"resolvedParents": {
+				"postgres:19-trixie": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:75428cce0b8556199c863b9b501c7958f1791e1536f4f60ee659d65331b3563e",
+							"size": 3253,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "arm64v8",
+								"org.opencontainers.image.base.digest": "sha256:24a01011d10eba3a023bc8585b9650b8b29021240d4217c05b905e09ef4a5232",
+								"org.opencontainers.image.base.name": "debian:trixie-slim",
+								"org.opencontainers.image.created": "2026-11-20T00:37:01Z",
+								"org.opencontainers.image.ref.name": "postgres:19-trixie@sha256:75428cce0b8556199c863b9b501c7958f1791e1536f4f60ee659d65331b3563e",
+								"org.opencontainers.image.revision": "8672300fdf4f4ce8a8eac7511031fd08b6d2c886",
+								"org.opencontainers.image.source": "https://github.com/docker-library/postgres.git#8672300fdf4f4ce8a8eac7511031fd08b6d2c886:19/trixie",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/postgres",
+								"org.opencontainers.image.version": "19.0"
+							},
+							"platform": {
+								"architecture": "arm64",
+								"os": "linux",
+								"variant": "v8"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:8df2cec88825dfd9f957739f981834601b1ae238a630a045bbbb786f7411b42e",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "arm64v8",
+								"org.opencontainers.image.ref.name": "postgres:19-trixie@sha256:8df2cec88825dfd9f957739f981834601b1ae238a630a045bbbb786f7411b42e",
+								"vnd.docker.reference.digest": "sha256:75428cce0b8556199c863b9b501c7958f1791e1536f4f60ee659d65331b3563e",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "postgres:19-trixie@sha256:bb6e70add742cd868fb62cb3b2f67d1dd2bdd2b65a521e778420748753687c60"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "55f8e97dbd05ac810707953a276a12a28fa7f0a17aef2e22cee626d13b3b1763",
+			"reproducibleGitChecksum": "ff06c1d2b5b73447590763f377466104c05db377dc2210e82ea1de9d6d94d6ea",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/tianon/docker-postgres-upgrade.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "bf9f7385dfc150dd1bb360289c17f0e267009c15",
+					"Directory": "17-to-19",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1795206126
+				}
+			],
+			"arches": {
+				"arm64v8": {
+					"tags": [
+						"tianon/postgres-upgrade:17-to-19"
+					],
+					"archTags": [],
+					"froms": [
+						"postgres:19-trixie"
+					],
+					"lastStageFrom": "postgres:19-trixie",
+					"platformString": "linux/arm64/v8",
+					"platform": {
+						"architecture": "arm64",
+						"os": "linux",
+						"variant": "v8"
+					},
+					"parents": {
+						"postgres:19-trixie": {
+							"sourceId": null,
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"1269a44a72f8f7d8d4d65a4dbb8d360247222020465cf3473e66ab40350284ba": {
+		"buildId": "1269a44a72f8f7d8d4d65a4dbb8d360247222020465cf3473e66ab40350284ba",
+		"build": {
+			"img": "tianon/zz-staging:amd64-1269a44a72f8f7d8d4d65a4dbb8d360247222020465cf3473e66ab40350284ba",
+			"resolved": null,
+			"sourceId": "f70080f4026e03819b86af6e288b0e82467064e219ec3c3d6e77685139191f47",
+			"arch": "amd64",
+			"parents": {
+				"postgres:19-trixie": "sha256:d2c8a7d3d224a9c0335bf9f69ae6ad0b9aa7d88c4b64bab89f0f261332f6d4de"
+			},
+			"resolvedParents": {
+				"postgres:19-trixie": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:d2c8a7d3d224a9c0335bf9f69ae6ad0b9aa7d88c4b64bab89f0f261332f6d4de",
+							"size": 3251,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "amd64",
+								"org.opencontainers.image.base.digest": "sha256:7378260c0a098d27ac206225db5e7d92b8c7c84ea7afccc86eeb513756bbd392",
+								"org.opencontainers.image.base.name": "debian:trixie-slim",
+								"org.opencontainers.image.created": "2026-11-20T00:36:59Z",
+								"org.opencontainers.image.ref.name": "postgres:19-trixie@sha256:d2c8a7d3d224a9c0335bf9f69ae6ad0b9aa7d88c4b64bab89f0f261332f6d4de",
+								"org.opencontainers.image.revision": "8672300fdf4f4ce8a8eac7511031fd08b6d2c886",
+								"org.opencontainers.image.source": "https://github.com/docker-library/postgres.git#8672300fdf4f4ce8a8eac7511031fd08b6d2c886:19/trixie",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/postgres",
+								"org.opencontainers.image.version": "19.0"
+							},
+							"platform": {
+								"architecture": "amd64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:c80ea00161780113ccbb44f23f80954477105a43e17a2cc48fb2e403d5f0f72c",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "amd64",
+								"org.opencontainers.image.ref.name": "postgres:19-trixie@sha256:c80ea00161780113ccbb44f23f80954477105a43e17a2cc48fb2e403d5f0f72c",
+								"vnd.docker.reference.digest": "sha256:d2c8a7d3d224a9c0335bf9f69ae6ad0b9aa7d88c4b64bab89f0f261332f6d4de",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "postgres:19-trixie@sha256:bb6e70add742cd868fb62cb3b2f67d1dd2bdd2b65a521e778420748753687c60"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "f70080f4026e03819b86af6e288b0e82467064e219ec3c3d6e77685139191f47",
+			"reproducibleGitChecksum": "91ed1057a70ab26abda803c7fa346987b7406ad1f912c13952a1b986fdcfde34",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/tianon/docker-postgres-upgrade.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "bf9f7385dfc150dd1bb360289c17f0e267009c15",
+					"Directory": "16-to-19",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1795206126
+				}
+			],
+			"arches": {
+				"amd64": {
+					"tags": [
+						"tianon/postgres-upgrade:16-to-19"
+					],
+					"archTags": [],
+					"froms": [
+						"postgres:19-trixie"
+					],
+					"lastStageFrom": "postgres:19-trixie",
+					"platformString": "linux/amd64",
+					"platform": {
+						"architecture": "amd64",
+						"os": "linux"
+					},
+					"parents": {
+						"postgres:19-trixie": {
+							"sourceId": null,
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"a93dc40b36791f23b0447654ddc7419c25cb8f8bd4b3415ee69a9c18503cc12c": {
+		"buildId": "a93dc40b36791f23b0447654ddc7419c25cb8f8bd4b3415ee69a9c18503cc12c",
+		"build": {
+			"img": "tianon/zz-staging:arm64v8-a93dc40b36791f23b0447654ddc7419c25cb8f8bd4b3415ee69a9c18503cc12c",
+			"resolved": null,
+			"sourceId": "f70080f4026e03819b86af6e288b0e82467064e219ec3c3d6e77685139191f47",
+			"arch": "arm64v8",
+			"parents": {
+				"postgres:19-trixie": "sha256:75428cce0b8556199c863b9b501c7958f1791e1536f4f60ee659d65331b3563e"
+			},
+			"resolvedParents": {
+				"postgres:19-trixie": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:75428cce0b8556199c863b9b501c7958f1791e1536f4f60ee659d65331b3563e",
+							"size": 3253,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "arm64v8",
+								"org.opencontainers.image.base.digest": "sha256:24a01011d10eba3a023bc8585b9650b8b29021240d4217c05b905e09ef4a5232",
+								"org.opencontainers.image.base.name": "debian:trixie-slim",
+								"org.opencontainers.image.created": "2026-11-20T00:37:01Z",
+								"org.opencontainers.image.ref.name": "postgres:19-trixie@sha256:75428cce0b8556199c863b9b501c7958f1791e1536f4f60ee659d65331b3563e",
+								"org.opencontainers.image.revision": "8672300fdf4f4ce8a8eac7511031fd08b6d2c886",
+								"org.opencontainers.image.source": "https://github.com/docker-library/postgres.git#8672300fdf4f4ce8a8eac7511031fd08b6d2c886:19/trixie",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/postgres",
+								"org.opencontainers.image.version": "19.0"
+							},
+							"platform": {
+								"architecture": "arm64",
+								"os": "linux",
+								"variant": "v8"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:8df2cec88825dfd9f957739f981834601b1ae238a630a045bbbb786f7411b42e",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "arm64v8",
+								"org.opencontainers.image.ref.name": "postgres:19-trixie@sha256:8df2cec88825dfd9f957739f981834601b1ae238a630a045bbbb786f7411b42e",
+								"vnd.docker.reference.digest": "sha256:75428cce0b8556199c863b9b501c7958f1791e1536f4f60ee659d65331b3563e",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "postgres:19-trixie@sha256:bb6e70add742cd868fb62cb3b2f67d1dd2bdd2b65a521e778420748753687c60"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "f70080f4026e03819b86af6e288b0e82467064e219ec3c3d6e77685139191f47",
+			"reproducibleGitChecksum": "91ed1057a70ab26abda803c7fa346987b7406ad1f912c13952a1b986fdcfde34",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/tianon/docker-postgres-upgrade.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "bf9f7385dfc150dd1bb360289c17f0e267009c15",
+					"Directory": "16-to-19",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1795206126
+				}
+			],
+			"arches": {
+				"arm64v8": {
+					"tags": [
+						"tianon/postgres-upgrade:16-to-19"
+					],
+					"archTags": [],
+					"froms": [
+						"postgres:19-trixie"
+					],
+					"lastStageFrom": "postgres:19-trixie",
+					"platformString": "linux/arm64/v8",
+					"platform": {
+						"architecture": "arm64",
+						"os": "linux",
+						"variant": "v8"
+					},
+					"parents": {
+						"postgres:19-trixie": {
+							"sourceId": null,
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"5815fb2f4478595b1d3fef4d262726f21594c5d2bd7142d68737af5725d8f4d6": {
+		"buildId": "5815fb2f4478595b1d3fef4d262726f21594c5d2bd7142d68737af5725d8f4d6",
+		"build": {
+			"img": "tianon/zz-staging:amd64-5815fb2f4478595b1d3fef4d262726f21594c5d2bd7142d68737af5725d8f4d6",
+			"resolved": null,
+			"sourceId": "3babff908f21f0f53410b2a230de1293fd97c6f9935a4cdf33a224f503ca1a04",
+			"arch": "amd64",
+			"parents": {
+				"postgres:19-trixie": "sha256:d2c8a7d3d224a9c0335bf9f69ae6ad0b9aa7d88c4b64bab89f0f261332f6d4de"
+			},
+			"resolvedParents": {
+				"postgres:19-trixie": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:d2c8a7d3d224a9c0335bf9f69ae6ad0b9aa7d88c4b64bab89f0f261332f6d4de",
+							"size": 3251,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "amd64",
+								"org.opencontainers.image.base.digest": "sha256:7378260c0a098d27ac206225db5e7d92b8c7c84ea7afccc86eeb513756bbd392",
+								"org.opencontainers.image.base.name": "debian:trixie-slim",
+								"org.opencontainers.image.created": "2026-11-20T00:36:59Z",
+								"org.opencontainers.image.ref.name": "postgres:19-trixie@sha256:d2c8a7d3d224a9c0335bf9f69ae6ad0b9aa7d88c4b64bab89f0f261332f6d4de",
+								"org.opencontainers.image.revision": "8672300fdf4f4ce8a8eac7511031fd08b6d2c886",
+								"org.opencontainers.image.source": "https://github.com/docker-library/postgres.git#8672300fdf4f4ce8a8eac7511031fd08b6d2c886:19/trixie",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/postgres",
+								"org.opencontainers.image.version": "19.0"
+							},
+							"platform": {
+								"architecture": "amd64",
+								"os": "linux"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:c80ea00161780113ccbb44f23f80954477105a43e17a2cc48fb2e403d5f0f72c",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "amd64",
+								"org.opencontainers.image.ref.name": "postgres:19-trixie@sha256:c80ea00161780113ccbb44f23f80954477105a43e17a2cc48fb2e403d5f0f72c",
+								"vnd.docker.reference.digest": "sha256:d2c8a7d3d224a9c0335bf9f69ae6ad0b9aa7d88c4b64bab89f0f261332f6d4de",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "postgres:19-trixie@sha256:bb6e70add742cd868fb62cb3b2f67d1dd2bdd2b65a521e778420748753687c60"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "3babff908f21f0f53410b2a230de1293fd97c6f9935a4cdf33a224f503ca1a04",
+			"reproducibleGitChecksum": "2574ede6b223dd1dad9c32acaf471c00210cc821e0d8df41b86034d9deca3c96",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/tianon/docker-postgres-upgrade.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "bf9f7385dfc150dd1bb360289c17f0e267009c15",
+					"Directory": "15-to-19",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1795206126
+				}
+			],
+			"arches": {
+				"amd64": {
+					"tags": [
+						"tianon/postgres-upgrade:15-to-19"
+					],
+					"archTags": [],
+					"froms": [
+						"postgres:19-trixie"
+					],
+					"lastStageFrom": "postgres:19-trixie",
+					"platformString": "linux/amd64",
+					"platform": {
+						"architecture": "amd64",
+						"os": "linux"
+					},
+					"parents": {
+						"postgres:19-trixie": {
+							"sourceId": null,
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
+	"4fda5dad18cc17f3fe4ba1f03cbf2d6a732029304c38c6e40b785880c430f43e": {
+		"buildId": "4fda5dad18cc17f3fe4ba1f03cbf2d6a732029304c38c6e40b785880c430f43e",
+		"build": {
+			"img": "tianon/zz-staging:arm64v8-4fda5dad18cc17f3fe4ba1f03cbf2d6a732029304c38c6e40b785880c430f43e",
+			"resolved": null,
+			"sourceId": "3babff908f21f0f53410b2a230de1293fd97c6f9935a4cdf33a224f503ca1a04",
+			"arch": "arm64v8",
+			"parents": {
+				"postgres:19-trixie": "sha256:75428cce0b8556199c863b9b501c7958f1791e1536f4f60ee659d65331b3563e"
+			},
+			"resolvedParents": {
+				"postgres:19-trixie": {
+					"schemaVersion": 2,
+					"mediaType": "application/vnd.oci.image.index.v1+json",
+					"manifests": [
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:75428cce0b8556199c863b9b501c7958f1791e1536f4f60ee659d65331b3563e",
+							"size": 3253,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "arm64v8",
+								"org.opencontainers.image.base.digest": "sha256:24a01011d10eba3a023bc8585b9650b8b29021240d4217c05b905e09ef4a5232",
+								"org.opencontainers.image.base.name": "debian:trixie-slim",
+								"org.opencontainers.image.created": "2026-11-20T00:37:01Z",
+								"org.opencontainers.image.ref.name": "postgres:19-trixie@sha256:75428cce0b8556199c863b9b501c7958f1791e1536f4f60ee659d65331b3563e",
+								"org.opencontainers.image.revision": "8672300fdf4f4ce8a8eac7511031fd08b6d2c886",
+								"org.opencontainers.image.source": "https://github.com/docker-library/postgres.git#8672300fdf4f4ce8a8eac7511031fd08b6d2c886:19/trixie",
+								"org.opencontainers.image.url": "https://hub.docker.com/_/postgres",
+								"org.opencontainers.image.version": "19.0"
+							},
+							"platform": {
+								"architecture": "arm64",
+								"os": "linux",
+								"variant": "v8"
+							}
+						},
+						{
+							"mediaType": "application/vnd.oci.image.manifest.v1+json",
+							"digest": "sha256:8df2cec88825dfd9f957739f981834601b1ae238a630a045bbbb786f7411b42e",
+							"size": 841,
+							"annotations": {
+								"com.docker.official-images.bashbrew.arch": "arm64v8",
+								"org.opencontainers.image.ref.name": "postgres:19-trixie@sha256:8df2cec88825dfd9f957739f981834601b1ae238a630a045bbbb786f7411b42e",
+								"vnd.docker.reference.digest": "sha256:75428cce0b8556199c863b9b501c7958f1791e1536f4f60ee659d65331b3563e",
+								"vnd.docker.reference.type": "attestation-manifest"
+							},
+							"platform": {
+								"architecture": "unknown",
+								"os": "unknown"
+							}
+						}
+					],
+					"annotations": {
+						"org.opencontainers.image.ref.name": "postgres:19-trixie@sha256:bb6e70add742cd868fb62cb3b2f67d1dd2bdd2b65a521e778420748753687c60"
+					}
+				}
+			}
+		},
+		"source": {
+			"sourceId": "3babff908f21f0f53410b2a230de1293fd97c6f9935a4cdf33a224f503ca1a04",
+			"reproducibleGitChecksum": "2574ede6b223dd1dad9c32acaf471c00210cc821e0d8df41b86034d9deca3c96",
+			"entries": [
+				{
+					"GitRepo": "https://github.com/tianon/docker-postgres-upgrade.git",
+					"GitFetch": "refs/heads/master",
+					"GitCommit": "bf9f7385dfc150dd1bb360289c17f0e267009c15",
+					"Directory": "15-to-19",
+					"File": "Dockerfile",
+					"Builder": "",
+					"SOURCE_DATE_EPOCH": 1795206126
+				}
+			],
+			"arches": {
+				"arm64v8": {
+					"tags": [
+						"tianon/postgres-upgrade:15-to-19"
+					],
+					"archTags": [],
+					"froms": [
+						"postgres:19-trixie"
+					],
+					"lastStageFrom": "postgres:19-trixie",
+					"platformString": "linux/arm64/v8",
+					"platform": {
+						"architecture": "arm64",
+						"os": "linux",
+						"variant": "v8"
+					},
+					"parents": {
+						"postgres:19-trixie": {
+							"sourceId": null,
+							"pin": null
+						}
+					}
+				}
+			}
+		}
+	},
 	"871c72c8881b4d54803a95ade84fef1b3929ff7f567051b08201bab34ec0fcec": {
 		"buildId": "871c72c8881b4d54803a95ade84fef1b3929ff7f567051b08201bab34ec0fcec",
 		"build": {
@@ -30120,11 +30896,11 @@
 				{
 					"GitRepo": "https://github.com/tianon/docker-postgres-upgrade.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "e029c5d69978852c4a68aebb2b18cf5aefd250b3",
+					"GitCommit": "bf9f7385dfc150dd1bb360289c17f0e267009c15",
 					"Directory": "17-to-18",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1795119725
+					"SOURCE_DATE_EPOCH": 1795206126
 				}
 			],
 			"arches": {
@@ -30141,176 +30917,6 @@
 					"platform": {
 						"architecture": "amd64",
 						"os": "linux"
-					},
-					"parents": {
-						"postgres:18-trixie": {
-							"sourceId": null,
-							"pin": null
-						}
-					}
-				}
-			}
-		}
-	},
-	"8102906a1182656412232480d027e811b21806185271023ea11a70bfde56f518": {
-		"buildId": "8102906a1182656412232480d027e811b21806185271023ea11a70bfde56f518",
-		"build": {
-			"img": "tianon/zz-staging:arm64v8-8102906a1182656412232480d027e811b21806185271023ea11a70bfde56f518",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:6f58955ae3d7799d236f8d2e58fefeb4770a358afb3f01f2746d4d8b276822e3",
-						"size": 4409,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.base.digest": "sha256:af98f9bf838b7b6bbc9b41cc14454549cc45b2a31addc617d3e2c74c76532acb",
-							"org.opencontainers.image.base.name": "postgres:18-trixie",
-							"org.opencontainers.image.created": "2026-11-20T10:46:10Z",
-							"org.opencontainers.image.ref.name": "tianon/zz-staging:arm64v8-8102906a1182656412232480d027e811b21806185271023ea11a70bfde56f518@sha256:6f58955ae3d7799d236f8d2e58fefeb4770a358afb3f01f2746d4d8b276822e3",
-							"org.opencontainers.image.revision": "e029c5d69978852c4a68aebb2b18cf5aefd250b3",
-							"org.opencontainers.image.source": "https://github.com/tianon/docker-postgres-upgrade.git#e029c5d69978852c4a68aebb2b18cf5aefd250b3:17-to-18",
-							"org.opencontainers.image.url": "https://hub.docker.com/r/tianon/postgres-upgrade",
-							"org.opencontainers.image.version": "17-to-18"
-						},
-						"platform": {
-							"architecture": "arm64",
-							"os": "linux",
-							"variant": "v8"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:39e3bddc7fe2ae596dd34e4d79304bcdb13a0bf240bc47930f7964b44af2741f",
-						"size": 838,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.ref.name": "tianon/zz-staging:arm64v8-8102906a1182656412232480d027e811b21806185271023ea11a70bfde56f518@sha256:39e3bddc7fe2ae596dd34e4d79304bcdb13a0bf240bc47930f7964b44af2741f",
-							"vnd.docker.reference.digest": "sha256:6f58955ae3d7799d236f8d2e58fefeb4770a358afb3f01f2746d4d8b276822e3",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:679c29523810c8ba114d0aa0fb7a13778440fa73977ee1f4f88a91e1efd5149d",
-						"size": 3488,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.ref.name": "tianon/zz-staging:arm64v8-8102906a1182656412232480d027e811b21806185271023ea11a70bfde56f518@sha256:679c29523810c8ba114d0aa0fb7a13778440fa73977ee1f4f88a91e1efd5149d",
-							"vnd.docker.reference.digest": "sha256:6f58955ae3d7799d236f8d2e58fefeb4770a358afb3f01f2746d4d8b276822e3"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						},
-						"artifactType": "application/vnd.dev.cosign.artifact.sig.v1+json"
-					}
-				],
-				"annotations": {
-					"com.docker.official-images.bashbrew.signed-by.label": "YubiKey 4239413 Slot 82",
-					"com.docker.official-images.bashbrew.signed-by.pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEG+1HMsDDAFXQrPkPi80/P4XmMsWJ\ndD5BxdeI7uvLPArqhqsB38LcTLiZ2iTwiITRwyqHlbnjXdvByWJAdaUWNQ==\n-----END PUBLIC KEY-----",
-					"org.opencontainers.image.ref.name": "tianon/zz-staging:arm64v8-8102906a1182656412232480d027e811b21806185271023ea11a70bfde56f518@sha256:0f0816a19066c219b68a2aacf76befea1b2bb259aec5ac0984d5fbd72deb9e60"
-				}
-			},
-			"sourceId": "510f0b7a6f101f01cd509462832e7d04c364d5442fd9bfbd5cd8c3d6c21aacb8",
-			"arch": "arm64v8",
-			"parents": {
-				"postgres:18-trixie": "sha256:af98f9bf838b7b6bbc9b41cc14454549cc45b2a31addc617d3e2c74c76532acb"
-			},
-			"resolvedParents": {
-				"postgres:18-trixie": {
-					"schemaVersion": 2,
-					"mediaType": "application/vnd.oci.image.index.v1+json",
-					"manifests": [
-						{
-							"mediaType": "application/vnd.oci.image.manifest.v1+json",
-							"digest": "sha256:af98f9bf838b7b6bbc9b41cc14454549cc45b2a31addc617d3e2c74c76532acb",
-							"size": 3253,
-							"annotations": {
-								"com.docker.official-images.bashbrew.arch": "arm64v8",
-								"org.opencontainers.image.base.digest": "sha256:24a01011d10eba3a023bc8585b9650b8b29021240d4217c05b905e09ef4a5232",
-								"org.opencontainers.image.base.name": "debian:trixie-slim",
-								"org.opencontainers.image.created": "2026-11-20T00:38:22Z",
-								"org.opencontainers.image.ref.name": "postgres:18-trixie@sha256:af98f9bf838b7b6bbc9b41cc14454549cc45b2a31addc617d3e2c74c76532acb",
-								"org.opencontainers.image.revision": "31f4af9d429410ba4ad1f6e394daecd9ae7edfa7",
-								"org.opencontainers.image.source": "https://github.com/docker-library/postgres.git#31f4af9d429410ba4ad1f6e394daecd9ae7edfa7:18/trixie",
-								"org.opencontainers.image.url": "https://hub.docker.com/_/postgres",
-								"org.opencontainers.image.version": "18.7"
-							},
-							"platform": {
-								"architecture": "arm64",
-								"os": "linux",
-								"variant": "v8"
-							}
-						},
-						{
-							"mediaType": "application/vnd.oci.image.manifest.v1+json",
-							"digest": "sha256:69cae97a4ac5bf8db9e4a0be78a041a930cf62a05d3177f0d32f23217ba07e68",
-							"size": 841,
-							"annotations": {
-								"com.docker.official-images.bashbrew.arch": "arm64v8",
-								"org.opencontainers.image.ref.name": "postgres:18-trixie@sha256:69cae97a4ac5bf8db9e4a0be78a041a930cf62a05d3177f0d32f23217ba07e68",
-								"vnd.docker.reference.digest": "sha256:af98f9bf838b7b6bbc9b41cc14454549cc45b2a31addc617d3e2c74c76532acb",
-								"vnd.docker.reference.type": "attestation-manifest"
-							},
-							"platform": {
-								"architecture": "unknown",
-								"os": "unknown"
-							}
-						}
-					],
-					"annotations": {
-						"org.opencontainers.image.ref.name": "postgres:18-trixie@sha256:eb63372c1e05c755f55fa30cbd07aecc443676fc6c0fa90b9002d01537841e1a"
-					}
-				}
-			},
-			"prodSignatures": [
-				{
-					"mediaType": "application/vnd.dev.cosign.simplesigning.v1+json",
-					"digest": "sha256:e16330c35a99dcc1e9c3aaf99d52fc9f357757c22fe4c4f750ab02ec99d2d41a",
-					"size": 1357,
-					"annotations": {
-						"dev.cosignproject.cosign/signature": "MEQCIDnKbNIkowfC/T19AqLK2qRvl4NMMrvcn04k3NQqIMwqAiAiBUj5jS3DckqCN7C0TY1uvWbeg5rH5fYlkhcEXT44Jw==",
-						"vnd.docker.reference.digest": "sha256:6f58955ae3d7799d236f8d2e58fefeb4770a358afb3f01f2746d4d8b276822e3"
-					}
-				}
-			]
-		},
-		"source": {
-			"sourceId": "510f0b7a6f101f01cd509462832e7d04c364d5442fd9bfbd5cd8c3d6c21aacb8",
-			"reproducibleGitChecksum": "56422a5ef10eba46829622c9d30e2660784d154bac53f964936cda25095ded92",
-			"entries": [
-				{
-					"GitRepo": "https://github.com/tianon/docker-postgres-upgrade.git",
-					"GitFetch": "refs/heads/master",
-					"GitCommit": "e029c5d69978852c4a68aebb2b18cf5aefd250b3",
-					"Directory": "17-to-18",
-					"File": "Dockerfile",
-					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1795119725
-				}
-			],
-			"arches": {
-				"arm64v8": {
-					"tags": [
-						"tianon/postgres-upgrade:17-to-18"
-					],
-					"archTags": [],
-					"froms": [
-						"postgres:18-trixie"
-					],
-					"lastStageFrom": "postgres:18-trixie",
-					"platformString": "linux/arm64/v8",
-					"platform": {
-						"architecture": "arm64",
-						"os": "linux",
-						"variant": "v8"
 					},
 					"parents": {
 						"postgres:18-trixie": {
@@ -30457,11 +31063,11 @@
 				{
 					"GitRepo": "https://github.com/tianon/docker-postgres-upgrade.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "e029c5d69978852c4a68aebb2b18cf5aefd250b3",
+					"GitCommit": "bf9f7385dfc150dd1bb360289c17f0e267009c15",
 					"Directory": "16-to-18",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1795119725
+					"SOURCE_DATE_EPOCH": 1795206126
 				}
 			],
 			"arches": {
@@ -30478,176 +31084,6 @@
 					"platform": {
 						"architecture": "amd64",
 						"os": "linux"
-					},
-					"parents": {
-						"postgres:18-trixie": {
-							"sourceId": null,
-							"pin": null
-						}
-					}
-				}
-			}
-		}
-	},
-	"e52b10b1363761b3040d5a3b6b860df9db236ece307fedb4b84ba783c353783d": {
-		"buildId": "e52b10b1363761b3040d5a3b6b860df9db236ece307fedb4b84ba783c353783d",
-		"build": {
-			"img": "tianon/zz-staging:arm64v8-e52b10b1363761b3040d5a3b6b860df9db236ece307fedb4b84ba783c353783d",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:ab6cec3abe969ddfaad91cb2f5f9ba0dc19c896f366d609925d09068c29b45f9",
-						"size": 4409,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.base.digest": "sha256:af98f9bf838b7b6bbc9b41cc14454549cc45b2a31addc617d3e2c74c76532acb",
-							"org.opencontainers.image.base.name": "postgres:18-trixie",
-							"org.opencontainers.image.created": "2026-11-20T10:47:16Z",
-							"org.opencontainers.image.ref.name": "tianon/zz-staging:arm64v8-e52b10b1363761b3040d5a3b6b860df9db236ece307fedb4b84ba783c353783d@sha256:ab6cec3abe969ddfaad91cb2f5f9ba0dc19c896f366d609925d09068c29b45f9",
-							"org.opencontainers.image.revision": "e029c5d69978852c4a68aebb2b18cf5aefd250b3",
-							"org.opencontainers.image.source": "https://github.com/tianon/docker-postgres-upgrade.git#e029c5d69978852c4a68aebb2b18cf5aefd250b3:16-to-18",
-							"org.opencontainers.image.url": "https://hub.docker.com/r/tianon/postgres-upgrade",
-							"org.opencontainers.image.version": "16-to-18"
-						},
-						"platform": {
-							"architecture": "arm64",
-							"os": "linux",
-							"variant": "v8"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:cb5f74a905290317e295ff112087ea46effd7a333927937aaba53a5dcd85406d",
-						"size": 838,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.ref.name": "tianon/zz-staging:arm64v8-e52b10b1363761b3040d5a3b6b860df9db236ece307fedb4b84ba783c353783d@sha256:cb5f74a905290317e295ff112087ea46effd7a333927937aaba53a5dcd85406d",
-							"vnd.docker.reference.digest": "sha256:ab6cec3abe969ddfaad91cb2f5f9ba0dc19c896f366d609925d09068c29b45f9",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:7d4c7ff6a030cc43df3c47fd8c2c8dcb384b4931efb94c8af27a0653bfac3a0c",
-						"size": 3488,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.ref.name": "tianon/zz-staging:arm64v8-e52b10b1363761b3040d5a3b6b860df9db236ece307fedb4b84ba783c353783d@sha256:7d4c7ff6a030cc43df3c47fd8c2c8dcb384b4931efb94c8af27a0653bfac3a0c",
-							"vnd.docker.reference.digest": "sha256:ab6cec3abe969ddfaad91cb2f5f9ba0dc19c896f366d609925d09068c29b45f9"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						},
-						"artifactType": "application/vnd.dev.cosign.artifact.sig.v1+json"
-					}
-				],
-				"annotations": {
-					"com.docker.official-images.bashbrew.signed-by.label": "YubiKey 4239413 Slot 82",
-					"com.docker.official-images.bashbrew.signed-by.pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEG+1HMsDDAFXQrPkPi80/P4XmMsWJ\ndD5BxdeI7uvLPArqhqsB38LcTLiZ2iTwiITRwyqHlbnjXdvByWJAdaUWNQ==\n-----END PUBLIC KEY-----",
-					"org.opencontainers.image.ref.name": "tianon/zz-staging:arm64v8-e52b10b1363761b3040d5a3b6b860df9db236ece307fedb4b84ba783c353783d@sha256:dcece2852bbf23798cb079e641c9b76a03a676080d7603c0c64ba0f6470792bb"
-				}
-			},
-			"sourceId": "c742a4c75c3bf784aece7a2c0ee5510f54d04ef9889d92b16eced975dca1884d",
-			"arch": "arm64v8",
-			"parents": {
-				"postgres:18-trixie": "sha256:af98f9bf838b7b6bbc9b41cc14454549cc45b2a31addc617d3e2c74c76532acb"
-			},
-			"resolvedParents": {
-				"postgres:18-trixie": {
-					"schemaVersion": 2,
-					"mediaType": "application/vnd.oci.image.index.v1+json",
-					"manifests": [
-						{
-							"mediaType": "application/vnd.oci.image.manifest.v1+json",
-							"digest": "sha256:af98f9bf838b7b6bbc9b41cc14454549cc45b2a31addc617d3e2c74c76532acb",
-							"size": 3253,
-							"annotations": {
-								"com.docker.official-images.bashbrew.arch": "arm64v8",
-								"org.opencontainers.image.base.digest": "sha256:24a01011d10eba3a023bc8585b9650b8b29021240d4217c05b905e09ef4a5232",
-								"org.opencontainers.image.base.name": "debian:trixie-slim",
-								"org.opencontainers.image.created": "2026-11-20T00:38:22Z",
-								"org.opencontainers.image.ref.name": "postgres:18-trixie@sha256:af98f9bf838b7b6bbc9b41cc14454549cc45b2a31addc617d3e2c74c76532acb",
-								"org.opencontainers.image.revision": "31f4af9d429410ba4ad1f6e394daecd9ae7edfa7",
-								"org.opencontainers.image.source": "https://github.com/docker-library/postgres.git#31f4af9d429410ba4ad1f6e394daecd9ae7edfa7:18/trixie",
-								"org.opencontainers.image.url": "https://hub.docker.com/_/postgres",
-								"org.opencontainers.image.version": "18.7"
-							},
-							"platform": {
-								"architecture": "arm64",
-								"os": "linux",
-								"variant": "v8"
-							}
-						},
-						{
-							"mediaType": "application/vnd.oci.image.manifest.v1+json",
-							"digest": "sha256:69cae97a4ac5bf8db9e4a0be78a041a930cf62a05d3177f0d32f23217ba07e68",
-							"size": 841,
-							"annotations": {
-								"com.docker.official-images.bashbrew.arch": "arm64v8",
-								"org.opencontainers.image.ref.name": "postgres:18-trixie@sha256:69cae97a4ac5bf8db9e4a0be78a041a930cf62a05d3177f0d32f23217ba07e68",
-								"vnd.docker.reference.digest": "sha256:af98f9bf838b7b6bbc9b41cc14454549cc45b2a31addc617d3e2c74c76532acb",
-								"vnd.docker.reference.type": "attestation-manifest"
-							},
-							"platform": {
-								"architecture": "unknown",
-								"os": "unknown"
-							}
-						}
-					],
-					"annotations": {
-						"org.opencontainers.image.ref.name": "postgres:18-trixie@sha256:eb63372c1e05c755f55fa30cbd07aecc443676fc6c0fa90b9002d01537841e1a"
-					}
-				}
-			},
-			"prodSignatures": [
-				{
-					"mediaType": "application/vnd.dev.cosign.simplesigning.v1+json",
-					"digest": "sha256:de39bca437cd79dcc9ee08704ad0e98b6243aff5e92ab67f07e815ea4d4638ed",
-					"size": 1357,
-					"annotations": {
-						"dev.cosignproject.cosign/signature": "MEUCIA7QaopF71FgW4BXk/9vROWN0b94kG1jDAv22AWC+Fb+AiEAiymyKcfS5xSj9q0iFX3CzzJHKv8SuT3E9RExITzNs+s=",
-						"vnd.docker.reference.digest": "sha256:ab6cec3abe969ddfaad91cb2f5f9ba0dc19c896f366d609925d09068c29b45f9"
-					}
-				}
-			]
-		},
-		"source": {
-			"sourceId": "c742a4c75c3bf784aece7a2c0ee5510f54d04ef9889d92b16eced975dca1884d",
-			"reproducibleGitChecksum": "2d5b3b8a4e242307644c365923dc6442bbf75f3ba12969950cdb3a163370c785",
-			"entries": [
-				{
-					"GitRepo": "https://github.com/tianon/docker-postgres-upgrade.git",
-					"GitFetch": "refs/heads/master",
-					"GitCommit": "e029c5d69978852c4a68aebb2b18cf5aefd250b3",
-					"Directory": "16-to-18",
-					"File": "Dockerfile",
-					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1795119725
-				}
-			],
-			"arches": {
-				"arm64v8": {
-					"tags": [
-						"tianon/postgres-upgrade:16-to-18"
-					],
-					"archTags": [],
-					"froms": [
-						"postgres:18-trixie"
-					],
-					"lastStageFrom": "postgres:18-trixie",
-					"platformString": "linux/arm64/v8",
-					"platform": {
-						"architecture": "arm64",
-						"os": "linux",
-						"variant": "v8"
 					},
 					"parents": {
 						"postgres:18-trixie": {
@@ -30794,11 +31230,11 @@
 				{
 					"GitRepo": "https://github.com/tianon/docker-postgres-upgrade.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "e029c5d69978852c4a68aebb2b18cf5aefd250b3",
+					"GitCommit": "bf9f7385dfc150dd1bb360289c17f0e267009c15",
 					"Directory": "15-to-18",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1795119725
+					"SOURCE_DATE_EPOCH": 1795206126
 				}
 			],
 			"arches": {
@@ -30815,176 +31251,6 @@
 					"platform": {
 						"architecture": "amd64",
 						"os": "linux"
-					},
-					"parents": {
-						"postgres:18-trixie": {
-							"sourceId": null,
-							"pin": null
-						}
-					}
-				}
-			}
-		}
-	},
-	"e6acaf966c55203c7aee54d7d51bef742288af68c4f5ec0a2eeda79c3abf0f0c": {
-		"buildId": "e6acaf966c55203c7aee54d7d51bef742288af68c4f5ec0a2eeda79c3abf0f0c",
-		"build": {
-			"img": "tianon/zz-staging:arm64v8-e6acaf966c55203c7aee54d7d51bef742288af68c4f5ec0a2eeda79c3abf0f0c",
-			"resolved": {
-				"schemaVersion": 2,
-				"mediaType": "application/vnd.oci.image.index.v1+json",
-				"manifests": [
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:9a02ec1d67fdc8a68585afcd6f05ff2df50d415baf61c8f6c1c77fb927cdc621",
-						"size": 4409,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.base.digest": "sha256:af98f9bf838b7b6bbc9b41cc14454549cc45b2a31addc617d3e2c74c76532acb",
-							"org.opencontainers.image.base.name": "postgres:18-trixie",
-							"org.opencontainers.image.created": "2026-11-20T10:48:13Z",
-							"org.opencontainers.image.ref.name": "tianon/zz-staging:arm64v8-e6acaf966c55203c7aee54d7d51bef742288af68c4f5ec0a2eeda79c3abf0f0c@sha256:9a02ec1d67fdc8a68585afcd6f05ff2df50d415baf61c8f6c1c77fb927cdc621",
-							"org.opencontainers.image.revision": "e029c5d69978852c4a68aebb2b18cf5aefd250b3",
-							"org.opencontainers.image.source": "https://github.com/tianon/docker-postgres-upgrade.git#e029c5d69978852c4a68aebb2b18cf5aefd250b3:15-to-18",
-							"org.opencontainers.image.url": "https://hub.docker.com/r/tianon/postgres-upgrade",
-							"org.opencontainers.image.version": "15-to-18"
-						},
-						"platform": {
-							"architecture": "arm64",
-							"os": "linux",
-							"variant": "v8"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:8a0b5df7ea108152d909c6e0740b9fd11f82076bbf5ad54ddb92ea7222ecc39f",
-						"size": 838,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.ref.name": "tianon/zz-staging:arm64v8-e6acaf966c55203c7aee54d7d51bef742288af68c4f5ec0a2eeda79c3abf0f0c@sha256:8a0b5df7ea108152d909c6e0740b9fd11f82076bbf5ad54ddb92ea7222ecc39f",
-							"vnd.docker.reference.digest": "sha256:9a02ec1d67fdc8a68585afcd6f05ff2df50d415baf61c8f6c1c77fb927cdc621",
-							"vnd.docker.reference.type": "attestation-manifest"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						}
-					},
-					{
-						"mediaType": "application/vnd.oci.image.manifest.v1+json",
-						"digest": "sha256:1174ade890371802c42ec149debc53621023a3e7868411d406896b3a159e1b17",
-						"size": 3488,
-						"annotations": {
-							"com.docker.official-images.bashbrew.arch": "arm64v8",
-							"org.opencontainers.image.ref.name": "tianon/zz-staging:arm64v8-e6acaf966c55203c7aee54d7d51bef742288af68c4f5ec0a2eeda79c3abf0f0c@sha256:1174ade890371802c42ec149debc53621023a3e7868411d406896b3a159e1b17",
-							"vnd.docker.reference.digest": "sha256:9a02ec1d67fdc8a68585afcd6f05ff2df50d415baf61c8f6c1c77fb927cdc621"
-						},
-						"platform": {
-							"architecture": "unknown",
-							"os": "unknown"
-						},
-						"artifactType": "application/vnd.dev.cosign.artifact.sig.v1+json"
-					}
-				],
-				"annotations": {
-					"com.docker.official-images.bashbrew.signed-by.label": "YubiKey 4239413 Slot 82",
-					"com.docker.official-images.bashbrew.signed-by.pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEG+1HMsDDAFXQrPkPi80/P4XmMsWJ\ndD5BxdeI7uvLPArqhqsB38LcTLiZ2iTwiITRwyqHlbnjXdvByWJAdaUWNQ==\n-----END PUBLIC KEY-----",
-					"org.opencontainers.image.ref.name": "tianon/zz-staging:arm64v8-e6acaf966c55203c7aee54d7d51bef742288af68c4f5ec0a2eeda79c3abf0f0c@sha256:a42a40859d7acd684569af63496050a02fb36af2c2b65bf140d515862bc23dfb"
-				}
-			},
-			"sourceId": "a62336c68833ce75ad5a33e6329c59d0ea4c8f912238eb047e8621b7e88d6ee0",
-			"arch": "arm64v8",
-			"parents": {
-				"postgres:18-trixie": "sha256:af98f9bf838b7b6bbc9b41cc14454549cc45b2a31addc617d3e2c74c76532acb"
-			},
-			"resolvedParents": {
-				"postgres:18-trixie": {
-					"schemaVersion": 2,
-					"mediaType": "application/vnd.oci.image.index.v1+json",
-					"manifests": [
-						{
-							"mediaType": "application/vnd.oci.image.manifest.v1+json",
-							"digest": "sha256:af98f9bf838b7b6bbc9b41cc14454549cc45b2a31addc617d3e2c74c76532acb",
-							"size": 3253,
-							"annotations": {
-								"com.docker.official-images.bashbrew.arch": "arm64v8",
-								"org.opencontainers.image.base.digest": "sha256:24a01011d10eba3a023bc8585b9650b8b29021240d4217c05b905e09ef4a5232",
-								"org.opencontainers.image.base.name": "debian:trixie-slim",
-								"org.opencontainers.image.created": "2026-11-20T00:38:22Z",
-								"org.opencontainers.image.ref.name": "postgres:18-trixie@sha256:af98f9bf838b7b6bbc9b41cc14454549cc45b2a31addc617d3e2c74c76532acb",
-								"org.opencontainers.image.revision": "31f4af9d429410ba4ad1f6e394daecd9ae7edfa7",
-								"org.opencontainers.image.source": "https://github.com/docker-library/postgres.git#31f4af9d429410ba4ad1f6e394daecd9ae7edfa7:18/trixie",
-								"org.opencontainers.image.url": "https://hub.docker.com/_/postgres",
-								"org.opencontainers.image.version": "18.7"
-							},
-							"platform": {
-								"architecture": "arm64",
-								"os": "linux",
-								"variant": "v8"
-							}
-						},
-						{
-							"mediaType": "application/vnd.oci.image.manifest.v1+json",
-							"digest": "sha256:69cae97a4ac5bf8db9e4a0be78a041a930cf62a05d3177f0d32f23217ba07e68",
-							"size": 841,
-							"annotations": {
-								"com.docker.official-images.bashbrew.arch": "arm64v8",
-								"org.opencontainers.image.ref.name": "postgres:18-trixie@sha256:69cae97a4ac5bf8db9e4a0be78a041a930cf62a05d3177f0d32f23217ba07e68",
-								"vnd.docker.reference.digest": "sha256:af98f9bf838b7b6bbc9b41cc14454549cc45b2a31addc617d3e2c74c76532acb",
-								"vnd.docker.reference.type": "attestation-manifest"
-							},
-							"platform": {
-								"architecture": "unknown",
-								"os": "unknown"
-							}
-						}
-					],
-					"annotations": {
-						"org.opencontainers.image.ref.name": "postgres:18-trixie@sha256:eb63372c1e05c755f55fa30cbd07aecc443676fc6c0fa90b9002d01537841e1a"
-					}
-				}
-			},
-			"prodSignatures": [
-				{
-					"mediaType": "application/vnd.dev.cosign.simplesigning.v1+json",
-					"digest": "sha256:28aa6d85c597554fe694b2aed0619a56decfd1e1ee6634be8c774dd950d2b612",
-					"size": 1357,
-					"annotations": {
-						"dev.cosignproject.cosign/signature": "MEUCICvGNzOdmoDiH2+mhI1kPIqvVa3QWXZtb4T3mZM8c7zyAiEA9rL1EZPDOAmM1y6OGdK3Ylu2HN6+uTuXmNO4l2B9uyM=",
-						"vnd.docker.reference.digest": "sha256:9a02ec1d67fdc8a68585afcd6f05ff2df50d415baf61c8f6c1c77fb927cdc621"
-					}
-				}
-			]
-		},
-		"source": {
-			"sourceId": "a62336c68833ce75ad5a33e6329c59d0ea4c8f912238eb047e8621b7e88d6ee0",
-			"reproducibleGitChecksum": "1d71a5721db8b064198c1fefca73c510ec6d6d9f151e292a072dbc904cbcd059",
-			"entries": [
-				{
-					"GitRepo": "https://github.com/tianon/docker-postgres-upgrade.git",
-					"GitFetch": "refs/heads/master",
-					"GitCommit": "e029c5d69978852c4a68aebb2b18cf5aefd250b3",
-					"Directory": "15-to-18",
-					"File": "Dockerfile",
-					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1795119725
-				}
-			],
-			"arches": {
-				"arm64v8": {
-					"tags": [
-						"tianon/postgres-upgrade:15-to-18"
-					],
-					"archTags": [],
-					"froms": [
-						"postgres:18-trixie"
-					],
-					"lastStageFrom": "postgres:18-trixie",
-					"platformString": "linux/arm64/v8",
-					"platform": {
-						"architecture": "arm64",
-						"os": "linux",
-						"variant": "v8"
 					},
 					"parents": {
 						"postgres:18-trixie": {
@@ -31131,11 +31397,11 @@
 				{
 					"GitRepo": "https://github.com/tianon/docker-postgres-upgrade.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "e029c5d69978852c4a68aebb2b18cf5aefd250b3",
+					"GitCommit": "bf9f7385dfc150dd1bb360289c17f0e267009c15",
 					"Directory": "16-to-17",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1795119725
+					"SOURCE_DATE_EPOCH": 1795206126
 				}
 			],
 			"arches": {
@@ -31298,11 +31564,11 @@
 				{
 					"GitRepo": "https://github.com/tianon/docker-postgres-upgrade.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "e029c5d69978852c4a68aebb2b18cf5aefd250b3",
+					"GitCommit": "bf9f7385dfc150dd1bb360289c17f0e267009c15",
 					"Directory": "15-to-17",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1795119725
+					"SOURCE_DATE_EPOCH": 1795206126
 				}
 			],
 			"arches": {
@@ -31465,11 +31731,11 @@
 				{
 					"GitRepo": "https://github.com/tianon/docker-postgres-upgrade.git",
 					"GitFetch": "refs/heads/master",
-					"GitCommit": "e029c5d69978852c4a68aebb2b18cf5aefd250b3",
+					"GitCommit": "bf9f7385dfc150dd1bb360289c17f0e267009c15",
 					"Directory": "15-to-16",
 					"File": "Dockerfile",
 					"Builder": "",
-					"SOURCE_DATE_EPOCH": 1795119725
+					"SOURCE_DATE_EPOCH": 1795206126
 				}
 			],
 			"arches": {
